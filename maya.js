@@ -199,14 +199,6 @@ $('.help').click(function(){
   $(".nav1 ul").show();
 })
 
-$('.help').click(function(){
-  if(!$(".list20").is(":visible")){
-      $(".list20").show(); 
-     }else{ 
-      $(".list20").hide(); 
-    }
-  $(".list20").siblings().hide();
-  $(".nav1 ul").show();
-})
+
 
 
