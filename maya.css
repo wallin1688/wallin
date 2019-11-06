@@ -1,0 +1,605 @@
+html,body,ul,li {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    background: #373737;
+}
+ul{
+    margin-left: 8px;
+}
+li{
+    list-style: none;
+    font-size: 12px;
+}
+.nav,.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+    background: #444;
+}
+.nav{
+    height: 54px;
+}
+/* .nav1{
+    position: relative;
+} */
+
+.words{
+    float: left;
+    padding: 6px 7px;
+    color: #c8c8c8;
+}
+
+
+
+
+
+/* 文件 */
+
+.list1{
+    width: 296px;
+    height: 692px;
+    background: #404040;
+    position: relative;
+    /* z-index: 6; */
+    margin-left: 0;
+    display: none;
+}
+.leftImg{
+    width: 19px;
+    background: #404040;
+}
+.list1 .leftImg{
+    height: 692px;
+}
+.list1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 277px;
+    height: 676px;
+}
+.rightWords{
+    background: #525252;
+    font-size: 12px;
+    color: #eee;
+}
+.rightWord{
+    height: 16px;
+    margin: 3.5px 0 4px 15px;
+}
+.list1 .rightWord{
+    width: 262px;
+}
+.list1>.rightWords>.rightWord>div:nth-child(1){
+    width: 235px;
+    float: left;
+}
+.rightWord div>span:nth-child(2){
+    float: right;
+}
+.rightWord>img{
+    float: right;
+    margin-right: 6px;
+}
+.frame{
+    width: 9px;
+    height: 9px;
+    border: 1px solid #bbb;
+    float: right;
+    margin: 3px 6px 0 0;
+}
+.group{
+    float: left;
+    margin:-4px 12px 0 3px;
+    color: #a4a4a4;
+}
+.groupLine{
+    margin: 9px 0;
+}
+hr{
+    border:none;border-top:1px solid #6f6f6f;
+    margin:1px 0 0 15px;
+}
+.recent{
+    color: #74787b;
+}
+
+/* 编辑 */
+.list2{
+    width: 223px;
+    height: 472px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 45px;
+    display: none;
+}
+.list2>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 204px;
+    height: 456px;
+}
+.list2 .rightWord{
+    width: 190px;
+}
+.list2>.rightWords>.rightWord>div:nth-child(1){
+    width: 162px;
+    float: left;
+}
+.list2 .leftImg{
+    height: 472px;
+}
+
+/* 创建 */
+.list3{
+    width: 274px;
+    height: 428px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 85px;
+    display: none;
+}
+.list3>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 255px;
+    height: 412px;
+}
+.list3 .rightWord{
+    width: 241px;
+}
+.list3>.rightWords>.rightWord>div:nth-child(1){
+    width: 162px;
+    float: left;
+}
+.list3 .leftImg{
+    height: 428px;
+}
+#gpList3{
+    margin:0 12px 0 3px;
+}
+
+/* 选择 */
+.list4{
+    width: 224px;
+    height: 611px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 122px;
+    display: none;
+}
+.list4>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 205px;
+    height:595px;
+}
+.list4 .rightWord{
+    width: 191px;
+}
+.list4>.rightWords>.rightWord>div:nth-child(1){
+    width: 162px;
+    float: left;
+}
+.list4 .leftImg{
+    height: 611px;
+}
+
+/* 修改 */
+.list5{
+    width: 203px;
+    height: 578px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 160px;
+    display: none;
+}
+.list5>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 184px;
+    height:562px;
+}
+.list5 .rightWord{
+    width: 170px;
+}
+.list5>.rightWords>.rightWord>div:nth-child(1){
+    width: 162px;
+    float: left;
+}
+.list5 .leftImg{
+    height: 578px;
+}
+#gpList5{
+    margin:0 12px 0 3px;
+}
+
+/* 显示 */
+.list6{
+    width: 382px;
+    height: 382px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 200px;
+    display: none;
+}
+.list6>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 363px;
+    height:366px;
+}
+.list6 .rightWord{
+    width: 349px;
+}
+.list6>.rightWords>.rightWord>div:nth-child(1){
+    width: 320px;
+    float: left;
+}
+.list6 .leftImg{
+    height: 382px;
+}
+#gpList6{
+    margin:0 12px 0 3px;
+}
+
+/* 窗口 */
+.list7{
+    width: 195px;
+    height: 322px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 238px;
+    display: none;
+}
+.list7>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 176px;
+    height:306px;
+}
+.list7 .rightWord{
+    width: 162px;
+}
+.list7>.rightWords>.rightWord>div:nth-child(1){
+    width: 140px;
+    float: left;
+}
+.list7 .leftImg{
+    height: 322px;
+}
+
+/* 建模 */
+/* 网格 */
+.list8{
+    width: 178px;
+    height: 424px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 276px;
+    display: none;
+}
+.list8>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 159px;
+    height:408px;
+}
+.list8 .rightWord{
+    width: 145px;
+}
+.list8>.rightWords>.rightWord>div:nth-child(1){
+    width: 120px;
+    float: left;
+}
+.list8 .leftImg{
+    height: 424px;
+}
+#gpList8{
+    margin:0 12px 0 3px;
+}
+
+/* 编辑网格 */
+.list9{
+    width: 252px;
+    height: 660px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 314px;
+    display: none;
+}
+.list9>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 233px;
+    height:644px;
+}
+.list9 .rightWord{
+    width: 219px;
+}
+.list9>.rightWords>.rightWord>div:nth-child(1){
+    width: 190px;
+    float: left;
+}
+.list9 .leftImg{
+    height: 660px;
+}
+#gpList9{
+    margin:0 12px 0 3px;
+}
+
+/* 网格工具 */
+.list10{
+    width: 184px;
+    height: 335px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 374px;
+    display: none;
+}
+.list10>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 165px;
+    height:319px;
+}
+.list10 .rightWord{
+    width: 151px;
+}
+.list10>.rightWords>.rightWord>div:nth-child(1){
+    width: 137px;
+    float: left;
+}
+.list10 .leftImg{
+    height: 335px;
+}
+
+/* 网格显示 */
+.list11{
+    width: 228px;
+    height: 660px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 436px;
+    display: none;
+}
+.list11>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 209px;
+    height:644px;
+}
+.list11 .rightWord{
+    width: 195px;
+}
+.list11>.rightWords>.rightWord>div:nth-child(1){
+    width: 181px;
+    float: left;
+}
+.list11 .leftImg{
+    height: 660px;
+}
+#gpList11{
+    margin:0 12px 0 3px;
+}
+
+/* 曲线 */
+.list12{
+    width: 188px;
+    height: 646px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 500px;
+    display: none;
+}
+.list12>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 169px;
+    height:630px;
+}
+.list12 .rightWord{
+    width: 155px;
+}
+.list12>.rightWords>.rightWord>div:nth-child(1){
+    width: 141px;
+    float: left;
+}
+.list12 .leftImg{
+    height: 646px;
+}
+#gpList12{
+    margin:0 12px 0 3px;
+}
+
+/* 曲面 */
+.list13{
+    width: 205px;
+    height: 718px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 536px;
+    display: none;
+}
+.list13>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 186px;
+    height:702px;
+}
+.list13 .rightWord{
+    width: 172px;
+}
+.list13>.rightWords>.rightWord>div:nth-child(1){
+    width: 158px;
+    float: left;
+}
+.list13 .leftImg{
+    height: 718px;
+}
+#gpList13{
+    margin:0 12px 0 3px;
+}
+
+/* 变形 */
+.list14{
+    width: 204px;
+    height: 932px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 576px;
+    display: none;
+}
+.list14>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 185px;
+    height:916px;
+}
+.list14 .rightWord{
+    width: 171px;
+}
+.list14>.rightWords>.rightWord>div:nth-child(1){
+    width: 157px;
+    float: left;
+}
+.list14 .leftImg{
+    height: 932px;
+}
+#gpList14{
+    margin:0 12px 0 3px;
+}
+
+/* UV */
+.list15{
+    width: 236px;
+    height: 462px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 612px;
+    display: none;
+}
+.list15>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 217px;
+    height:446px;
+}
+.list15 .rightWord{
+    width: 203px;
+}
+.list15>.rightWords>.rightWord>div:nth-child(1){
+    width: 189px;
+    float: left;
+}
+.list15 .leftImg{
+    height: 462px;
+}
+#gpList15{
+    margin:0 12px 0 3px;
+}
+
+
+
+
+
+
+.nav2-1,.nav2-list{
+    background: #505050;
+    margin-left: 14px;
+}
+.nav2-1{
+    width: 98px;
+    height: 21px;
+}
+.nav2-1-1,.nav2-1-2{
+    height: 21px;
+    background: #5d5d5d;
+    float: left;
+}
+.nav2-1-1{
+    width: 74px;
+    margin-right: 2px;
+    padding-left: 3px;
+    color: #c8c8c8;
+    font-size: 14px;
+}
+.nav2-1-2{
+    width: 19px;
+}
+.nav2-list{
+    width: 98px;
+    height: 200px;
+}
+
+
+
+
+
+
+.box1{
+    margin-top: 2px;
+    height: 70px;
+}
+.wrap{
+    overflow: hidden;
+    zoom: 1;    
+}
+.box2,.box3,.box4{
+    height: 695px;
+    float: left;
+}
+.box2{
+    margin: 2px 2px 2px 0;
+    width: 44px;
+}
+.box3{
+    margin: 2px 2px 0 0;
+    width: 1590px;
+}
+.box4,.box6,.box7,.box8{
+    margin-top: 2px;
+}
+.box4{
+    width: 282px;
+}
+.box5{
+    height: 42px;
+}
+.box6{
+    height: 37px;
+}
+.box7{
+    height: 32px;
+}
+.box8{
+    height: 24px;
+}
