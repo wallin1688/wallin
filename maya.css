@@ -28,9 +28,9 @@ li{
     padding: 6px 7px;
     color: #c8c8c8;
 }
-
-
-
+/* .words:hover{
+    background: #5285a6;
+} */
 
 
 /* 文件 */
@@ -645,29 +645,32 @@ hr{
 /* 帮助 */
 .list20{
     width: 278px;
-    height: 428px;
+    height: 430px;
     background: #404040;
     position: relative;
     z-index: 66;
-    margin-left: 792px;
+    margin-left: 846px;
     display: none;
 }
 .list20>.rightWords{
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 225px;
-    height:252px;
+    width: 259px;
+    height:414px;
 }
 .list20 .rightWord{
-    width: 211px;
+    width: 245px;
 }
 .list20>.rightWords>.rightWord>div:nth-child(1){
-    width: 197px;
+    width: 231px;
     float: left;
 }
 .list20 .leftImg{
-    height: 268px;
+    height: 430px;
+}
+#gpList20{
+    margin:0 12px 0 3px;
 }
 
 
