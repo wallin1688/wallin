@@ -527,6 +527,155 @@ hr{
     margin:0 12px 0 3px;
 }
 
+/* 生成 */
+.list16{
+    width: 324px;
+    height: 972px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 644px;
+    display: none;
+}
+.list16>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 305px;
+    height:956px;
+}
+.list16 .rightWord{
+    width: 291px;
+}
+.list16>.rightWords>.rightWord>div:nth-child(1){
+    width:277px;
+    float: left;
+}
+.list16 .leftImg{
+    height: 972px;
+}
+#gpList16{
+    margin:0 12px 0 3px;
+}
+
+/* 缓存 */
+.list17{
+    width: 176px;
+    height: 96px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 682px;
+    display: none;
+}
+.list17>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 157px;
+    height:80px;
+}
+.list17 .rightWord{
+    width: 143px;
+}
+.list17>.rightWords>.rightWord>div:nth-child(1){
+    width: 129px;
+    float: left;
+}
+.list17  .leftImg{
+    height: 96px;
+}
+
+/* Substance */
+.list18{
+    width: 158px;
+    height: 40px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 722px;
+    display: none;
+}
+.list18>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 139px;
+    height:24px;
+}
+.list18 .rightWord{
+    width: 125px;
+}
+.list18>.rightWords>.rightWord>div:nth-child(1){
+    width: 111px;
+    float: left;
+}
+.list18  .leftImg{
+    height: 40px;
+}
+
+/* Arnold */
+.list19{
+    width: 244px;
+    height: 268px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 792px;
+    display: none;
+}
+.list19>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 225px;
+    height:252px;
+}
+.list19 .rightWord{
+    width: 211px;
+}
+.list19>.rightWords>.rightWord>div:nth-child(1){
+    width: 197px;
+    float: left;
+}
+.list19  .leftImg{
+    height: 268px;
+}
+
+/* 帮助 */
+.list20{
+    width: 278px;
+    height: 428px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    margin-left: 792px;
+    display: none;
+}
+.list20>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 225px;
+    height:252px;
+}
+.list20 .rightWord{
+    width: 211px;
+}
+.list20>.rightWords>.rightWord>div:nth-child(1){
+    width: 197px;
+    float: left;
+}
+.list20 .leftImg{
+    height: 268px;
+}
+
+
+
+
+
+
+
 
 
 
