@@ -10,13 +10,12 @@ $(".GcurveList").click(function(){
 //         var X = e.pageX;
 //         var Y = e.pageY;
 //         //获取鼠标坐标e.pageX e.pageY，给图片添加绝对位置 position:absolute  改变图片大小
-//         $(".sanJ").css({ /*"width": "100px", "height": "100px",*/ "position": "absolute", /*"left": e.pageX,*/ "top": e.pageY-80 });$(".sanJ").show();
-//         //获取鼠标坐标：
-//         var X = e.pageX;
-//         var Y = e.pageY;
-//         //获取鼠标坐标e.pageX e.pageY，给图片添加绝对位置 position:absolute  改变图片大小
 //         $(".sanJ").css({ /*"width": "100px", "height": "100px",*/ "position": "absolute", /*"left": e.pageX,*/ "top": e.pageY-80 });
 //     }
-    $(".GtabLi").click(function() {
+    $(".GtabLi").click(function(e) {
+        //获取鼠标坐标：
+        var X = e.pageX;
+        var Y = e.pageY;
         $(".GtabDiV").show();
+        $(".GtabDiV").css({ /*"width": "100px", "height": "100px",*/ "position": "absolute", "left": e.pageX, "top": e.pageY});
     })
