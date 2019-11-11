@@ -195,7 +195,7 @@ li{
     background: url(images/quaixngaoguang1.png)no-repeat -1110PX -365px;
 }
 .GClickQ{
-    background: url(images/quaixngaoguang1.png)no-repeat -273PX -365px;
+    background: url(images/quaixngaoguang1.png)no-repeat -273PX -363px;
 }
 .GClickR{
     background: url(images/quaixngaoguang1.png)no-repeat -312PX -365px;
@@ -346,4 +346,117 @@ li{
 }
 .GClickAd16{
     background: url(images/quaixngaoguang1.png)no-repeat -1060PX -83px;
+}
+/* MASH图标 */
+.GClickMH{
+    background: url(images/quaixngaoguang1.png)no-repeat -124PX -293px;
+}
+.GClickMH1{
+    background: url(images/quaixngaoguang1.png)no-repeat -481PX -293px;
+}
+.GClickMH2{
+    background: url(images/quaixngaoguang1.png)no-repeat -530PX -293px;
+}
+.GClickMH3{
+    background: url(images/quaixngaoguang1.png)no-repeat -176PX -293px;
+}
+.GClickMH4{
+    background: url(images/quaixngaoguang1.png)no-repeat -582PX -293px;
+}
+.GClickMH5{
+    background: url(images/quaixngaoguang1.png)no-repeat -224PX -293px;
+}
+.GClickMH6{
+    background: url(images/quaixngaoguang1.png)no-repeat -276PX -293px;
+}
+.GClickMH7{
+    background: url(images/quaixngaoguang1.png)no-repeat -632PX -293px;
+}
+.GClickMH8{
+    background: url(images/quaixngaoguang1.png)no-repeat -685PX -293px;
+}
+.GClickMH9{
+    background: url(images/quaixngaoguang1.png)no-repeat -734PX -293px;
+}
+.GClickMH10{
+    background: url(images/quaixngaoguang1.png)no-repeat -783PX -293px;
+}
+.GClickMH11{
+    background: url(images/quaixngaoguang1.png)no-repeat -327PX -293px;
+}
+.GClickMH12{
+    background: url(images/quaixngaoguang1.png)no-repeat -375PX -293px;
+}
+.GClickMH13{
+    background: url(images/quaixngaoguang1.png)no-repeat -428PX -293px;
+}
+.GClickMH14{
+    background: url(images/quaixngaoguang1.png)no-repeat -834PX -293px;
+}
+.GClickMH15{
+    background: url(images/quaixngaoguang1.png)no-repeat -886PX -293px;
+}
+/* 运动图形图标 */
+.GClickYd{
+    background: url(images/quaixngaoguang1.png)no-repeat -123PX -433px;
+}
+.GClickYd1{
+    background: url(images/quaixngaoguang1.png)no-repeat -465PX -433px;
+}
+.GClickYd2{
+    background: url(images/quaixngaoguang1.png)no-repeat -510PX -433px;
+}
+.GClickYd3{
+    background: url(images/quaixngaoguang1.png)no-repeat -560PX -433px;
+}
+.GClickYd4{
+    background: url(images/quaixngaoguang1.png)no-repeat -608PX -433px;
+}
+.GClickYd5{
+    background: url(images/quaixngaoguang1.png)no-repeat -657PX -433px;
+}
+.GClickYd6{
+    background: url(images/quaixngaoguang1.png)no-repeat -708PX -433px;
+}
+.GClickYd7{
+    background: url(images/quaixngaoguang1.png)no-repeat -755PX -433px;
+}
+.GClickYd8{
+    background: url(images/quaixngaoguang1.png)no-repeat -171PX -433px;
+}
+.GClickYd9{
+    background: url(images/quaixngaoguang1.png)no-repeat -218PX -433px;
+}
+.GClickYd10{
+    background: url(images/quaixngaoguang1.png)no-repeat -801PX -433px;
+}
+.GClickYd11{
+    background: url(images/quaixngaoguang1.png)no-repeat -851PX -433px;
+}
+.GClickYd12{
+    background: url(images/quaixngaoguang1.png)no-repeat -314PX -433px;
+}
+.GClickYd13{
+    background: url(images/quaixngaoguang1.png)no-repeat -364PX -433px;
+}
+.GClickYd14{
+    background: url(images/quaixngaoguang1.png)no-repeat -899PX -433px;
+}
+.GClickYd15{
+    background: url(images/quaixngaoguang1.png)no-repeat -413PX -433px;
+}
+.GClickYd16{
+    background: url(images/quaixngaoguang1.png)no-repeat -947PX -433px;
+}
+.GClickYd17{
+    background: url(images/quaixngaoguang1.png)no-repeat -997PX -433px;
+}
+.GClickYd18{
+    background: url(images/quaixngaoguang1.png)no-repeat -267PX -433px;
+}
+/* 选择工具 */
+.Gselect{
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
 }
