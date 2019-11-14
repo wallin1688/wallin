@@ -172,3 +172,11 @@ $(".GtabDiVLi").click(function () {
             break;                                              
     }
 })
+// 选择工具上点击事件
+$(".GselectA").click(function () {
+       $(this).addClass("GselectAbg").siblings(".GselectA").removeClass("GselectAbg");
+})
+// 选择工具下点击事件
+$(".GselectB4").click(function () {
+        $(this).parents(".GselectB").toggleClass("GselectAbg");
+})

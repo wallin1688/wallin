@@ -19,7 +19,7 @@ li{
     padding-top: 13px;
 }
 .Gcurve{
-    width: 1824px;
+    width: 1884px;
     height: 70px;
     float: left;
 }
@@ -56,6 +56,7 @@ li{
     padding-top: 12px;
     box-sizing: border-box;
     padding-left: 2px;
+    position: relative;
 }
 .GcurveLabelA{
     display: block;
@@ -268,7 +269,7 @@ li{
     background: url(images/quaixngaoguang1.png)no-repeat -596PX -225px;
 }
 .GClickFX9{
-    background: url(images/quaixngaoguang1.png)no-repeat -656PX -153px;
+    background: url(images/quaixngaoguang1.png)no-repeat -656PX -225px;
 }
 /* Bifrost图标 */
 .GClickBt{
@@ -454,9 +455,586 @@ li{
 .GClickYd18{
     background: url(images/quaixngaoguang1.png)no-repeat -267PX -433px;
 }
-/* 选择工具 */
+/* 选择工具上 */
 .Gselect{
     width: 100%;
     height: 300px;
-    background-color: aqua;
+}
+.GselectA,.GselectB{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left:2px;
+}
+.GselectAbg{
+    background-color: #5292b5;
+}
+.GselectA1,.GselectA2,.GselectA3,.GselectA4,.GselectA5,.GselectA6,.GselectB1,.GselectB2,.GselectB3,.GselectB4{
+    width: 35px;
+    height: 35px;
+    margin: 6px auto;
+    opacity: 0.7;
+}
+.GselectA1{
+    background: url(images/tubiaojihe.png)no-repeat -7px -163px;
+}
+.GselectA2{
+    background: url(images/tubiaojihe.png)no-repeat -5px -203px;
+}
+.GselectA3{
+    background: url(images/tubiaojihe.png)no-repeat -4px -239px;
+}
+.GselectA4{
+    background: url(images/tubiaojihe.png)no-repeat -6px -276px;
+}
+.GselectA5{
+    background: url(images/tubiaojihe.png)no-repeat -5px -313px;
+}
+.GselectA6{
+    background: url(images/tubiaojihe.png)no-repeat -7px -351px;
+}
+.GselectA1:hover,.GselectA2:hover,.GselectA3:hover,.GselectA4:hover,.GselectA5:hover,.GselectA6:hover,.GselectB1:hover,.GselectB2:hover,.GselectB3:hover,.GselectB4:hover{
+    opacity: 1;
+}
+/* 选择工具下 */
+.GselectLine{
+    width: 36px;
+    height: 2px;
+    background-color: #cfcfcf;
+    margin-left: 4px;
+}
+.GselectB1{
+    background: url(images/tubiaojihe.png)no-repeat -5px -472px;
+}
+.GselectB2{
+    background: url(images/tubiaojihe.png)no-repeat -5px -509px;
+}
+.GselectB3{
+    background: url(images/tubiaojihe.png)no-repeat -5px -546px;
+}
+.GselectB4{
+    background: url(images/tubiaojihe.png)no-repeat -5px -583px;
+}
+/* 多边形建模 */
+.GClickPn{
+    background: url(images/duobianxing.png)no-repeat -46px -109px;
+}
+.GClickPn1{
+    background: url(images/duobianxing.png)no-repeat -81px -109px;
+}
+.GClickPn2{
+    background: url(images/duobianxing.png)no-repeat -118px -109px;
+}
+.GClickPn3{
+    background: url(images/duobianxing.png)no-repeat -152px -109px;
+}
+.GClickPn4{
+    background: url(images/duobianxing.png)no-repeat -188px -109px;
+}
+.GClickPn5{
+    background: url(images/duobianxing.png)no-repeat -222px -109px;
+}
+.GClickPn6{
+    background: url(images/duobianxing.png)no-repeat -257px -109px;
+}
+.GClickPn7{
+    background: url(images/duobianxing.png)no-repeat -304px -109px;
+}
+.GClickPn8{
+    background: url(images/duobianxing.png)no-repeat -349px -109px;
+}
+.GClickPn9{
+    background: url(images/duobianxing.png)no-repeat -387px -109px;
+}
+.GClickPn10{
+    background: url(images/duobianxing.png)no-repeat -421px -109px;
+}
+.GClickPn11{
+    background: url(images/duobianxing.png)no-repeat -467px -109px;
+}
+.GClickPn12{
+    background: url(images/duobianxing.png)no-repeat -507px -109px;
+}
+.GClickPn13{
+    background: url(images/duobianxing.png)no-repeat -535px -109px;
+}
+.GClickPn14{
+    background: url(images/duobianxing.png)no-repeat -584px -109px;
+}
+.GClickPn16{
+    background: url(images/duobianxing.png)no-repeat -620px -109px;
+}
+.GClickPn17{
+    background: url(images/duobianxing.png)no-repeat -652px -109px;
+}
+.GClickPn18{
+    background: url(images/duobianxing.png)no-repeat -689px -109px;
+}
+.GClickPn19{
+    background: url(images/duobianxing.png)no-repeat -724px -109px;
+}
+.GClickPn20{
+    background: url(images/duobianxing.png)no-repeat -760px -109px;
+}
+.GClickPn21{
+    background: url(images/duobianxing.png)no-repeat -791px -109px;
+}
+.GClickPn22{
+    background: url(images/duobianxing.png)no-repeat -829px -109px;
+}
+.GClickPn23{
+    background: url(images/duobianxing.png)no-repeat -862px -109px;
+}
+.GClickPn24{
+    background: url(images/duobianxing.png)no-repeat -899px -109px;
+}
+.GClickPn25{
+    background: url(images/duobianxing.png)no-repeat -934px -109px;    
+}
+.GClickPn26{
+    background: url(images/duobianxing.png)no-repeat -967px -109px;
+}
+.GClickPn27{
+    background: url(images/duobianxing.png)no-repeat -1005px -109px;
+}
+.GClickPn28{
+    background: url(images/duobianxing.png)no-repeat -1039px -109px;
+}
+.GClickPn29{
+    background: url(images/duobianxing.png)no-repeat -1085px -109px;
+}
+.GClickPn30{
+    background: url(images/duobianxing.png)no-repeat -1121px -109px;
+}
+.GClickPn31{
+    background: url(images/duobianxing.png)no-repeat -1155px -109px;
+}
+.GClickPn32{
+    background: url(images/duobianxing.png)no-repeat -1203px -109px;
+}
+.GClickPn33{
+    background: url(images/duobianxing.png)no-repeat -1239px -109px;
+}
+.GClickPn34{
+    background: url(images/duobianxing.png)no-repeat -1273px -109px;
+}
+.GClickPn35{
+    background: url(images/duobianxing.png)no-repeat -1308px -109px;
+}
+.GClickPn36{
+    background: url(images/duobianxing.png)no-repeat -1345px -109px;
+}
+.GClickPn37{
+    background: url(images/duobianxing.png)no-repeat -1378px -109px;
+}
+.GClickPn38{
+    background: url(images/duobianxing.png)no-repeat -1411px -109px;
+}
+.GClickPn39{
+    background: url(images/duobianxing.png)no-repeat -1447px -109px;
+}
+/* 雕刻图标 */
+.GClickCg{
+    background: url(images/duobianxing.png)no-repeat -46px -165px;
+}
+.GClickCg1{
+    background: url(images/duobianxing.png)no-repeat -81px -165px;
+}
+.GClickCg2{
+    background: url(images/duobianxing.png)no-repeat -116px -165px;
+}
+.GClickCg3{
+    background: url(images/duobianxing.png)no-repeat -151px -165px;
+}
+.GClickCg4{
+    background: url(images/duobianxing.png)no-repeat -184px -165px;
+}
+.GClickCg5{
+    background: url(images/duobianxing.png)no-repeat -221px -165px;
+}
+.GClickCg6{
+    background: url(images/duobianxing.png)no-repeat -255px -165px;
+}
+.GClickCg7{
+    background: url(images/duobianxing.png)no-repeat -291px -165px;
+}
+.GClickCg8{
+    background: url(images/duobianxing.png)no-repeat -327px -165px;
+}
+.GClickCg9{
+    background: url(images/duobianxing.png)no-repeat -362px -165px;
+}
+.GClickCg10{
+    background: url(images/duobianxing.png)no-repeat -395px -164px;
+}
+.GClickCg11{
+    background: url(images/duobianxing.png)no-repeat -431px -163px;
+}
+.GClickCg12{
+    background: url(images/duobianxing.png)no-repeat -467px -165px;
+}
+.GClickCg13{
+    background: url(images/duobianxing.png)no-repeat -501px -165px;
+}
+.GClickCg14{
+    background: url(images/duobianxing.png)no-repeat -536px -165px;
+}
+.GClickCg15{
+    background: url(images/duobianxing.png)no-repeat -570px -165px;
+}
+.GClickCg16{
+    background: url(images/duobianxing.png)no-repeat -606px -165px;
+}
+.GClickCg17{
+    background: url(images/duobianxing.png)no-repeat -641px -165px;
+}
+.GClickCg18{
+    background: url(images/duobianxing.png)no-repeat -688px -165px;
+}
+.GClickCg19{
+    background: url(images/duobianxing.png)no-repeat -723px -165px;
+}
+.GClickCg20{
+    background: url(images/duobianxing.png)no-repeat -770px -165px;
+}
+.GClickCg21{
+    background: url(images/duobianxing.png)no-repeat -805px -165px;
+}
+.GClickCg22{
+    background: url(images/duobianxing.png)no-repeat -852px -165px;
+}
+.GClickCg23{
+    background: url(images/duobianxing.png)no-repeat -887px -165px;
+}
+.GClickCg24{
+    background: url(images/duobianxing.png)no-repeat -923px -165px;
+}
+.GClickCg25{
+    background: url(images/duobianxing.png)no-repeat -956px -165px;
+}
+/* 绑定图标 */
+.GClickBg{
+    background: url(images/duobianxing.png)no-repeat -46px -218px;
+}
+.GClickBg1{
+    background: url(images/duobianxing.png)no-repeat -83px -218px;
+}
+.GClickBg2{
+    background: url(images/duobianxing.png)no-repeat -117px -218px;
+}
+.GClickBg3{
+    background: url(images/duobianxing.png)no-repeat -151px -218px;
+}
+.GClickBg4{
+    background: url(images/duobianxing.png)no-repeat -183px -218px;
+}
+.GClickBg5{
+    background: url(images/duobianxing.png)no-repeat -218px -218px;
+}
+.GClickBg6{
+    background: url(images/duobianxing.png)no-repeat -265px -218px;
+}
+.GClickBg7{
+    background: url(images/duobianxing.png)no-repeat -301px -218px;
+}
+.GClickBg8{
+    background: url(images/duobianxing.png)no-repeat -334px -218px;
+}
+.GClickBg9{
+    background: url(images/duobianxing.png)no-repeat -370px -218px;
+}
+.GClickBg10{
+    background: url(images/duobianxing.png)no-repeat -417px -218px;
+}
+.GClickBg11{
+    background: url(images/duobianxing.png)no-repeat -451px -218px;
+}
+.GClickBg12{
+    background: url(images/duobianxing.png)no-repeat -487px -218px;
+}
+.GClickBg13{
+    background: url(images/duobianxing.png)no-repeat -523px -218px;
+}
+.GClickBg14{
+    background: url(images/duobianxing.png)no-repeat -559px -218px;
+}
+.GClickBg15{
+    background: url(images/duobianxing.png)no-repeat -591px -218px;
+}
+.GClickBg16{
+    background: url(images/duobianxing.png)no-repeat -640px -218px;
+}
+.GClickBg17{
+    background: url(images/duobianxing.png)no-repeat -675px -218px;
+}
+/* 动画 */
+.GClickAn{
+    background: url(images/duobianxing.png)no-repeat -46px -274px;
+}
+.GClickAn1{
+    background: url(images/duobianxing.png)no-repeat -79px -274px;
+}
+.GClickAn2{
+    background: url(images/duobianxing.png)no-repeat -113px -274px;
+}
+.GClickAn3{
+    background: url(images/duobianxing.png)no-repeat -149px -274px;
+}
+.GClickAn4{
+    background: url(images/duobianxing.png)no-repeat -186px -274px;
+}
+.GClickAn5{
+    background: url(images/duobianxing.png)no-repeat -231px -274px;
+}
+.GClickAn6{
+    background: url(images/duobianxing.png)no-repeat -266px -274px;
+}
+.GClickAn7{
+    background: url(images/duobianxing.png)no-repeat -300px -274px;
+}
+.GClickAn8{
+    background: url(images/duobianxing.png)no-repeat -337px -274px;
+}
+.GClickAn9{
+    background: url(images/duobianxing.png)no-repeat -371px -274px;
+}
+.GClickAn10{
+    background: url(images/duobianxing.png)no-repeat -418px -274px;
+}
+.GClickAn11{
+    background: url(images/duobianxing.png)no-repeat -452px -274px;
+}
+.GClickAn12{
+    background: url(images/duobianxing.png)no-repeat -488px -274px;
+}
+.GClickAn13{
+    background: url(images/duobianxing.png)no-repeat -524px -274px;
+}
+.GClickAn14{
+    background: url(images/duobianxing.png)no-repeat -560px -274px;
+}
+.GClickAn15{
+    background: url(images/duobianxing.png)no-repeat -592px -274px;
+}
+/* 渲染 */
+.GClickRr{
+    background: url(images/duobianxing.png)no-repeat -46px -326px;
+}
+.GClickRr1{
+    background: url(images/duobianxing.png)no-repeat -82px -326px;
+}
+.GClickRr2{
+    background: url(images/duobianxing.png)no-repeat -118px -326px;
+}
+.GClickRr3{
+    background: url(images/duobianxing.png)no-repeat -150px -326px;
+}
+.GClickRr4{
+    background: url(images/duobianxing.png)no-repeat -185px -326px;
+}
+.GClickRr5{
+    background: url(images/duobianxing.png)no-repeat -221px -326px;
+}
+.GClickRr6{
+    background: url(images/duobianxing.png)no-repeat -254px -326px;
+}
+.GClickRr7{
+    background: url(images/duobianxing.png)no-repeat -291px -326px;
+}
+.GClickRr8{
+    background: url(images/duobianxing.png)no-repeat -326px -326px;
+}
+.GClickRr9{
+    background: url(images/duobianxing.png)no-repeat -361px -326px;
+}
+.GClickRr10{
+    background: url(images/duobianxing.png)no-repeat -396px -326px;
+}
+.GClickRr11{
+    background: url(images/duobianxing.png)no-repeat -431px -326px;
+}
+.GClickRr12{
+    background: url(images/duobianxing.png)no-repeat -466px -326px;
+}
+.GClickRr13{
+    background: url(images/duobianxing.png)no-repeat -502px -326px;
+}
+.GClickRr14{
+    background: url(images/duobianxing.png)no-repeat -536px -326px;
+}
+.GClickRr15{
+    background: url(images/duobianxing.png)no-repeat -572px -326px;
+}
+.GClickRr16{
+    background: url(images/duobianxing.png)no-repeat -607px -326px;
+}
+.GClickRr17{
+    background: url(images/duobianxing.png)no-repeat -641px -326px;
+}
+.GClickRr18{
+    background: url(images/duobianxing.png)no-repeat -676px -326px;
+}
+.GClickRr19{
+    background: url(images/duobianxing.png)no-repeat -711px -326px;
+}
+.GClickRr20{
+    background: url(images/duobianxing.png)no-repeat -748px -326px;
+}
+.GClickRr21{
+    background: url(images/duobianxing.png)no-repeat -781px -326px;
+}
+.GClickRr22{
+    background: url(images/duobianxing.png)no-repeat -815px -326px;
+}
+.GClickRr23{
+    background: url(images/duobianxing.png)no-repeat -850px -326px;
+}
+/* FX */
+.GClickFXA{
+    background: url(images/duobianxing.png)no-repeat -46px -374px;
+}
+.GClickFXA1{
+    background: url(images/duobianxing.png)no-repeat -82px -374px;
+}
+.GClickFXA2{
+    background: url(images/duobianxing.png)no-repeat -129px -374px;
+}
+.GClickFXA3{
+    background: url(images/duobianxing.png)no-repeat -166px -374px;
+}
+.GClickFXA4{
+    background: url(images/duobianxing.png)no-repeat -201px -374px;
+}
+.GClickFXA5{
+    background: url(images/duobianxing.png)no-repeat -235px -374px;
+}
+.GClickFXA6{
+    background: url(images/duobianxing.png)no-repeat -283px -374px;
+}
+.GClickFXA7{
+    background: url(images/duobianxing.png)no-repeat -317px -374px;
+}
+.GClickFXA8{
+    background: url(images/duobianxing.png)no-repeat -351px -374px;
+}
+.GClickFXA9{
+    background: url(images/duobianxing.png)no-repeat -389px -374px;
+}
+.GClickFXA10{
+    background: url(images/duobianxing.png)no-repeat -425px -374px;
+}
+.GClickFXA11{
+    background: url(images/duobianxing.png)no-repeat -460px -374px;
+}
+.GClickFXA12{
+    background: url(images/duobianxing.png)no-repeat -489px -374px;
+}
+.GClickFXA13{
+    background: url(images/duobianxing.png)no-repeat -526px -374px;
+}
+.GClickFXA14{
+    background: url(images/duobianxing.png)no-repeat -561px -374px;
+}
+.GClickFXA15{
+    background: url(images/duobianxing.png)no-repeat -596px -374px;
+}
+.GClickFXA16{
+    background: url(images/duobianxing.png)no-repeat -633px -374px;
+}
+.GClickFXA17{
+    background: url(images/duobianxing.png)no-repeat -665px -374px;
+}
+.GClickFXA18{
+    background: url(images/duobianxing.png)no-repeat -700px -374px;
+}
+.GClickFXA19{
+    background: url(images/duobianxing.png)no-repeat -737px -374px;
+}
+.GClickFXA20{
+    background: url(images/duobianxing.png)no-repeat -770px -374px;
+}
+.GClickFXA21{
+    background: url(images/duobianxing.png)no-repeat -808px -374px;
+}
+.GClickFXA22{
+    background: url(images/duobianxing.png)no-repeat -840px -374px;
+}
+.GClickFXA23{
+    background: url(images/duobianxing.png)no-repeat -886px -374px;
+}
+.GClickFXA24{
+    background: url(images/duobianxing.png)no-repeat -921px -374px;
+}
+.GClickFXA25{
+    background: url(images/duobianxing.png)no-repeat -956px -374px;
+}
+.GClickFXA26{
+    background: url(images/duobianxing.png)no-repeat -991px -374px;
+}
+.GClickFXA27{
+    background: url(images/duobianxing.png)no-repeat -1026px -374px;
+}
+.GClickFXA28{
+    background: url(images/duobianxing.png)no-repeat -1073px -374px;
+}
+/* 右边的滚轮样式 */
+.Gscale{
+    width: 10px;
+    height: 36px;
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    background: url(images/tubiaojihe.png)no-repeat -1901px -104px;
+    background-color: #313131;
+}
+.GtabSet{
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: 31px;
+    background: url(images/tubiaojihe.png)no-repeat -19px -124px;
+    opacity: 0.7;
+}
+.GtabSet:hover{
+    opacity: 1;
+}
+/* 用于修改项目的工具栏 */
+.GtabSetD{
+    position: absolute;
+    width: 166px;
+    height: 176px;
+    z-index: 2;
+    border: 1px solid #333;
+    background-color: #525252;
+}
+.GtabSetLeft{
+    width: 20px;
+    height: 100%;
+    background-color: #404040;
+    float: left;
+}
+.GtabSetDLi{
+    width: 144px;
+    height: 22px;
+    border-bottom: 1px solid #6f6f6f;
+    font-size: 12px;
+    color: #fff;
+    line-height: 22px;
+    text-indent: 10px;
+}
+.GtabSetRight{
+    width: 146px;
+    height: 176px;
+    float: left;
+}
+.GtabSetDLi:hover{
+    background-color: #5292b5;
+}
+.GtabSetDiv{
+    width: 144px;
+    height: 22px;
+    position: relative;
+}
+.GtabSetDLiS{
+    float: right;
 }
