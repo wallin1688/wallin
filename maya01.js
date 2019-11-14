@@ -112,7 +112,7 @@ $(document).click(function () {
 $(".GtabDiVLi").click(function () {
     $(this).find(".GtabDiVLiLeftA").addClass("GtabDiVLiRightD");
     $(this).siblings(".GtabDiVLi").find(".GtabDiVLiLeftA").removeClass("GtabDiVLiRightD");
-    var ma=$(this).attr("name")
+    var ma=$(this).attr("name");
     switch(ma){
             case "1":
             $(".GcurveList1").addClass("GcurveListColor").siblings(".GcurveList").removeClass("GcurveListColor");
