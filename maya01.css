@@ -17,10 +17,16 @@ li{
     padding-left: 5px;
     box-sizing: border-box;
     padding-top: 13px;
+
     position: relative;
 }
 .Gcurve{
     width: 1824px;
+
+}
+.Gcurve{
+    width: 1865px;
+
     height: 70px;
     float: left;
 }
@@ -97,4 +103,1375 @@ li{
     position: absolute;
     top: 20px;
     left: 30px;
+    border: 1px solid #333;
+    z-index: 2;
+    display: none;
+}
+.GtabDiVLi{
+    width: 100%;
+    height: 22px;
+}
+.GtabDiVLiLeft{
+    width: 22px;
+    height: 22px;
+    float: left;
+    background-color: #333;
+}
+.GtabDiVLiLeftA{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 2px solid #000;
+    margin: 5px 5px;
+}
+.GtabDiVLiRight{
+    float: left;
+    width: 128px;
+    height: 20px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 20px;
+    text-indent: 5px;
+}
+.GtabDiVLiRightC{
+    background-color: #598daf;
+}
+.GtabDiVLiRightD{
+    background-color: #fff;
+}
+.GtabDiVLiRight:hover{
+    background-color: #598daf;
+}
+.GcurveLabel{
+    width: 100%;
+    height: 30px;
+    display: none;
+}
+.GcurveLabelBlock{
+    display: block;
+}
+/* Xgen图标 */
+.GClickA{
+    background: url(images/quaixngaoguang1.png)no-repeat -123px -365px;
+}
+.GClickB{
+    background: url(images/quaixngaoguang1.png)no-repeat -692px -365px;
+}
+.GClickC{
+    background: url(images/quaixngaoguang1.png)no-repeat -729px -365px;
+}
+.GClickD{
+    background: url(images/quaixngaoguang1.png)no-repeat -767px -365px;
+}
+.GClickE{
+    background: url(images/quaixngaoguang1.png)no-repeat -806px -365px;
+}
+.GClickF{
+    background: url(images/quaixngaoguang1.png)no-repeat -846px -365px;
+}
+.GClickG{
+    background: url(images/quaixngaoguang1.png)no-repeat -161px -364px;
+}
+.GClickH{
+    background: url(images/quaixngaoguang1.png)no-repeat -885px -365px;
+}
+.GClickI{
+    background: url(images/quaixngaoguang1.png)no-repeat -921px -365px;
+}
+.GClickJ{
+    background: url(images/quaixngaoguang1.png)no-repeat -958px -365px;
+}
+.GClickK{
+    background: url(images/quaixngaoguang1.png)no-repeat -198px -365px;
+}
+.GClickL{
+    background: url(images/quaixngaoguang1.png)no-repeat -995px -365px;
+}
+.GClickM{
+    background: url(images/quaixngaoguang1.png)no-repeat -238PX -365px;
+}
+.GClickN{
+    background: url(images/quaixngaoguang1.png)no-repeat -1036PX -365px;
+}
+.GClickO{
+    background: url(images/quaixngaoguang1.png)no-repeat -1073PX -365px;
+}
+.GClickP{
+    background: url(images/quaixngaoguang1.png)no-repeat -1110PX -365px;
+}
+.GClickQ{
+    background: url(images/quaixngaoguang1.png)no-repeat -273PX -363px;
+}
+.GClickR{
+    background: url(images/quaixngaoguang1.png)no-repeat -312PX -365px;
+}
+.GClickS{
+    background: url(images/quaixngaoguang1.png)no-repeat -351PX -365px;
+}
+.GClickT{
+    background: url(images/quaixngaoguang1.png)no-repeat -1147PX -365px;
+}
+.GClickU{
+    background: url(images/quaixngaoguang1.png)no-repeat -1186PX -365px;
+}
+.GClickV{
+    background: url(images/quaixngaoguang1.png)no-repeat -388PX -365px;
+}
+.GClickW{
+    background: url(images/quaixngaoguang1.png)no-repeat -425PX -365px;
+}
+.GClickX{
+    background: url(images/quaixngaoguang1.png)no-repeat -1225PX -365px;
+}
+.GClickY{
+    background: url(images/quaixngaoguang1.png)no-repeat -467PX -365px;
+}
+.GClickZ{
+    background: url(images/quaixngaoguang1.png)no-repeat -502PX -365px;
+}
+.GClickZ1{
+    background: url(images/quaixngaoguang1.png)no-repeat -539PX -365px;
+}
+.GClickZ2{
+    background: url(images/quaixngaoguang1.png)no-repeat -579PX -365px;
+}
+.GClickZ3{
+    background: url(images/quaixngaoguang1.png)no-repeat -619PX -365px;
+}
+.GClickZ4{
+    background: url(images/quaixngaoguang1.png)no-repeat -653PX -365px;
+}
+.GClickZ5{
+    background: url(images/quaixngaoguang1.png)no-repeat -1262PX -365px;
+}
+/* FX缓存图标 */
+.GClickFX{
+    background: url(images/quaixngaoguang1.png)no-repeat -124PX -226px;
+}
+.GClickFX1{
+    background: url(images/quaixngaoguang1.png)no-repeat -182PX -225px;
+}
+.GClickFX2{
+    background: url(images/quaixngaoguang1.png)no-repeat -416PX -225px;
+}
+.GClickFX3{
+    background: url(images/quaixngaoguang1.png)no-repeat -237PX -223px;
+}
+.GClickFX4{
+    background: url(images/quaixngaoguang1.png)no-repeat -478PX -226px;
+}
+.GClickFX5{
+    background: url(images/quaixngaoguang1.png)no-repeat -299PX -221px;
+}
+.GClickFX6{
+    background: url(images/quaixngaoguang1.png)no-repeat -536PX -226px;
+}
+.GClickFX7{
+    background: url(images/quaixngaoguang1.png)no-repeat -358PX -221px;
+}
+.GClickFX8{
+    background: url(images/quaixngaoguang1.png)no-repeat -596PX -225px;
+}
+.GClickFX9{
+    background: url(images/quaixngaoguang1.png)no-repeat -656PX -225px;
+}
+/* Bifrost图标 */
+.GClickBt{
+    background: url(images/quaixngaoguang1.png)no-repeat -125PX -153px;
+}
+.GClickBt1{
+    background: url(images/quaixngaoguang1.png)no-repeat -278PX -153px;
+}
+.GClickBt2{
+    background: url(images/quaixngaoguang1.png)no-repeat -350PX -153px;
+}
+.GClickBt3{
+    background: url(images/quaixngaoguang1.png)no-repeat -503PX -153px;
+}
+.GClickBt4{
+    background: url(images/quaixngaoguang1.png)no-repeat -576PX -153px;
+}
+.GClickBt5{
+    background: url(images/quaixngaoguang1.png)no-repeat -652PX -153px;
+}
+.GClickBt6{
+    background: url(images/quaixngaoguang1.png)no-repeat -426PX -153px;
+}
+.GClickBt7{
+    background: url(images/quaixngaoguang1.png)no-repeat -195PX -153px;
+}
+/* Arnold图标 */
+.GClickAd{
+    background: url(images/quaixngaoguang1.png)no-repeat -120PX -83px;
+}
+.GClickAd1{
+    background: url(images/quaixngaoguang1.png)no-repeat -178PX -83px;
+}
+.GClickAd2{
+    background: url(images/quaixngaoguang1.png)no-repeat -474PX -83px;
+}
+.GClickAd3{
+    background: url(images/quaixngaoguang1.png)no-repeat -236PX -83px;
+}
+.GClickAd4{
+    background: url(images/quaixngaoguang1.png)no-repeat -295PX -83px;
+}
+.GClickAd5{
+    background: url(images/quaixngaoguang1.png)no-repeat -354PX -83px;
+}
+.GClickAd6{
+    background: url(images/quaixngaoguang1.png)no-repeat -532PX -84px;
+}
+.GClickAd7{
+    background: url(images/quaixngaoguang1.png)no-repeat -415PX -82px;
+}
+.GClickAd8{
+    background: url(images/quaixngaoguang1.png)no-repeat -593PX -83px;
+}
+.GClickAd9{
+    background: url(images/quaixngaoguang1.png)no-repeat -651PX -83px;
+}
+.GClickAd10{
+    background: url(images/quaixngaoguang1.png)no-repeat -708PX -83px;
+}
+.GClickAd11{
+    background: url(images/quaixngaoguang1.png)no-repeat -768PX -84px;
+}
+.GClickAd12{
+    background: url(images/quaixngaoguang1.png)no-repeat -826PX -79px; 
+}
+.GClickAd13{
+    background: url(images/quaixngaoguang1.png)no-repeat -886PX -82px;
+}
+.GClickAd14{
+    background: url(images/quaixngaoguang1.png)no-repeat -944PX -82px;
+}
+.GClickAd15{
+    background: url(images/quaixngaoguang1.png)no-repeat -1000PX -83px;
+}
+.GClickAd16{
+    background: url(images/quaixngaoguang1.png)no-repeat -1060PX -83px;
+}
+/* MASH图标 */
+.GClickMH{
+    background: url(images/quaixngaoguang1.png)no-repeat -124PX -293px;
+}
+.GClickMH1{
+    background: url(images/quaixngaoguang1.png)no-repeat -481PX -293px;
+}
+.GClickMH2{
+    background: url(images/quaixngaoguang1.png)no-repeat -530PX -293px;
+}
+.GClickMH3{
+    background: url(images/quaixngaoguang1.png)no-repeat -176PX -293px;
+}
+.GClickMH4{
+    background: url(images/quaixngaoguang1.png)no-repeat -582PX -293px;
+}
+.GClickMH5{
+    background: url(images/quaixngaoguang1.png)no-repeat -224PX -293px;
+}
+.GClickMH6{
+    background: url(images/quaixngaoguang1.png)no-repeat -276PX -293px;
+}
+.GClickMH7{
+    background: url(images/quaixngaoguang1.png)no-repeat -632PX -293px;
+}
+.GClickMH8{
+    background: url(images/quaixngaoguang1.png)no-repeat -685PX -293px;
+}
+.GClickMH9{
+    background: url(images/quaixngaoguang1.png)no-repeat -734PX -293px;
+}
+.GClickMH10{
+    background: url(images/quaixngaoguang1.png)no-repeat -783PX -293px;
+}
+.GClickMH11{
+    background: url(images/quaixngaoguang1.png)no-repeat -327PX -293px;
+}
+.GClickMH12{
+    background: url(images/quaixngaoguang1.png)no-repeat -375PX -293px;
+}
+.GClickMH13{
+    background: url(images/quaixngaoguang1.png)no-repeat -428PX -293px;
+}
+.GClickMH14{
+    background: url(images/quaixngaoguang1.png)no-repeat -834PX -293px;
+}
+.GClickMH15{
+    background: url(images/quaixngaoguang1.png)no-repeat -886PX -293px;
+}
+/* 运动图形图标 */
+.GClickYd{
+    background: url(images/quaixngaoguang1.png)no-repeat -123PX -433px;
+}
+.GClickYd1{
+    background: url(images/quaixngaoguang1.png)no-repeat -465PX -433px;
+}
+.GClickYd2{
+    background: url(images/quaixngaoguang1.png)no-repeat -510PX -433px;
+}
+.GClickYd3{
+    background: url(images/quaixngaoguang1.png)no-repeat -560PX -433px;
+}
+.GClickYd4{
+    background: url(images/quaixngaoguang1.png)no-repeat -608PX -433px;
+}
+.GClickYd5{
+    background: url(images/quaixngaoguang1.png)no-repeat -657PX -433px;
+}
+.GClickYd6{
+    background: url(images/quaixngaoguang1.png)no-repeat -708PX -433px;
+}
+.GClickYd7{
+    background: url(images/quaixngaoguang1.png)no-repeat -755PX -433px;
+}
+.GClickYd8{
+    background: url(images/quaixngaoguang1.png)no-repeat -171PX -433px;
+}
+.GClickYd9{
+    background: url(images/quaixngaoguang1.png)no-repeat -218PX -433px;
+}
+.GClickYd10{
+    background: url(images/quaixngaoguang1.png)no-repeat -801PX -433px;
+}
+.GClickYd11{
+    background: url(images/quaixngaoguang1.png)no-repeat -851PX -433px;
+}
+.GClickYd12{
+    background: url(images/quaixngaoguang1.png)no-repeat -314PX -433px;
+}
+.GClickYd13{
+    background: url(images/quaixngaoguang1.png)no-repeat -364PX -433px;
+}
+.GClickYd14{
+    background: url(images/quaixngaoguang1.png)no-repeat -899PX -433px;
+}
+.GClickYd15{
+    background: url(images/quaixngaoguang1.png)no-repeat -413PX -433px;
+}
+.GClickYd16{
+    background: url(images/quaixngaoguang1.png)no-repeat -947PX -433px;
+}
+.GClickYd17{
+    background: url(images/quaixngaoguang1.png)no-repeat -997PX -433px;
+}
+.GClickYd18{
+    background: url(images/quaixngaoguang1.png)no-repeat -267PX -433px;
+}
+/* 选择工具上 */
+.Gselect{
+    width: 100%;
+    height: 300px;
+}
+.GselectA,.GselectB{
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-left:2px;
+}
+.GselectAbg{
+    background-color: #5292b5;
+}
+.GselectA1,.GselectA2,.GselectA3,.GselectA4,.GselectA5,.GselectA6,.GselectB1,.GselectB2,.GselectB3,.GselectB4{
+    width: 35px;
+    height: 35px;
+    margin: 6px auto;
+    opacity: 0.7;
+}
+.GselectA1{
+    background: url(images/tubiaojihe.png)no-repeat -7px -163px;
+}
+.GselectA2{
+    background: url(images/tubiaojihe.png)no-repeat -5px -203px;
+}
+.GselectA3{
+    background: url(images/tubiaojihe.png)no-repeat -4px -239px;
+}
+.GselectA4{
+    background: url(images/tubiaojihe.png)no-repeat -6px -276px;
+}
+.GselectA5{
+    background: url(images/tubiaojihe.png)no-repeat -5px -313px;
+}
+.GselectA6{
+    background: url(images/tubiaojihe.png)no-repeat -7px -351px;
+}
+.GselectA1:hover,.GselectA2:hover,.GselectA3:hover,.GselectA4:hover,.GselectA5:hover,.GselectA6:hover,.GselectB1:hover,.GselectB2:hover,.GselectB3:hover,.GselectB4:hover{
+    opacity: 1;
+}
+/* 选择工具下 */
+.GselectLine{
+    width: 36px;
+    height: 2px;
+    background-color: #cfcfcf;
+    margin-left: 4px;
+}
+.GselectB1{
+    background: url(images/tubiaojihe.png)no-repeat -5px -472px;
+}
+.GselectB2{
+    background: url(images/tubiaojihe.png)no-repeat -5px -509px;
+}
+.GselectB3{
+    background: url(images/tubiaojihe.png)no-repeat -5px -546px;
+}
+.GselectB4{
+    background: url(images/tubiaojihe.png)no-repeat -5px -583px;
+}
+/* 多边形建模 */
+.GClickPn{
+    background: url(images/duobianxing.png)no-repeat -46px -109px;
+}
+.GClickPn1{
+    background: url(images/duobianxing.png)no-repeat -81px -109px;
+}
+.GClickPn2{
+    background: url(images/duobianxing.png)no-repeat -118px -109px;
+}
+.GClickPn3{
+    background: url(images/duobianxing.png)no-repeat -152px -109px;
+}
+.GClickPn4{
+    background: url(images/duobianxing.png)no-repeat -188px -109px;
+}
+.GClickPn5{
+    background: url(images/duobianxing.png)no-repeat -222px -109px;
+}
+.GClickPn6{
+    background: url(images/duobianxing.png)no-repeat -257px -109px;
+}
+.GClickPn7{
+    background: url(images/duobianxing.png)no-repeat -304px -109px;
+}
+.GClickPn8{
+    background: url(images/duobianxing.png)no-repeat -349px -109px;
+}
+.GClickPn9{
+    background: url(images/duobianxing.png)no-repeat -387px -109px;
+}
+.GClickPn10{
+    background: url(images/duobianxing.png)no-repeat -421px -109px;
+}
+.GClickPn11{
+    background: url(images/duobianxing.png)no-repeat -467px -109px;
+}
+.GClickPn12{
+    background: url(images/duobianxing.png)no-repeat -507px -109px;
+}
+.GClickPn13{
+    background: url(images/duobianxing.png)no-repeat -535px -109px;
+}
+.GClickPn14{
+    background: url(images/duobianxing.png)no-repeat -584px -109px;
+}
+.GClickPn16{
+    background: url(images/duobianxing.png)no-repeat -620px -109px;
+}
+.GClickPn17{
+    background: url(images/duobianxing.png)no-repeat -652px -109px;
+}
+.GClickPn18{
+    background: url(images/duobianxing.png)no-repeat -689px -109px;
+}
+.GClickPn19{
+    background: url(images/duobianxing.png)no-repeat -724px -109px;
+}
+.GClickPn20{
+    background: url(images/duobianxing.png)no-repeat -760px -109px;
+}
+.GClickPn21{
+    background: url(images/duobianxing.png)no-repeat -791px -109px;
+}
+.GClickPn22{
+    background: url(images/duobianxing.png)no-repeat -829px -109px;
+}
+.GClickPn23{
+    background: url(images/duobianxing.png)no-repeat -862px -109px;
+}
+.GClickPn24{
+    background: url(images/duobianxing.png)no-repeat -899px -109px;
+}
+.GClickPn25{
+    background: url(images/duobianxing.png)no-repeat -934px -109px;    
+}
+.GClickPn26{
+    background: url(images/duobianxing.png)no-repeat -967px -109px;
+}
+.GClickPn27{
+    background: url(images/duobianxing.png)no-repeat -1005px -109px;
+}
+.GClickPn28{
+    background: url(images/duobianxing.png)no-repeat -1039px -109px;
+}
+.GClickPn29{
+    background: url(images/duobianxing.png)no-repeat -1085px -109px;
+}
+.GClickPn30{
+    background: url(images/duobianxing.png)no-repeat -1121px -109px;
+}
+.GClickPn31{
+    background: url(images/duobianxing.png)no-repeat -1155px -109px;
+}
+.GClickPn32{
+    background: url(images/duobianxing.png)no-repeat -1203px -109px;
+}
+.GClickPn33{
+    background: url(images/duobianxing.png)no-repeat -1239px -109px;
+}
+.GClickPn34{
+    background: url(images/duobianxing.png)no-repeat -1273px -109px;
+}
+.GClickPn35{
+    background: url(images/duobianxing.png)no-repeat -1308px -109px;
+}
+.GClickPn36{
+    background: url(images/duobianxing.png)no-repeat -1345px -109px;
+}
+.GClickPn37{
+    background: url(images/duobianxing.png)no-repeat -1378px -109px;
+}
+.GClickPn38{
+    background: url(images/duobianxing.png)no-repeat -1411px -109px;
+}
+.GClickPn39{
+    background: url(images/duobianxing.png)no-repeat -1447px -109px;
+}
+/* 雕刻图标 */
+.GClickCg{
+    background: url(images/duobianxing.png)no-repeat -46px -165px;
+}
+.GClickCg1{
+    background: url(images/duobianxing.png)no-repeat -81px -165px;
+}
+.GClickCg2{
+    background: url(images/duobianxing.png)no-repeat -116px -165px;
+}
+.GClickCg3{
+    background: url(images/duobianxing.png)no-repeat -151px -165px;
+}
+.GClickCg4{
+    background: url(images/duobianxing.png)no-repeat -184px -165px;
+}
+.GClickCg5{
+    background: url(images/duobianxing.png)no-repeat -221px -165px;
+}
+.GClickCg6{
+    background: url(images/duobianxing.png)no-repeat -255px -165px;
+}
+.GClickCg7{
+    background: url(images/duobianxing.png)no-repeat -291px -165px;
+}
+.GClickCg8{
+    background: url(images/duobianxing.png)no-repeat -327px -165px;
+}
+.GClickCg9{
+    background: url(images/duobianxing.png)no-repeat -362px -165px;
+}
+.GClickCg10{
+    background: url(images/duobianxing.png)no-repeat -395px -164px;
+}
+.GClickCg11{
+    background: url(images/duobianxing.png)no-repeat -431px -163px;
+}
+.GClickCg12{
+    background: url(images/duobianxing.png)no-repeat -467px -165px;
+}
+.GClickCg13{
+    background: url(images/duobianxing.png)no-repeat -501px -165px;
+}
+.GClickCg14{
+    background: url(images/duobianxing.png)no-repeat -536px -165px;
+}
+.GClickCg15{
+    background: url(images/duobianxing.png)no-repeat -570px -165px;
+}
+.GClickCg16{
+    background: url(images/duobianxing.png)no-repeat -606px -165px;
+}
+.GClickCg17{
+    background: url(images/duobianxing.png)no-repeat -641px -165px;
+}
+.GClickCg18{
+    background: url(images/duobianxing.png)no-repeat -688px -165px;
+}
+.GClickCg19{
+    background: url(images/duobianxing.png)no-repeat -723px -165px;
+}
+.GClickCg20{
+    background: url(images/duobianxing.png)no-repeat -770px -165px;
+}
+.GClickCg21{
+    background: url(images/duobianxing.png)no-repeat -805px -165px;
+}
+.GClickCg22{
+    background: url(images/duobianxing.png)no-repeat -852px -165px;
+}
+.GClickCg23{
+    background: url(images/duobianxing.png)no-repeat -887px -165px;
+}
+.GClickCg24{
+    background: url(images/duobianxing.png)no-repeat -923px -165px;
+}
+.GClickCg25{
+    background: url(images/duobianxing.png)no-repeat -956px -165px;
+}
+/* 绑定图标 */
+.GClickBg{
+    background: url(images/duobianxing.png)no-repeat -46px -218px;
+}
+.GClickBg1{
+    background: url(images/duobianxing.png)no-repeat -83px -218px;
+}
+.GClickBg2{
+    background: url(images/duobianxing.png)no-repeat -117px -218px;
+}
+.GClickBg3{
+    background: url(images/duobianxing.png)no-repeat -151px -218px;
+}
+.GClickBg4{
+    background: url(images/duobianxing.png)no-repeat -183px -218px;
+}
+.GClickBg5{
+    background: url(images/duobianxing.png)no-repeat -218px -218px;
+}
+.GClickBg6{
+    background: url(images/duobianxing.png)no-repeat -265px -218px;
+}
+.GClickBg7{
+    background: url(images/duobianxing.png)no-repeat -301px -218px;
+}
+.GClickBg8{
+    background: url(images/duobianxing.png)no-repeat -334px -218px;
+}
+.GClickBg9{
+    background: url(images/duobianxing.png)no-repeat -370px -218px;
+}
+.GClickBg10{
+    background: url(images/duobianxing.png)no-repeat -417px -218px;
+}
+.GClickBg11{
+    background: url(images/duobianxing.png)no-repeat -451px -218px;
+}
+.GClickBg12{
+    background: url(images/duobianxing.png)no-repeat -487px -218px;
+}
+.GClickBg13{
+    background: url(images/duobianxing.png)no-repeat -523px -218px;
+}
+.GClickBg14{
+    background: url(images/duobianxing.png)no-repeat -559px -218px;
+}
+.GClickBg15{
+    background: url(images/duobianxing.png)no-repeat -591px -218px;
+}
+.GClickBg16{
+    background: url(images/duobianxing.png)no-repeat -640px -218px;
+}
+.GClickBg17{
+    background: url(images/duobianxing.png)no-repeat -675px -218px;
+}
+/* 动画 */
+.GClickAn{
+    background: url(images/duobianxing.png)no-repeat -46px -274px;
+}
+.GClickAn1{
+    background: url(images/duobianxing.png)no-repeat -79px -274px;
+}
+.GClickAn2{
+    background: url(images/duobianxing.png)no-repeat -113px -274px;
+}
+.GClickAn3{
+    background: url(images/duobianxing.png)no-repeat -149px -274px;
+}
+.GClickAn4{
+    background: url(images/duobianxing.png)no-repeat -186px -274px;
+}
+.GClickAn5{
+    background: url(images/duobianxing.png)no-repeat -231px -274px;
+}
+.GClickAn6{
+    background: url(images/duobianxing.png)no-repeat -266px -274px;
+}
+.GClickAn7{
+    background: url(images/duobianxing.png)no-repeat -300px -274px;
+}
+.GClickAn8{
+    background: url(images/duobianxing.png)no-repeat -337px -274px;
+}
+.GClickAn9{
+    background: url(images/duobianxing.png)no-repeat -371px -274px;
+}
+.GClickAn10{
+    background: url(images/duobianxing.png)no-repeat -418px -274px;
+}
+.GClickAn11{
+    background: url(images/duobianxing.png)no-repeat -452px -274px;
+}
+.GClickAn12{
+    background: url(images/duobianxing.png)no-repeat -488px -274px;
+}
+.GClickAn13{
+    background: url(images/duobianxing.png)no-repeat -524px -274px;
+}
+.GClickAn14{
+    background: url(images/duobianxing.png)no-repeat -560px -274px;
+}
+.GClickAn15{
+    background: url(images/duobianxing.png)no-repeat -592px -274px;
+}
+/* 渲染 */
+.GClickRr{
+    background: url(images/duobianxing.png)no-repeat -46px -326px;
+}
+.GClickRr1{
+    background: url(images/duobianxing.png)no-repeat -82px -326px;
+}
+.GClickRr2{
+    background: url(images/duobianxing.png)no-repeat -118px -326px;
+}
+.GClickRr3{
+    background: url(images/duobianxing.png)no-repeat -150px -326px;
+}
+.GClickRr4{
+    background: url(images/duobianxing.png)no-repeat -185px -326px;
+}
+.GClickRr5{
+    background: url(images/duobianxing.png)no-repeat -221px -326px;
+}
+.GClickRr6{
+    background: url(images/duobianxing.png)no-repeat -254px -326px;
+}
+.GClickRr7{
+    background: url(images/duobianxing.png)no-repeat -291px -326px;
+}
+.GClickRr8{
+    background: url(images/duobianxing.png)no-repeat -326px -326px;
+}
+.GClickRr9{
+    background: url(images/duobianxing.png)no-repeat -361px -326px;
+}
+.GClickRr10{
+    background: url(images/duobianxing.png)no-repeat -396px -326px;
+}
+.GClickRr11{
+    background: url(images/duobianxing.png)no-repeat -431px -326px;
+}
+.GClickRr12{
+    background: url(images/duobianxing.png)no-repeat -466px -326px;
+}
+.GClickRr13{
+    background: url(images/duobianxing.png)no-repeat -502px -326px;
+}
+.GClickRr14{
+    background: url(images/duobianxing.png)no-repeat -536px -326px;
+}
+.GClickRr15{
+    background: url(images/duobianxing.png)no-repeat -572px -326px;
+}
+.GClickRr16{
+    background: url(images/duobianxing.png)no-repeat -607px -326px;
+}
+.GClickRr17{
+    background: url(images/duobianxing.png)no-repeat -641px -326px;
+}
+.GClickRr18{
+    background: url(images/duobianxing.png)no-repeat -676px -326px;
+}
+.GClickRr19{
+    background: url(images/duobianxing.png)no-repeat -711px -326px;
+}
+.GClickRr20{
+    background: url(images/duobianxing.png)no-repeat -748px -326px;
+}
+.GClickRr21{
+    background: url(images/duobianxing.png)no-repeat -781px -326px;
+}
+.GClickRr22{
+    background: url(images/duobianxing.png)no-repeat -815px -326px;
+}
+.GClickRr23{
+    background: url(images/duobianxing.png)no-repeat -850px -326px;
+}
+/* FX */
+.GClickFXA{
+    background: url(images/duobianxing.png)no-repeat -46px -374px;
+}
+.GClickFXA1{
+    background: url(images/duobianxing.png)no-repeat -82px -374px;
+}
+.GClickFXA2{
+    background: url(images/duobianxing.png)no-repeat -129px -374px;
+}
+.GClickFXA3{
+    background: url(images/duobianxing.png)no-repeat -166px -374px;
+}
+.GClickFXA4{
+    background: url(images/duobianxing.png)no-repeat -201px -374px;
+}
+.GClickFXA5{
+    background: url(images/duobianxing.png)no-repeat -235px -374px;
+}
+.GClickFXA6{
+    background: url(images/duobianxing.png)no-repeat -283px -374px;
+}
+.GClickFXA7{
+    background: url(images/duobianxing.png)no-repeat -317px -374px;
+}
+.GClickFXA8{
+    background: url(images/duobianxing.png)no-repeat -351px -374px;
+}
+.GClickFXA9{
+    background: url(images/duobianxing.png)no-repeat -389px -374px;
+}
+.GClickFXA10{
+    background: url(images/duobianxing.png)no-repeat -425px -374px;
+}
+.GClickFXA11{
+    background: url(images/duobianxing.png)no-repeat -460px -374px;
+}
+.GClickFXA12{
+    background: url(images/duobianxing.png)no-repeat -489px -374px;
+}
+.GClickFXA13{
+    background: url(images/duobianxing.png)no-repeat -526px -374px;
+}
+.GClickFXA14{
+    background: url(images/duobianxing.png)no-repeat -561px -374px;
+}
+.GClickFXA15{
+    background: url(images/duobianxing.png)no-repeat -596px -374px;
+}
+.GClickFXA16{
+    background: url(images/duobianxing.png)no-repeat -633px -374px;
+}
+.GClickFXA17{
+    background: url(images/duobianxing.png)no-repeat -665px -374px;
+}
+.GClickFXA18{
+    background: url(images/duobianxing.png)no-repeat -700px -374px;
+}
+.GClickFXA19{
+    background: url(images/duobianxing.png)no-repeat -737px -374px;
+}
+.GClickFXA20{
+    background: url(images/duobianxing.png)no-repeat -770px -374px;
+}
+.GClickFXA21{
+    background: url(images/duobianxing.png)no-repeat -808px -374px;
+}
+.GClickFXA22{
+    background: url(images/duobianxing.png)no-repeat -840px -374px;
+}
+.GClickFXA23{
+    background: url(images/duobianxing.png)no-repeat -886px -374px;
+}
+.GClickFXA24{
+    background: url(images/duobianxing.png)no-repeat -921px -374px;
+}
+.GClickFXA25{
+    background: url(images/duobianxing.png)no-repeat -956px -374px;
+}
+.GClickFXA26{
+    background: url(images/duobianxing.png)no-repeat -991px -374px;
+}
+.GClickFXA27{
+    background: url(images/duobianxing.png)no-repeat -1026px -374px;
+}
+.GClickFXA28{
+    background: url(images/duobianxing.png)no-repeat -1073px -374px;
+}
+/* 右边的滚轮样式 */
+.Gscale{
+    width: 10px;
+    height: 36px;
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    background: url(images/tubiaojihe.png)no-repeat -1901px -104px;
+    background-color: #313131;
+}
+.GtabSet{
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: 31px;
+    background: url(images/tubiaojihe.png)no-repeat -19px -124px;
+    opacity: 0.7;
+}
+.GtabSet:hover{
+    opacity: 1;
+}
+/* 用于修改项目的工具栏 */
+.GtabSetD{
+    width: 166px;
+    height: 170px;
+    z-index: 2;
+    border: 1px solid #333;
+    background-color: #525252;
+    display: none;
+    box-shadow: 1px 1px 4px #000;
+}
+.GtabSetLeft{
+    width: 20px;
+    height: 100%;
+    background-color: #404040;
+    float: left;
+}
+.GtabSetDLi{
+    width: 146px;
+    height: 23px;
+    border-bottom: 1px solid #6f6f6f;
+    font-size: 12px;
+    color: #fff;
+    line-height: 22px;
+    text-indent: 10px;
+}
+.GtabSetRight{
+    width: 146px;
+    height: 176px;
+    float: left;
+}
+.GtabSetDLi:hover{
+    background-color: #5292b5;
+}
+.GtabSetDiv{
+    width: 146px;
+    height: 22px;
+    position: relative;
+}
+.GtabSetDLiS{
+    float: right;
+}
+.GtabSetDLiD{
+    position: absolute;
+    width: 178px;
+    height: 87px;
+    background-color:#525252;
+    top: -1px;
+    left: 146px;
+    display: none;
+}
+.GtabSetLine{
+    width: 100%;
+    height: 20px;
+    background-color: #4a4949;
+}
+.GtabSetLineD{
+    float: left;
+    width: 100%;
+    height: 5px;
+    border-bottom: 1px dashed #908d8d;
+    border-top: 1px dashed #908d8d;
+    margin-top: 6px;
+}
+.GtabSetLine:hover{
+    background-color: #5292b5;
+}
+.GtabSetLineS{
+    margin-top: 3px;
+    width: 100%;
+    height: 64px;
+    float: left;
+}
+.GtabSetLineSD{
+    width: 22px;
+    height: 100%;
+    background-color: #4a4949;
+    float: left;
+}
+.GtabSetLineSDiv{
+    width: 156px;
+    height: 64px;
+    float: left;
+}
+.GtabSetA{
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+}
+.GtabSetA:hover{
+    background-color: #5292b5;
+}
+.GtabSetB{
+    width: 100%;
+    height: 20px;
+    border-top: 1px solid #908d8d;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+}
+.GtabSetB:hover{
+    background-color: #5292b5;
+}
+.GtabSetDivS{
+    width: 100%;
+    height: 46px;
+    margin-top: 5px;
+    border-bottom: 1px solid #6f6f6f;
+}
+.GtabSetDivS li{
+    border: 0;
+}
+.GtabSetSure{
+    width: 14px;
+    height: 14px;
+    background-color: #000;
+    font-size: 12px;
+    color:#fff;
+    text-align: center;
+    line-height: 14px;
+    margin: 3px;
+}
+/* 大纲视图 */
+.Gview{
+    width: 20%;
+    height: 695px;
+    background-color: #373737;
+    float: left;
+    margin-left: 5px;
+}
+.GviewT{
+    width: 100%;
+    height: 18px;
+}
+.GviewTP{
+    width: 21%;
+    height: 18px;
+    background-color: #444;
+    font-size: 12px;
+    color: #c7c7c7;
+    line-height: 18px;
+    text-align: center;
+}
+.GviewTlist{
+    width: 100%;
+    height: 25px;
+    background-color:#444;
+    position: relative;
+}
+.GviewTlistA{
+    width: 13%;
+    height: 25px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+    color: #c7c7c7;
+    float: left;
+}
+.GviewTlistA:hover{
+    background-color: #5292b5;
+}
+.GviewTS{
+    width: 100%;
+    height: 21px;
+    background-color: #444;
+    padding-top: 4px;
+}
+.GviewTSleft{
+    width: 9%;
+    height: 21px;
+    float: left;
+    background: url(images/duobianxing.png)no-repeat -40px -937px;
+}
+.GviewTSRight{
+    width: 89%;
+    height: 21px;
+    background-color: #000;
+    border-radius: 4px;
+    float: left;
+}
+.GviewTSRightS{
+    width: 90%;
+    height: 21px;
+    float: left;
+    text-indent: 10px;
+    border: 0;
+    background-color: #000;
+    color: #999;
+    border-radius: 4px;
+}
+.GviewTSRightX{
+    width: 10%;
+    height: 21px;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    transform:rotate(180deg);
+    line-height: 21px;
+    color: #999;
+    cursor: default;
+}
+.GviewTboot{
+    width: 98%;
+    height:627px;
+    overflow: auto;
+}
+.GviewTbootA{
+    width: 100.3%;
+    height: 628px;
+}
+.GviewTbootAList{
+    width: 99%;
+    height: 24px;
+    padding-left: 13%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.GviewTbootIcon{
+    display: block;
+    width: 10%;
+    height: 100%;
+    background: url(images/duobianxing.png)no-repeat -41px -814px;
+    float: left;
+}
+.GviewTbootIconA{
+    background: url(images/duobianxing.png)no-repeat -140px -816px;
+}
+.GviewTbootP{
+    width: 76%;
+    height: 100%;
+    font-size: 12px;
+    color: #666;
+    float: left;
+    margin-right: 5px;
+    line-height: 21px;
+}
+.GviewTbootInput{
+    background-color: #000;
+    color: #999;
+    border: 0;
+    float: left;
+    width: 90%;
+    height: 21px;
+    margin-top: 2px;
+    text-indent: 2px;
+}
+
+/* 搜索弹窗 */
+.Gsearch{
+    width: 280px;
+    height: 40px;
+    background-color: #424141;
+    display: none;
+    box-shadow: 2px 1px 4px #000;
+}
+.GsearchA{
+    width: 20px;
+    height: 40px;
+    background-color: #373737;
+    float: left;
+}
+.GsearchB{
+    width: 260px;
+    height: 40px;
+    float: left;
+}
+.GsearchBList{
+    width: 100%;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666;
+    text-indent: 5px;
+}
+.GsearchBList:hover{
+    background-color: #5292b5;
+}
+/* 展示弹窗 */
+.GviewTlistA1{
+    width: 246px;
+    height: 485px;
+    background-color: #3e3d3d;
+    position: absolute;
+    top: 26px;
+    left: 0;
+    box-shadow: 1px 2px 2px #000;
+    border: 1px solid #333;
+    display: none;
+}
+.GviewTlistAtop{
+    overflow: hidden;
+    width: 246px;
+    height: 20px;
+    background-color: #404040;
+}
+.GviewTlistAtopLine{
+    width: 100%;
+    height: 6px;
+    margin-top: 5px;
+    border-top: 1px dashed #908d8d;
+    border-bottom: 1px dashed #908d8d;
+}
+.GviewTlistAtop:hover{
+    background-color: #5292b5;
+}
+.GviewTlistDiv{
+    width: 100%;
+    height: 273px;
+}
+.GviewTlistDivL{
+    width: 100%;
+    height: 21px;
+}
+.Gleft{
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+.GleftD{
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+    margin: 5px 4px;
+    display: block;
+    font-size: 12px;
+    color: #fff;
+    line-height: 10px;
+    text-align: center;
+    float: left;
+}
+.GleftDT{
+    width: 225px;
+    height: 21px;
+    font-size: 12px;
+    color: #dedede;
+    float: left;
+    line-height: 20px;
+    text-indent: 5px;
+    background-color: #555;
+}
+.GleftDT:hover{
+    background-color: #5292b5;
+}
+.GviewTlistDiv1{
+    width:100%;
+    height:66px;
+}
+.GleftDiv{
+    width:225px;
+    height: 21px;
+    font-size: 12px;
+    text-indent: 2px;
+    line-height: 21px;
+    color: #dedede;
+    position: relative;
+    float: left;
+    background-color: #555;
+}
+.GleftDivP{
+    transform:rotate(90deg);
+    float: right;
+}
+.GleftDiv:hover{
+    background-color: #5292b5;
+}
+.GleftDivChild{
+    width: 150px;
+    height: 84px;
+    position: absolute;
+    top: 0;
+    right: -152px;
+    background-color: #424141;
+    border: 1px solid #333;
+    box-shadow: 1px 2px 2px #333;
+    display: none;
+}
+.GleftDivChildD{
+    width: 100%;
+    height: 20px;
+}
+.GDClist{
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+.GDClistA{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 5px auto;
+    border: 2px solid #333;
+}
+.GDClistColor{
+    background-color: #fff;
+}
+.GDClistB{
+    width: 130px;
+    height: 21px;
+    line-height: 20px;
+    text-indent: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    float: left;
+    background-color: #555;
+}
+.GDClistB:hover{
+    background-color: #5292b5;
+}
+.GselectAbg{
+    background-color: #5292b5;
+}
+.GviewTlistAShA{
+    display: block;
+}
+/* 大纲视图显示弹窗 */
+.GviewTlistA2{
+    width: 180px;
+    height: 240px;
+    background-color: #555;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    border: 1px solid #333;
+}
+.GviewTlistA2top{
+    width: 100%;
+    height: 16px;
+    float: left;
+    background-color: #404040;
+}
+.GviewTlistAtopLine2{
+    width: 100%;
+    height: 3px;
+    border-bottom: 1px dashed #908d8d;
+    border-top: 1px dashed #908d8d;
+    margin-top: 5px;
+}
+.Garr{
+    width: 100%;
+    height: 20px;
+    float: left;
+}
+.GarrD{
+    width: 20px;
+    height: 20px;
+    background-color: #404040;
+    float: left;
+}
+.GarrDiv{
+    width: 160px;
+    height: 20px;
+    float: left;
+}
+.GarrDivP{
+    width:100%;
+    height: 20px;
+    font-size: 12px;
+    text-indent: 4px;
+    color: #dedede;
+    line-height: 20px;
+}
+.GarrDivM{
+    width: 200px;
+    height: 500px;
+    background-color:#404040;
+    position: absolute;
+    top: 16px;
+    left: 180px;
 }
