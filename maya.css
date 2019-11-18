@@ -5779,18 +5779,20 @@ hr{
     position: relative;
     z-index: 55;
 }
-.nav2Icon{
+.nav2Icon,.nav2Icon1{
     display: block;
     width: 22px;
     height: 22px;
-    background: url(images/tubiaojihe.png) no-repeat;
     float: left;
     margin: 2px 1px;
     opacity: 0.7;
 }
-/* .nav2Icon1{
-
-} */
+.nav2Icon{
+    background: url(images/tubiaojihe.png) no-repeat;
+}
+.nav2Icon1{
+    background: url(images/duobianxing.png) no-repeat;
+}
 
 .nav2Icon:hover{
     opacity: 1;
@@ -5908,7 +5910,7 @@ hr{
     background-position: -115px -50px;
 }
 .Wicon36{
-    background-position: -815px -50px;
+    background-position: -355px -894px;
 }
 .Wicon37{
     background-position: -835px -50px;
@@ -5922,6 +5924,22 @@ hr{
 .Wicon40{
     background-position: -550px -50px;
 }
+.Wicon41{
+    background-position: -43px -972px;
+}
+.Wicon42{
+    background-position: -43px -972px;
+}
+.Wicon43{
+    background-position: -43px -972px;
+}
+.Wicon44{
+    background-position: -43px -972px;
+}
+
+
+
+
 
 /* 点击菜单 */
 .navList1{
