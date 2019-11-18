@@ -92,7 +92,35 @@ $(document).click(function(){
   });
   
 
-
-$('.Wicon1').click(function(){
-  $('.nav2Icons').hide();
+// 点击收起展开
+$('.WiconClick').click(function(){
+  if(!$(this).siblings('.nav2Icons').is(":visible")){
+    $(this).siblings('.nav2Icons').show();
+    $(this).css('background-position','-115px -50px');
+   }else{ 
+    $(this).siblings('.nav2Icons').hide();
+    $(this).css('background-position','-365px -50px');
+  }
 })
+
+// console.log("$(this).siblings('.nav2Icons')");
+
+// 点击nav2出现二级菜单
+$('.nav2Icons').click(function(e){
+  pageY=e.pageY;
+  pageX=e.pageX;
+  if(!$(this).siblings('.Wlist').is(":visible")){
+    $(this).siblings('.Wlist').show();
+    $(this).parent().siblings().children('.Wlist').hide();
+    $(this).siblings('.Wlist').css({
+      " top": pageY,
+      "left": pageX,
+    }
+
+  );
+   }else{ 
+    $(this).siblings('.Wlist').hide();
+  }
+  event.stopPropagation();
+})
+

@@ -23,7 +23,7 @@ li{
     background: #444;
 }
 .nav{
-    height: 54px;
+    height: 52px;
 }
 
 .Wnav{
@@ -5713,6 +5713,10 @@ hr{
 
 
 /* 菜单栏切换选项卡 */
+.nav2{
+    position: relative;
+    height: 26px;
+}
 .nav2-1,.nav2-list{
     background: #505050;
     margin-left: 14px;
@@ -5784,6 +5788,10 @@ hr{
     margin: 2px 1px;
     opacity: 0.7;
 }
+/* .nav2Icon1{
+
+} */
+
 .nav2Icon:hover{
     opacity: 1;
 }
@@ -5791,25 +5799,25 @@ hr{
     background-position: -115px -50px;
 }
 .Wicon2{
-    background-position: -135px -48px;
+    background-position: -135px -50px;
 }
 .Wicon3{
-    background-position: -158px -48px;
+    background-position: -158px -50px;
 }
 .Wicon4{
-    background-position: -180px -48px;
+    background-position: -180px -50px;
 }
 .Wicon5{
-    background-position: -203px -48px;
+    background-position: -203px -50px;
 }
 .Wicon6{
-    background-position: -227px -48px;
+    background-position: -227px -50px;
 }
 .Wicon7{
     background-position: -268px -50px;
 }
 .Wicon8{
-    background-position: -550px -48px;
+    background-position: -550px -50px;
 }
 
 .object{
@@ -5822,97 +5830,155 @@ hr{
     margin-top: 4px;
 }
 .Wicon9{
-    background-position: -275px -48px;
+    background-position: -275px -50px;
 }
 .Wicon10{
-    background-position: -294px -48px;
+    background-position: -294px -50px;
 }
 .Wicon11{
-    background-position: -317px -48px;
+    background-position: -317px -50px;
 }
 .Wicon12{
-    background-position: -340px -48px;
+    background-position: -340px -50px;
 }
 .Wicon13{
-    background-position: -365px -48px;
+    background-position: -115px -50px;
 }
 .Wicon14{
-    background-position: -388px -48px;
+    background-position: -388px -50px;
 }
 .Wicon15{
-    background-position: -408px -48px;
+    background-position: -408px -50px;
 }
 .Wicon16{
-    background-position: -432px -48px;
+    background-position: -432px -50px;
 }
 .Wicon17{
-    background-position: -431px -48px;
+    background-position: -454px -50px;
 }
 .Wicon18{
-    background-position: -454px -48px;
+    background-position: -478px -50px;
 }
 .Wicon19{
-    background-position: -478px -48px;
+    background-position: -500px -50px;
 }
 .Wicon20{
-    background-position: -476px -48px;
-}
-.Wicon21{
-    background-position: -524px -48px;
+    background-position: -524px -50px;
 }
 .Wicon22{
-    background-position: -548px -48px;
+    background-position: -548px -50px;
 }
 .Wicon23{
-    background-position: -668px -48px;
+    background-position: -668px -50px;
 }
 .Wicon24{
-    background-position: -692px -48px;
+    background-position: -692px -50px;
 }
 .Wicon25{
-    background-position: -668px -48px;
+    background-position: -668px -50px;
 }
 .Wicon26{
-    background-position: -670px -48px;
+    background-position: -670px -50px;
 }
 .Wicon27{
-    background-position: -852px -48px;
+    background-position: -852px -50px;
 }
 .Wicon28{
-    background-position: -875px -48px;
+    background-position: -875px -50px;
 }
 .Wicon29{
-    background-position: -898px -48px;
+    background-position: -898px -50px;
 }
 .Wicon30{
-    background-position: -921px -48px;
+    background-position: -921px -50px;
 }
 .Wicon31{
-    background-position: -944px -48px;
+    background-position: -944px -50px;
 }
 .Wicon32{
-    background-position: -967px -48px;
+    background-position: -967px -50px;
 }
 .Wicon33{
-    background-position: -992px -48px;
+    background-position: -992px -50px;
 }
 .Wicon34{
-    background-position: -1014px -48px;
+    background-position: -1014px -50px;
 }
 .Wicon35{
-    background-position: -1036px -48px;
+    background-position: -115px -50px;
 }
 .Wicon36{
-    background-position: -815px -48px;
+    background-position: -815px -50px;
 }
 .Wicon37{
-    background-position: -835px -48px;
+    background-position: -835px -50px;
 }
 .Wicon38{
-    background-position: -855px -48px;
+    background-position: -855px -50px;
 }
 .Wicon39{
-    background-position: -875px -48px;
+    background-position: -875px -50px;
+}
+.Wicon40{
+    background-position: -550px -50px;
+}
+
+/* 点击菜单 */
+.navList1{
+    width: 150px;
+    height: 170px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.navList1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 131px;
+    height:170px;
+}
+.navList1 .leftImg{
+    height: 170px;
+}
+
+.navList2{
+    width: 196px;
+    height: 20px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.navList2>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 177px;
+    height:20px;
+}
+.navList2 .leftImg{
+    height: 20px;
+}
+
+.navList3{
+    width: 125px;
+    height: 160px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.navList3>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 106px;
+    height:160px;
+}
+.navList3 .leftImg{
+    height: 160px;
 }
 
 
@@ -5921,7 +5987,7 @@ hr{
 
 
 .box1{
-    margin-top: 2px;
+    margin-top: 8px;
     height: 70px;
 }
 .wrap{
