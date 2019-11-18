@@ -1,12 +1,19 @@
 html,body,ul,li {
     margin: 0;
     padding: 0;
+
+}
+html{
+    overflow: hidden;
+
+
 }
 body{
     background: #373737;
 }
-ul{
-    margin-left: 8px;
+.nav1{
+    width: 1920px;
+    height: 22px;
 }
 li{
     list-style: none;
@@ -18,29 +25,43 @@ li{
 .nav{
     height: 54px;
 }
-/* .nav1{
-    position: relative;
-} */
+
+.Wnav{
+    float: left;
+}
+.change5,.change2,.change3,.change4{
+    display: none;
+}
+
 
 .words{
     float: left;
-    padding: 6px 7px;
+    padding: 0 7px;
     color: #c8c8c8;
+    line-height: 22px;
+    position: relative;
 }
-/* .words:hover{
-    background: #5285a6;
-} */
+.word{
+    position: relative;
+    float: left;
+    margin: 0;
+}
+
+.Wlist{
+    position: absolute;
+    left: 0;
+    top: 22px;
+}
 
 
 /* 文件 */
-
+/* 一级页面 */
 .list1{
     width: 296px;
     height: 692px;
     background: #404040;
-    position: relative;
-    /* z-index: 6; */
-    margin-left: 0;
+    z-index: 666;
+    /* margin-left: 0; */
     display: none;
 }
 .leftImg{
@@ -61,10 +82,12 @@ li{
     background: #525252;
     font-size: 12px;
     color: #eee;
+    position: relative;
 }
 .rightWord{
-    height: 16px;
-    margin: 3.5px 0 4px 15px;
+    line-height: 15px;
+    height: 15px;
+    padding: 2.6px 0 2.6px 15px;
 }
 .list1 .rightWord{
     width: 262px;
@@ -78,23 +101,32 @@ li{
 }
 .rightWord>img{
     float: right;
-    margin-right: 6px;
+    margin: 3px 6px 0 0;
 }
 .frame{
     width: 9px;
     height: 9px;
     border: 1px solid #bbb;
     float: right;
-    margin: 3px 6px 0 0;
+    margin: 2.6px 6px 0 0;
 }
 .group{
-    float: left;
-    margin:-4px 12px 0 3px;
+    margin-bottom: 6px;
+    margin-top: -3.5px;
+    margin-left: 4px;
+}
+.group span:nth-child(1){
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
     color: #a4a4a4;
 }
+
 .groupLine{
-    margin: 9px 0;
+    margin: -10px 0 0 34px;
 }
+
 hr{
     border:none;border-top:1px solid #6f6f6f;
     margin:1px 0 0 15px;
@@ -102,15 +134,55 @@ hr{
 .recent{
     color: #74787b;
 }
+/* 二级页面 */
+        /* 文件的二级菜单 */
+        .list1-1,
+        .list1-2,
+        .list1-3 {
+            width: 174px;
+            height: 62px;
+            background: #404040;
+            position: absolute;
+            left: 276px;
+            display: none;
+        }
+        .list1-1>.rightWords,
+        .list1-2>.rightWords,
+        .list1-3>.rightWords {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 155px;
+            height: 60px;
+        }
+        /* .rightWord {
+            height: 16px;
+            margin: 0.5px 0 4px 15px;
+        } */
+        .list1-1 .leftImg {
+            height: 472px;
+        }
+
+.list1-1{
+    top: 266px;
+}
+.list1-2{
+    top: 286px;
+}
+.list1-3{
+    top: 374px;
+}
+
+
+
 
 /* 编辑 */
+/* 一级页面 */
 .list2{
     width: 223px;
     height: 472px;
     background: #404040;
-    position: relative;
     z-index: 66;
-    margin-left: 45px;
     display: none;
 }
 .list2>.rightWords{
@@ -130,15 +202,119 @@ hr{
 .list2 .leftImg{
     height: 472px;
 }
+/* 二级页面 */
+/* 编辑的二级菜单 */
+.list2-1 {
+    width: 150px;
+    height: 156px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list2-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 131px;
+    height: 140px;
+}
+.list2-1 .rightWord{
+    width: 117px;
+}
+.list2-1 .leftImg {
+    height: 156px;
+}
+
+.list2-2 {
+    width: 184px;
+    height: 236px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list2-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 165px;
+    height: 220px;
+}
+.list2-2 .rightWord{
+    width: 151px;
+}
+.list2-2 .leftImg {
+    height: 236px;
+}
+
+.list2-3 {
+    width: 162px;
+    height: 688px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list2-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 143px;
+    height: 672px;
+}
+.list2-3 .leftImg {
+    height: 688px;
+}
+.list2-4 {
+    width: 175px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list2-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 156px;
+    height: 60px;
+}
+.list2-4 .rightWord{
+    width: 142px;
+}
+
+.list2-4 .leftImg {
+    height: 76px;
+}
+.list2-1,.list2-2,.list2-3,.list2-4{
+    position: absolute;
+    left: 203px;
+    display: none;
+}
+.list2-1{
+    top: 142px;
+}
+.list2-2{
+    top: 198px;
+}
+.list2-3{
+    top:218px;
+}
+.list2-4{
+    top: 392px;
+}
+
+
 
 /* 创建 */
+/* 一级菜单 */
 .list3{
     width: 274px;
     height: 428px;
     background: #404040;
-    position: relative;
     z-index: 66;
-    margin-left: 85px;
     display: none;
 }
 .list3>.rightWords{
@@ -149,7 +325,7 @@ hr{
     height: 412px;
 }
 .list3 .rightWord{
-    width: 241px;
+    width: 236px;
 }
 .list3>.rightWords>.rightWord>div:nth-child(1){
     width: 162px;
@@ -159,17 +335,307 @@ hr{
     height: 428px;
 }
 #gpList3{
-    margin:0 12px 0 3px;
+    margin:-4px 12px 0 3px;
 }
+/* 创建的二级菜单 */
+.list3-1 {
+    width: 150px;
+    height: 222px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list3-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 131px;
+    height: 206px;
+}
+.list3-1 .rightWord{
+    width: 117px;
+}
+
+.list3-1 .leftImg {
+    height: 222px;
+}
+
+.list3-2 {
+    width: 178px;
+    height: 422px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list3-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 159px;
+    height: 406px;
+}
+.list3-2 .rightWord{
+    width: 145px;
+}
+.list3-2 .leftImg {
+    height: 422px;
+}
+
+.list3-3 {
+    width: 130px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list3-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 111px;
+    height: 60px;
+}
+
+.list3-3 .leftImg {
+    height: 76px;
+}
+
+.list3-4 {
+    width: 131px;
+    height: 136px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list3-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 112px;
+    height: 120px;
+}
+.list3-4 .rightWord{
+    width: 98px;
+}
+.list3-4 .leftImg {
+    height: 136px;
+}
+
+.list3-5 {
+    width: 215px;
+    height: 121px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list3-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 196px;
+    height: 105px;
+}
+.list3-5 .rightWord{
+    width: 182px;
+}
+.list3-5 .leftImg {
+    height: 121px;
+}
+
+.list3-6 {
+    width: 184px;
+    height: 136px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list3-6>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 165px;
+    height: 120px;
+}
+.list3-6 .rightWord{
+    width: 151px;
+}
+.list3-6 .leftImg {
+    height: 136px;
+}
+
+.list3-6 {
+    width: 184px;
+    height: 136px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list3-6>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 165px;
+    height: 120px;
+}
+.list3-6 .rightWord{
+    width: 151px;
+}
+.list3-6 .leftImg {
+    height: 136px;
+}
+
+.list3-7 {
+    width: 143px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list3-7>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 124px;
+    height: 60px;
+}
+.list3-7 .rightWord{
+    width: 110px;
+}
+.list3-7 .leftImg {
+    height: 76px;
+}
+
+.list3-8 {
+    width: 146px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list3-8>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 127px;
+    height: 40px;
+}
+.list3-8 .rightWord{
+    width: 113px;
+}
+.list3-8 .leftImg {
+    height: 40px;
+}
+
+.list3-9 {
+    width: 158px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list3-9>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 139px;
+    height: 60px;
+}
+.list3-9 .rightWord{
+    width: 125px;
+}
+.list3-9 .leftImg {
+    height: 60px;
+}
+
+.list3-10 {
+    width: 161px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list3-10>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 142px;
+    height: 40px;
+}
+.list3-10 .rightWord{
+    width: 128px;
+}
+.list3-10 .leftImg {
+    height: 136px;
+}
+
+
+.list3-1,.list3-2,.list3-3,.list3-4,.list3-5,.list3-6,
+.list3-7,.list3-8,.list3-9,.list3-10{
+    position: absolute;
+    left: 254px;
+    display: none;
+}
+.list3-1{
+    top: 10px;
+}
+.list3-2{
+    top: 28px;
+}
+.list3-3{
+    top:48px;
+}
+.list3-4{
+    top: 68px;
+}
+.list3-5{
+    top: 90px;
+}
+.list3-6{
+    top: 110px;
+}
+.list3-7{
+    top:288px;
+}
+.list3-8{
+    top: 326px;
+}
+.list3-9{
+    top: 364px;
+}
+.list3-10{
+    top: 384px;
+}
+
 
 /* 选择 */
 .list4{
     width: 224px;
     height: 611px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 122px;
     display: none;
 }
 .list4>.rightWords{
@@ -190,14 +656,181 @@ hr{
     height: 611px;
 }
 
+
+.list4-1 {
+    width: 162px;
+    height: 572px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list4-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 143px;
+    height: 556px;
+}
+.list4-1 .rightWord{
+    width: 129px;
+}
+
+.list4-1 .leftImg {
+    height: 556px;
+}
+
+
+.list4-2 {
+    width: 185px;
+    height: 20px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list4-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 166px;
+    height: 20px;
+}
+.list4-2 .rightWord{
+    width: 152px;
+}
+
+.list4-2 .leftImg {
+    height: 20px;
+}
+
+.list4-3 {
+    width: 171px;
+    height: 161px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list4-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 152px;
+    height: 145px;
+}
+.list4-3 .rightWord{
+    width: 124px;
+}
+
+.list4-3 .leftImg {
+    height:145px;
+}
+
+.list4-4 {
+    width: 180px;
+    height: 416px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list4-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 161px;
+    height: 400px;
+}
+.list4-4 .rightWord{
+    width: 134px;
+}
+.list4-4 .leftImg {
+    height: 400px;
+}
+
+.list4-5 {
+    width: 137px;
+    height: 96px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list4-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 118px;
+    height: 80px;
+}
+.list4-5 .rightWord{
+    width: 118px;
+}
+.list4-5 .leftImg {
+    height: 80px;
+}
+
+
+.list4-6 {
+    width: 137px;
+    height: 96px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list4-6>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 118px;
+    height: 80px;
+}
+.list4-6 .rightWord{
+    width: 118px;
+}
+.list4-6 .leftImg {
+    height: 80px;
+}
+
+
+.list4-1,.list4-2,.list4-3,.list4-4,.list4-5,.list4-6{
+    position: absolute;
+    left: 204px;
+    display: none;
+}
+.list4-1{
+    top: 20px;
+}
+.list4-2{
+    top: 206px;
+}
+.list4-3{
+    top:278px;
+}
+.list4-4{
+    top: 342px;
+}
+.list4-5{
+    top: 398px;
+}
+.list4-6{
+    top: 516px;
+}
+
+
 /* 修改 */
 .list5{
     width: 203px;
     height: 578px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 160px;
     display: none;
 }
 .list5>.rightWords{
@@ -221,14 +854,181 @@ hr{
     margin:0 12px 0 3px;
 }
 
+
+.list5-1 {
+    width: 200px;
+    height: 246px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list5-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 181px;
+    height: 230px;
+}
+.list5-1 .rightWord{
+    width: 154px;
+}
+
+.list5-1 .leftImg {
+    height: 246px;
+}
+
+
+.list5-2 {
+    width: 161px;
+    height: 126px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list5-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 142px;
+    height: 110px;
+}
+.list5-2 .rightWord{
+    width: 128px;
+}
+
+.list5-2 .leftImg {
+    height: 126px;
+}
+
+.list5-3 {
+    width: 157px;
+    height: 116px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list5-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 138px;
+    height: 100px;
+}
+.list5-3 .rightWord{
+    width: 124px;
+}
+
+.list5-3 .leftImg {
+    height:116px;
+}
+
+.list5-4 {
+    width: 141px;
+    height: 320px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list5-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 122px;
+    height: 304px;
+}
+.list5-4 .rightWord{
+    width: 122px;
+}
+.list5-4 .leftImg {
+    height: 320px;
+}
+
+.list5-5 {
+    width: 250px;
+    height: 438px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list5-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 231px;
+    height: 422px;
+}
+.list5-5 .rightWord{
+    width: 217px;
+}
+.list5-5 .leftImg {
+    height: 438px;
+}
+
+
+.list5-6 {
+    width: 210px;
+    height: 290px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list5-6>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 191px;
+    height: 274px;
+}
+.list5-6 .rightWord{
+    width: 177px;
+}
+.list5-6 .leftImg {
+    height: 290px;
+}
+
+
+.list5-1,.list5-2,.list5-3,.list5-4,.list5-5,.list5-6{
+    position: absolute;
+    left: 184px;
+    display: none;
+}
+.list5-1{
+    top: 12px;
+}
+.list5-2{
+    top:74px;
+}
+.list5-3{
+    top:164px;
+}
+.list5-4{
+    top: 240px;
+}
+.list5-5{
+    top: 450px;
+}
+.list5-6{
+    top: 542px;
+}
+
+
 /* 显示 */
 .list6{
     width: 382px;
     height: 382px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 200px;
     display: none;
 }
 .list6>.rightWords{
@@ -252,14 +1052,286 @@ hr{
     margin:0 12px 0 3px;
 }
 
+.list6-1 {
+    width: 186px;
+    height: 482px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list6-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 167px;
+    height: 466px;
+}
+.list6-1 .rightWord{
+    width: 153px;
+}
+
+.list6-1 .leftImg {
+    height: 482px;
+}
+
+
+.list6-2 {
+    width: 210px;
+    height: 468px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list6-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 191px;
+    height: 452px;
+}
+.list6-2 .rightWord{
+    width: 177px;
+}
+.list6-2 .rightWord div{
+    width: 150px;
+}
+
+.list6-2 .leftImg {
+    height: 468px;
+}
+
+.list6-3 {
+    width: 272px;
+    height: 488px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list6-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 253px;
+    height: 472px;
+}
+.list6-3 .rightWord{
+    width: 239px;
+}
+.list6-3 .rightWord div{
+    width: 212px;
+}
+
+.list6-3 .leftImg {
+    height:488px;
+}
+
+.list6-4 {
+    width: 222px;
+    height: 148px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list6-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 203px;
+    height: 132px;
+}
+.list6-4 .rightWord{
+    width: 189px;
+}
+.list6-4 .leftImg {
+    height: 148px;
+}
+
+.list6-5 {
+    width: 174px;
+    height: 218px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list6-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 155px;
+    height: 202px;
+}
+.list6-5 .rightWord{
+    width: 141px;
+}
+.list6-5 .leftImg {
+    height: 218px;
+}
+
+.list6-6 {
+    width: 150px;
+    height: 98px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list6-6>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 131px;
+    height: 82px;
+}
+.list6-6 .rightWord{
+    width: 117px;
+}
+.list6-6 .leftImg {
+    height: 98px;
+}
+
+.list6-7 {
+    width: 196px;
+    height: 630px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list6-7>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 177px;
+    height: 614px;
+}
+.list6-7 .rightWord{
+    width: 163px;
+}
+.list6-7 .leftImg {
+    height: 630px;
+}
+
+.list6-8 {
+    width: 170px;
+    height: 262px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list6-8>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 151px;
+    height: 256px;
+}
+.list6-8 .rightWord{
+    width: 137px;
+}
+.list6-8 .leftImg {
+    height: 262px;
+}
+
+.list6-9 {
+    width: 182px;
+    height: 172px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list6-9>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 163px;
+    height: 156px;
+}
+.list6-9 .rightWord{
+    width: 149px;
+}
+.list6-9 .leftImg {
+    height: 172px;
+}
+
+.list6-10 {
+    width: 212px;
+    height: 82px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list6-10>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 193px;
+    height: 66px;
+}
+.list6-10 .rightWord{
+    width: 179px;
+}
+.list6-10 .leftImg {
+    height: 82px;
+}
+
+.list6-1,.list6-2,.list6-3,.list6-4,.list6-5,.list6-6,
+.list6-7,.list6-8,.list6-9,.list6-10{
+    position: absolute;
+    left: 362px;
+    display: none;
+}
+.list6-1{
+    top: 32px;
+}
+.list6-2{
+    top:68px;
+}
+.list6-3{
+    top:88px; 
+}
+.list6-4{
+    top: 128px;
+}
+.list6-5{
+    top: 170px;
+}
+.list6-6{
+    top: 190px;
+}
+.list6-7{
+    top:212px;
+}
+.list6-8{
+    top: 232px;
+}
+.list6-9{
+    top: 254px;
+}
+.list6-10{
+    top: 274px;
+}
+
+
+
 /* 窗口 */
 .list7{
     width: 195px;
     height: 322px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 238px;
     display: none;
 }
 .list7>.rightWords{
@@ -280,15 +1352,234 @@ hr{
     height: 322px;
 }
 
-/* 建模 */
+.list7-1 {
+    width: 292px;
+    height: 456px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list7-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 273px;
+    height: 440px;
+}
+.list7-1 .rightWord{
+    width: 259px;
+}
+
+.list7-1 .leftImg {
+    height: 456px;
+}
+
+
+.list7-2 {
+    width: 288px;
+    height: 428px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list7-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 269px;
+    height: 412px;
+}
+.list7-2 .rightWord{
+    width: 255px;
+}
+.list6-2 .leftImg {
+    height: 428px;
+}
+
+.list7-3 {
+    width: 166px;
+    height: 116px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list7-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 147px;
+    height: 100px;
+}
+.list7-3 .rightWord{
+    width: 133px;
+}
+.list7-3 .leftImg {
+    height:116px;
+}
+
+.list7-4 {
+    width: 168px;
+    height: 220px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list7-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 149px;
+    height: 206px;
+}
+.list7-4 .rightWord{
+    width: 135px;
+}
+.list7-4 .leftImg {
+    height: 220px;
+}
+
+.list7-5 {
+    width: 216px;
+    height: 180px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list7-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 197px;
+    height: 164px;
+}
+.list7-5 .rightWord{
+    width: 183px;
+}
+.list7-5 .leftImg {
+    height: 180px;
+}
+
+.list7-6 {
+    width: 150px;
+    height: 236px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list7-6>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 131px;
+    height: 220px;
+}
+.list7-6 .rightWord{
+    width: 117px;
+}
+.list7-6 .leftImg {
+    height: 236px;
+}
+
+.list7-7 {
+    width: 182px;
+    height: 226px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list7-7>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 163px;
+    height: 210px;
+}
+.list7-7 .rightWord{
+    width: 149px;
+}
+.list7-7 .leftImg {
+    height: 226px;
+}
+
+.list7-8 {
+    width: 170px;
+    height: 166px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list7-8>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 151px;
+    height: 150px;
+}
+.list7-8 .rightWord{
+    width: 137px;
+}
+.list7-8 .leftImg {
+    height: 166px;
+}
+#gpList7-1{
+    margin:0 0px 6px 3px;
+}
+
+
+.list7-1,.list7-2,.list7-3,.list7-4,.list7-5,.list7-6,
+.list7-7,.list7-8{
+    position: absolute;
+    left: 176px;
+    display: none;
+}
+.list7-1{
+    top: 0px;
+}
+.list7-2{
+    top:36px;
+}
+.list7-3{
+    top:54px; 
+}
+.list7-4{
+    top: 74px;
+}
+.list7-5{
+    top: 94px;
+}
+.list7-6{
+    top: 116px;
+}
+.list7-7{
+    top:136px;
+}
+.list7-8{
+    top: 156px;
+}
+
+
+
+
+/* 建模(导航的不同一级菜单栏) */
 /* 网格 */
 .list8{
     width: 178px;
     height: 424px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 276px;
     display: none;
 }
 .list8>.rightWords{
@@ -312,14 +1603,102 @@ hr{
     margin:0 12px 0 3px;
 }
 
+
+.list8-1 {
+    width: 120px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list8-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 101px;
+    height: 60px;
+}
+.list8-1 .rightWord{
+    width: 87px;
+}
+.list8-1 .leftImg {
+    height: 76px;
+}
+
+.list8-2 {
+    width: 155px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list8-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 136px;
+    height: 60px;
+}
+.list8-2 .rightWord{
+    width: 122px;
+}
+.list8-2 .leftImg {
+    height: 76px;
+}
+
+.list8-3 {
+    width: 240px;
+    height: 122px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list8-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 221px;
+    height: 106px;
+}
+.list8-3 .rightWord{
+    width: 207px;
+}
+.list8-3 .rightWord .Wlist8-3{
+    width: 180px;
+    float: left;
+}
+.list8-3 .leftImg {
+    height: 122px;
+}
+
+.list8-1,.list8-2,.list8-3{
+    position: absolute;
+    left: 159px;
+    display: none;
+}
+.list8-1{
+    top: 12px;
+}
+.list8-2{
+    top: 262px;
+}
+.list8-3{
+    top:382px;
+}
+
+
+
+
 /* 编辑网格 */
 .list9{
     width: 252px;
     height: 660px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 314px;
     display: none;
 }
 .list9>.rightWords{
@@ -348,9 +1727,8 @@ hr{
     width: 184px;
     height: 335px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 374px;
     display: none;
 }
 .list10>.rightWords{
@@ -371,14 +1749,49 @@ hr{
     height: 335px;
 }
 
+.list10-1 {
+    width: 192px;
+    height: 474px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list10-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 173px;
+    height: 458px;
+}
+.list10-1 .rightWord{
+    width: 159px;
+}
+.list10-1 .rightWord .Wlist10-1{
+    width: 132px;
+    float: left;
+}
+.list10-1 .leftImg {
+    height: 474px;
+}
+
+.list10-1{
+    position: absolute;
+    left: 164px;
+    display: none;
+}
+.list10-1{
+    top: 258px;
+}
+
+
 /* 网格显示 */
 .list11{
     width: 228px;
     height: 660px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 436px;
     display: none;
 }
 .list11>.rightWords{
@@ -402,14 +1815,109 @@ hr{
     margin:0 12px 0 3px;
 }
 
+.list11-1 {
+    width: 160px;
+    height: 20px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list11-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 141px;
+    height: 20px;
+}
+.list11-1 .leftImg {
+    height: 20px;
+}
+
+.list11-2 {
+    width: 184px;
+    height: 138px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list11-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 165px;
+    height: 122px;
+}
+.list11-2 .leftImg {
+    height: 138px;
+}
+
+.list11-3 {
+    width: 154px;
+    height: 156px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list11-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 135px;
+    height: 140px;
+}
+.list11-3 .leftImg {
+    height: 156px;
+}
+.list11-4 {
+    width: 168px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list11-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 149px;
+    height: 40px;
+}
+.list11-4 .leftImg {
+    height:46px;
+}
+
+.list11-1,.list11-2,.list11-3,.list11-4{
+    position: absolute;
+    left: 208px;
+    display: none;
+}
+.list11-1{
+    top: 494px;
+}
+.list11-2{
+    top: 570px;
+}
+.list11-3{
+    top:590px;
+}
+.list11-4{
+    top: 610px;
+}
+
+
+
+
 /* 曲线 */
 .list12{
     width: 188px;
     height: 646px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 500px;
     display: none;
 }
 .list12>.rightWords{
@@ -433,14 +1941,95 @@ hr{
     margin:0 12px 0 3px;
 }
 
+.list12-1 {
+    width: 190px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list12-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 171px;
+    height: 40px;
+}
+.list12-1 .rightWord{
+    width: 157px;
+}
+.list12-1 .leftImg {
+    height: 56px;
+}
+
+.list12-2 {
+    width: 190px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list12-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 171px;
+    height: 40px;
+}
+.list12-2 .rightWord{
+    width: 157px;
+}
+.list12-2 .leftImg {
+    height: 56px;
+}
+
+.list12-3 {
+    width: 150px;
+    height:56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list12-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 131px;
+    height: 40px;
+}
+.list12-3 .rightWord{
+    width: 117px;
+}
+.list12-3 .leftImg {
+    height: 56px;
+}
+
+.list12-1,.list12-2,.list12-3{
+    position: absolute;
+    left: 168px;
+    display: none;
+}
+.list12-1{
+    top: 400px;
+}
+.list12-2{
+    top: 440px;
+}
+.list12-3{
+    top:544px;
+}
+
+
 /* 曲面 */
 .list13{
     width: 205px;
     height: 718px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 536px;
     display: none;
 }
 .list13>.rightWords{
@@ -464,14 +2053,147 @@ hr{
     margin:0 12px 0 3px;
 }
 
+.list13-1 {
+    width: 190px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list13-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 171px;
+    height: 60px;
+}
+.list13-1 .rightWord{
+    width: 157px;
+}
+.list13-1 .leftImg {
+    height: 76px;
+}
+
+.list13-2 {
+    width: 155px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list13-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 136px;
+    height: 60px;
+}
+.list13-2 .rightWord{
+    width: 122px;
+}
+.list13-2 .leftImg {
+    height: 76px;
+}
+
+.list13-3 {
+    width: 168px;
+    height:76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list13-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 149px;
+    height: 60px;
+}
+.list13-3 .rightWord{
+    width: 135px;
+}
+.list13-3 .leftImg {
+    height: 76px;
+}
+
+.list13-4 {
+    width: 168px;
+    height:76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list13-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 149px;
+    height: 60px;
+}
+.list13-4 .rightWord{
+    width: 135px;
+}
+.list13-4 .leftImg {
+    height: 76px;
+}
+
+.list13-5 {
+    width: 142px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list13-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 123px;
+    height: 60px;
+}
+.list13-5 .rightWord{
+    width: 109px;
+}
+.list13-5 .leftImg {
+    height: 76px;
+}
+
+.list13-1,.list13-2,.list13-3,.list13-4,.list13-5{
+    position: absolute;
+    left: 186px;
+    display: none;
+}
+.list13-1{
+    top: 74px;
+}
+.list13-2{
+    top: 526px;
+}
+.list13-3{
+    top:546px;
+}
+.list13-4{
+    top: 590px;
+}
+.list13-5{
+    top:612px;
+}
+
+
+
+
 /* 变形 */
 .list14{
     width: 204px;
     height: 932px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 576px;
     display: none;
 }
 .list14>.rightWords{
@@ -495,14 +2217,286 @@ hr{
     margin:0 12px 0 3px;
 }
 
+/* 二级页面 */
+.list14-1 {
+    width: 180px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list14-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 161px;
+    height: 40px;
+}
+.list14-1 .rightWord{
+    width: 147px;
+}
+
+.list14-1 .leftImg {
+    height: 56px;
+}
+
+.list14-2 {
+    width: 202px;
+    height: 290px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list14-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 183px;
+    height: 276px;
+}
+.list14-2 .rightWord{
+    width: 169px;
+}
+.list14-2 .leftImg {
+    height: 290px;
+}
+
+.list14-3 {
+    width: 120px;
+    height: 136px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list14-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 101px;
+    height: 120px;
+}
+.list14-3 .rightWord{
+    width: 87px;
+}
+.list14-3 .leftImg {
+    height: 136px;
+}
+
+.list14-4 {
+    width: 190px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list14-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 171px;
+    height: 60px;
+}
+.list14-4 .rightWord{
+    width: 157px;
+}
+.list14-4 .leftImg {
+    height: 76px;
+}
+
+.list14-5 {
+    width: 190px;
+    height: 116px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list14-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 171px;
+    height: 100px;
+}
+.list14-5 .rightWord{
+    width: 157px;
+}
+.list14-5 .leftImg {
+    height: 116px;
+}
+
+.list14-6 {
+    width: 166px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list14-6>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 147px;
+    height: 40px;
+}
+.list14-6 .rightWord{
+    width: 133px;
+}
+.list14-6 .leftImg {
+    height: 56px;
+}
+
+.list14-7 {
+    width: 156px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list14-7>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 137px;
+    height: 40px;
+}
+.list14-7 .rightWord{
+    width: 123px;
+}
+.list14-7 .leftImg {
+    height: 56px;
+}
+
+.list14-8 {
+    width: 168px;
+    height: 136px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list14-8>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 149px;
+    height: 120px;
+}
+.list14-8 .rightWord{
+    width: 135px;
+}
+.list14-8 .leftImg {
+    height: 136px;
+}
+
+.list14-9 {
+    width: 180px;
+    height: 156px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list14-9>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 161px;
+    height: 140px;
+}
+.list14-9 .rightWord{
+    width: 147px;
+}
+.list14-9 .leftImg {
+    height: 156px;
+}
+
+.list14-10 {
+    width: 120px;
+    height: 96px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list14-10>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 101px;
+    height: 80px;
+}
+.list14-10 .rightWord{
+    width: 87px;
+}
+.list14-10 .leftImg {
+    height: 96px;
+}
+
+
+.list14-1,.list14-2,.list14-3,.list14-4,.list14-5,.list14-6,
+.list14-7,.list14-8,.list14-9,.list14-10{
+    position: absolute;
+    left: 184px;
+    display: none;
+}
+.list14-1{
+    top: 214px;
+}
+.list14-2{
+    top: 236px;
+}
+.list14-3{
+    top:258px;
+}
+.list14-4{
+    top: 340px;
+}
+.list14-5{
+    top: 396px;
+}
+.list14-6{
+    top: 416px;
+}
+.list14-7{
+    top:434px;
+}
+.list14-8{
+    top: 456px;
+}
+.list14-9{
+    top: 476px;
+}
+.list14-10{
+    top: 520px;
+}
+
+
+
+
 /* UV */
 .list15{
     width: 236px;
     height: 462px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 612px;
     display: none;
 }
 .list15>.rightWords{
@@ -531,9 +2525,8 @@ hr{
     width: 324px;
     height: 972px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 644px;
     display: none;
 }
 .list16>.rightWords{
@@ -554,17 +2547,2547 @@ hr{
     height: 972px;
 }
 #gpList16{
+    margin:0 0px 6px 3px;
+}
+
+.list16-1 {
+    width: 182px;
+    height: 298px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list16-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 163px;
+    height: 282px;
+}
+.list16-1 .rightWord{
+    width: 149px;
+}
+.list16-1 .rightWord .Wlist16-1{
+    width: 122px;
+    float: left;
+}
+.list16-1 .leftImg {
+    height: 298px;
+}
+
+.list16-2 {
+    width: 228px;
+    height: 186px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list16-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 209px;
+    height: 170px;
+}
+.list16-2 .rightWord{
+    width: 195px;
+}
+.list16-2 .leftImg {
+    height: 186px;
+}
+
+.list16-3 {
+    width: 160px;
+    height:60px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list16-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 141px;
+    height: 60px;
+}
+.list16-3 .rightWord{
+    width: 127px;
+}
+.list16-3 .leftImg {
+    height: 60px;
+}
+
+.list16-4 {
+    width: 220px;
+    height:100px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list16-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width:201px;
+    height:100px;
+}
+.list16-4 .rightWord{
+    width: 187px;
+}
+.list16-4 .leftImg {
+    height: 100px;
+}
+
+.list16-5 {
+    width: 138px;
+    height: 40px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list16-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 119px;
+    height: 40px;
+}
+.list16-5 .rightWord{
+    width: 105px;
+}
+.list16-5 .leftImg {
+    height: 40px;
+}
+
+.list16-1,.list16-2,.list16-3,.list16-4,.list16-5{
+    position: absolute;
+    left: 304px;
+    display: none;
+}
+.list16-1{
+    top: 284px;
+}
+.list16-2{
+    top: 306px;
+}
+.list16-3{
+    top:800px;
+}
+.list16-4{
+    top: 822px;
+}
+.list16-5{
+    top:842px;
+}
+
+
+/* 不同导航 绑定 */
+/* 骨架 */
+.bindList8{
+    width: 220px;
+    height: 436px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.bindList8>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 201px;
+    height:420px;
+}
+.bindList8 .rightWord{
+    width: 187px;
+}
+.bindList8>.rightWords>.rightWord>div:nth-child(1){
+    width: 189px;
+    float: left;
+}
+.bindList8 .leftImg{
+    height: 4636px;
+}
+#gpbindList8{
     margin:0 12px 0 3px;
 }
 
+.bindList8-1 {
+    width: 210px;
+    height: 138px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList8-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 191px;
+    height: 122px;
+}
+.bindList8-1 .rightWord{
+    width: 177px;
+}
+/* .bindList8-1 .rightWord .Wlist16-1{
+    width: 122px;
+    float: left;
+} */
+.bindList8-1 .leftImg {
+    height: 138px;
+}
+
+.bindList8-1{
+    position: absolute;
+    left: 202px;
+    display: none;
+}
+.bindList8-1{
+    top: 174px;
+}
+
+/* 蒙皮 */
+.bindList9{
+    width: 216px;
+    height: 516px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.bindList9>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 197px;
+    height:500px;
+}
+.bindList9 .rightWord{
+    width: 183px;
+}
+.bindList9>.rightWords>.rightWord>div:nth-child(1){
+    width: 189px;
+    float: left;
+}
+.bindList9 .leftImg{
+    height: 500px;
+}
+#gpbindList9{
+    margin:0 12px 0 3px;
+}
+
+.bindList9-1,.bindList9-2 {
+    width: 196px;
+    height: 96px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList9-1>.rightWords,.bindList9-2>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 177px;
+    height: 80px;
+}
+.bindList9-1 .rightWord,.bindList9-2 .rightWord{
+    width: 163px;
+}
+.bindList9-1 .leftImg,.bindList9-2 .leftImg{
+    height: 96px;
+}
+
+.bindList9-1,.bindList9-2{
+    position: absolute;
+    left: 198px;
+    display: none;
+}
+.bindList9-1{
+    top: 292px;
+}
+.bindList9-2{
+    top: 428px;
+}
+
+/* 变形 */
+.bindList10{
+    width: 202px;
+    height: 934px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.bindList10>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 183px;
+    height:918px;
+}
+.bindList10 .rightWord{
+    width: 169px;
+}
+.bindList10 .leftImg{
+    height:934px;
+}
+#gpbindList10{
+    margin:0 12px 0 3px;
+}
+
+.bindList10-1 {
+    width: 180px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList10-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 161px;
+    height: 40px;
+}
+.bindList10-1 .rightWord{
+    width: 147px;
+}
+.bindList10-1 .leftImg{
+    height: 56px;
+}
+
+.bindList10-2 {
+    width: 202px;
+    height: 290px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList10-2>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 183px;
+    height: 274px;
+}
+.bindList10-2 .rightWord{
+    width: 169px;
+}
+.bindList10-2 .leftImg{
+    height: 290px;
+}
+
+.bindList10-3 {
+    width: 120px;
+    height: 136px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList10-3>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 101px;
+    height: 120px;
+}
+.bindList10-3 .rightWord{
+    width: 87px;
+}
+.bindList10-3 .leftImg{
+    height: 136px;
+}
+
+.bindList10-4 {
+    width: 190px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList10-4>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 171px;
+    height: 60px;
+}
+.bindList10-4 .rightWord{
+    width: 157px;
+}
+.bindList10-4 .leftImg{
+    height: 76px;
+}
+
+.bindList10-5 {
+    width: 190px;
+    height: 116px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList10-5>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 171px;
+    height: 100px;
+}
+.bindList10-5 .rightWord{
+    width: 157px;
+}
+.bindList10-5 .leftImg{
+    height: 116px;
+}
+
+.bindList10-6 {
+    width: 168px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList10-6>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 149px;
+    height: 40px;
+}
+.bindList10-6 .rightWord{
+    width: 135px;
+}
+.bindList10-6 .leftImg{
+    height: 56px;
+}
+
+.bindList10-7 {
+    width: 156px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList10-7>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 137px;
+    height: 40px;
+}
+.bindList10-7 .rightWord{
+    width: 123px;
+}
+.bindList10-7 .leftImg{
+    height: 56px;
+}
+
+.bindList10-8 {
+    width: 168px;
+    height: 136px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList10-8>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 149px;
+    height: 120px;
+}
+.bindList10-8 .rightWord{
+    width: 135px;
+}
+.bindList10-8 .leftImg{
+    height: 1366px;
+}
+
+.bindList10-9 {
+    width: 180px;
+    height: 156px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList10-9>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 161px;
+    height: 140px;
+}
+.bindList10-9 .rightWord{
+    width: 147px;
+}
+.bindList10-9 .leftImg{
+    height: 156px;
+}
+
+.bindList10-10 {
+    width: 120px;
+    height: 96px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList10-10>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 101px;
+    height: 80px;
+}
+.bindList10-10 .rightWord{
+    width: 87px;
+}
+.bindList10-10 .leftImg{
+    height: 96px;
+}
+
+
+.bindList10-1,.bindList10-2,.bindList10-3,.bindList10-4,.bindList10-5,
+.bindList10-6,.bindList10-7,.bindList10-8,.bindList10-9,.bindList10-10{
+    position: absolute;
+    left: 182px;
+    display: none;
+}
+.bindList10-1{
+    top: 214px;
+}
+.bindList10-2{
+    top: 236px;
+}
+.bindList10-3{
+    top: 258px;
+}
+.bindList10-4{
+    top: 340px;
+}
+.bindList10-5{
+    top: 392px;
+}
+.bindList10-6{
+    top: 414px;
+}
+.bindList10-7{
+    top: 434px;
+}
+.bindList10-8{
+    top: 454px;
+}
+.bindList10-9{
+    top: 476px;
+}
+.bindList10-10{
+    top: 518px;
+}
+
+/* 约束 */
+.bindList11{
+    width: 192px;
+    height: 352px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.bindList11>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 173px;
+    height:336px;
+}
+.bindList11 .rightWord{
+    width: 159px;
+}
+.bindList11 .leftImg{
+    height: 352px;
+}
+#gpbindList11{
+    margin:0 12px 0 3px;
+}
+
+.bindList11-1 {
+    width: 204px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList11-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 185px;
+    height: 60px;
+}
+.bindList11-1 .rightWord{
+    width: 171px;
+}
+.bindList11-1 .leftImg {
+    height: 76px;
+}
+
+.bindList11-1{
+    position: absolute;
+    left: 172px;
+    display: none;
+}
+.bindList11-1{
+    top: 134px;
+}
+
+/* 控制 */
+.bindList12{
+    width: 196px;
+    height: 352px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.bindList12>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 177px;
+    height:336px;
+}
+.bindList12 .rightWord{
+    width: 163px;
+}
+.bindList12 .leftImg{
+    height: 352px;
+}
+#gpbindList12{
+    margin:0 12px 0 3px;
+}
+
+.bindList12-1 {
+    width: 160px;
+    height: 46px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.bindList12-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 141px;
+    height: 46px;
+}
+.bindList12-1 .rightWord{
+    width: 127px;
+}
+.bindList12-1 .leftImg {
+    height: 46px;
+}
+
+.bindList12-1{
+    position: absolute;
+    left: 177px;
+    display: none;
+}
+.bindList12-1{
+    top: 285px;
+}
+
+
+
+/* 不同导航 动画 */
+/* 关键帧 */
+.animaList8{
+    width: 256px;
+    height: 672px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.animaList8>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 237px;
+    height:656px;
+}
+.animaList8 .rightWord{
+    width: 223px;
+}
+.animaList8>.rightWords>.rightWord>div:nth-child(1){
+    width: 196px;
+    float: left;
+}
+.animaList8 .leftImg{
+    height: 672px;
+}
+#gpanimaList8{
+    margin:0 12px 0 3px;
+}
+
+.animaList8-1 {
+    width: 150px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.animaList8-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 131px;
+    height: 60px;
+}
+.animaList8-1 .rightWord{
+    width: 117px;
+}
+.animaList8-1 .leftImg {
+    height: 76px;
+}
+
+.animaList8-2 {
+    width: 188px;
+    height: 96px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.animaList8-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 169px;
+    height: 80px;
+}
+.animaList8-2 .rightWord{
+    width: 155px;
+}
+.animaList8-2 .leftImg {
+    height: 96px;
+}
+
+.animaList8-3 {
+    width: 160px;
+    height: 46px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.animaList8-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 141px;
+    height: 46px;
+}
+.animaList8-3 .rightWord{
+    width: 127px;
+}
+.animaList8-3 .leftImg {
+    height: 46px;
+}
+
+.animaList8-4 {
+    width: 192px;
+    height: 96px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.animaList8-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 173px;
+    height: 80px;
+}
+.animaList8-4 .rightWord{
+    width: 159px;
+}
+.animaList8-4 .leftImg {
+    height: 96px;
+}
+
+
+.animaList8-1,.animaList8-2,.animaList8-3,.animaList8-4{
+    position: absolute;
+    left: 237px;
+    display: none;
+}
+.animaList8-1{
+    top: 134px;
+}
+.animaList8-2{
+    top: 354px;
+}
+.animaList8-3{
+    top: 575px;
+}
+.animaList8-4{
+    top: 626px;
+}
+
+/* 播放 */
+.animaList9{
+    width: 246px;
+    height: 406px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.animaList9>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 227px;
+    height:390px;
+}
+.animaList9 .rightWord{
+    width: 213px;
+}
+.animaList9>.rightWords>.rightWord>div:nth-child(1){
+    width: 186px;
+    float: left;
+}
+.animaList9 .leftImg{
+    height: 406px;
+}
+#gpanimaList9{
+    margin:0 12px 0 3px;
+}
+
+.animaList9-1 {
+    width: 172px;
+    height: 126px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.animaList9-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 153px;
+    height: 110px;
+}
+.animaList9-1 .rightWord{
+    width: 139px;
+}
+.animaList9-1 .leftImg{
+    height: 126px;
+}
+
+.animaList9-2 {
+    width: 166px;
+    height: 136px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.animaList9-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 147px;
+    height: 120px;
+}
+.animaList9-2 .rightWord{
+    width: 133px;
+}
+.animaList9-2 .leftImg {
+    height: 136px;
+}
+
+.animaList9-3 {
+    width: 232px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.animaList9-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 213px;
+    height: 60px;
+}
+.animaList9-3 .rightWord{
+    width: 199px;
+}
+.animaList9-3 .leftImg {
+    height: 76px;
+}
+
+.animaList9-4 {
+    width: 120px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.animaList9-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 101px;
+    height: 60px;
+}
+.animaList9-4 .rightWord{
+    width: 87px;
+}
+.animaList9-4 .leftImg {
+    height: 76px;
+}
+
+
+.animaList9-1,.animaList9-2,.animaList9-3,.animaList9-4{
+    position: absolute;
+    left: 226px;
+    display: none;
+}
+.animaList9-1{
+    top: 20px;
+}
+.animaList9-2{
+    top: 252px;
+}
+.animaList9-3{
+    top: 272px;
+}
+.animaList9-4{
+    top: 292px;
+}
+
+
+/* 可视化 */
+.animaList10{
+    width: 224px;
+    height: 222px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.animaList10>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 205px;
+    height:206px;
+}
+.animaList10 .rightWord{
+    width: 191px;
+}
+.animaList10 .leftImg{
+    height:222px;
+}
+#gpanimaList10{
+    margin:0 12px 0 3px;
+}
+
+
+/* MASH */
+.animaList11{
+    width: 186px;
+    height: 96px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.animaList11>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 167px;
+    height:80px;
+}
+.animaList11 .rightWord{
+    width: 153px;
+}
+.animaList11 .leftImg{
+    height: 96px;
+}
+
+
+.animaList11-1 {
+    width: 294px;
+    height: 286px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.animaList11-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 275px;
+    height: 270px;
+}
+.animaList11-1 .rightWord{
+    width: 261px;
+}
+.animaList11-1 .leftImg {
+    height: 286px;
+}
+
+.animaList11-2 {
+    width: 166px;
+    height: 82px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.animaList11-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 147px;
+    height: 66px;
+}
+.animaList11-2 .rightWord{
+    width: 133px;
+}
+.animaList11-2 .leftImg {
+    height: 82px;
+}
+
+.animaList11-1,.animaList11-2{
+    position: absolute;
+    left: 166px;
+    display: none;
+}
+.animaList11-1{
+    top: 40px;
+}
+.animaList11-2{
+    top: 60px;
+}
+
+
+/* 不同导航FX */
+/* nParticle */
+.FXList8{
+    width: 220px;
+    height: 500px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.FXList8>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 201px;
+    height:484px;
+}
+.FXList8 .rightWord{
+    width: 187px;
+}
+.FXList8 .leftImg{
+    height: 500px;
+}
+
+
+.FXList8-1 {
+    width: 128px;
+    height: 130px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList8-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 109px;
+    height: 114px;
+}
+.FXList8-1 .rightWord{
+    width: 95px;
+}
+.FXList8-1 .leftImg {
+    height: 130px;
+}
+
+
+.FXList8-1{
+    position: absolute;
+    left: 166px;
+    display: none;
+}
+.FXList8-1{
+    top: 40px;
+}
+
+/* 播放 */
+.FXList9{
+    width: 206px;
+    height: 342px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.FXList9>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 187px;
+    height:326px;
+}
+.FXList9 .rightWord{
+    width: 173px;
+}
+.FXList9 .leftImg{
+    height: 342px;
+}
+#gpFXList9{
+    margin:0 12px 0 3px;
+}
+
+.FXList9-1 {
+    width: 168px;
+    height: 136px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList9-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 149px;
+    height: 120px;
+}
+.FXList9-1 .rightWord{
+    width: 135px;
+}
+.FXList9-1 .leftImg{
+    height: 136px;
+}
+
+.FXList9-2 {
+    width: 148px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList9-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 129px;
+    height: 40px;
+}
+.FXList9-2 .rightWord{
+    width: 115px;
+}
+.FXList9-2 .leftImg {
+    height: 56px;
+}
+
+.FXList9-3 {
+    width: 136px;
+    height: 96px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList9-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 117px;
+    height: 80px;
+}
+.FXList9-3 .rightWord{
+    width: 103px;
+}
+.FXList9-3 .leftImg {
+    height: 96px;
+}
+
+.FXList9-4 {
+    width: 160px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList9-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 141px;
+    height: 60px;
+}
+.FXList9-4 .rightWord{
+    width: 127px;
+}
+.FXList9-4 .leftImg {
+    height: 76px;
+}
+
+
+.FXList9-1,.FXList9-2,.FXList9-3,.FXList9-4{
+    position: absolute;
+    left: 187px;
+    display: none;
+}
+.FXList9-1{
+    top: 52px;
+}
+.FXList9-2{
+    top: 74px;
+}
+.FXList9-3{
+    top: 246px;
+}
+.FXList9-4{
+    top: 286px;
+}
+
+
+/* nCloth */
+.FXList10{
+    width: 254px;
+    height: 338px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.FXList10>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 235px;
+    height:322px;
+}
+.FXList10 .rightWord{
+    width: 221px;
+}
+.FXList10 .leftImg{
+    height: 338px;
+}
+#gpFXList10{
+    margin:0 12px 0 3px;
+}
+
+.FXList10-1 {
+    width: 210px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList10-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 191px;
+    height: 40px;
+}
+.FXList10-1 .rightWord{
+    width: 177px;
+}
+.FXList10-1 .leftImg{
+    height: 56px;
+}
+
+.FXList10-2 {
+    width: 232px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList10-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 213px;
+    height: 60px;
+}
+.FXList10-2 .rightWord{
+    width: 199px;
+}
+.FXList10-2 .leftImg {
+    height: 76px;
+}
+
+.FXList10-3 {
+    width: 178px;
+    height: 468px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList10-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 159px;
+    height: 452px;
+}
+.FXList10-3 .rightWord{
+    width: 145px;
+}
+.FXList10-3 .leftImg {
+    height: 468px;
+}
+
+.FXList10-4{
+    width: 178px;
+    height: 468px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList10-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 159px;
+    height: 452px;
+}
+.FXList10-4 .rightWord{
+    width: 145px;
+}
+.FXList10-4 .leftImg {
+    height: 468px;
+}
+
+.FXList10-5 {
+    width: 178px;
+    height: 468px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList10-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 159px;
+    height: 452px;
+}
+.FXList10-5 .rightWord{
+    width: 145px;
+}
+.FXList10-5 .leftImg {
+    height: 468px;
+}
+
+.FXList10-6 {
+    width: 178px;
+    height: 468px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList10-6>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 159px;
+    height: 452px;
+}
+.FXList10-6 .rightWord{
+    width: 145px;
+}
+.FXList10-6 .leftImg {
+    height: 468px;
+}
+
+
+.FXList10-1,.FXList10-2,.FXList10-3,.FXList10-4,.FXList10-5,.FXList10-6{
+    position: absolute;
+    left: 235px;
+    display: none;
+}
+.FXList10-1{
+    top: 184px;
+}
+.FXList10-2{
+    top: 206px;
+}
+.FXList10-3{
+    top: 240px;
+}
+.FXList10-4{
+    top: 262px;
+}
+.FXList10-5{
+    top: 282px;
+}
+.FXList10-6{
+    top: 302px;
+}
+
+
+/* nHair */
+.FXList11{
+    width: 278px;
+    height: 458px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.FXList11>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 259px;
+    height:442px;
+}
+.FXList11 .rightWord{
+    width: 245px;
+}
+.FXList11 .leftImg{
+    height: 458px;
+}
+#gpFXList11{
+    margin:0 12px 0 3px;
+}
+
+.FXList11-1 {
+    width: 166px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList11-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 147px;
+    height: 60px;
+}
+.FXList11-1 .rightWord{
+    width: 133px;
+}
+.FXList11-1 .leftImg{
+    height: 76px;
+}
+
+.FXList11-2 {
+    width: 166px;
+    height: 20px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList11-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 147px;
+    height: 20px;
+}
+.FXList11-2 .rightWord{
+    width: 133px;
+}
+.FXList11-2 .leftImg {
+    height: 20px;
+}
+
+.FXList11-3 {
+    width: 260px;
+    height:212px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList11-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 241px;
+    height: 196px;
+}
+.FXList11-3 .rightWord{
+    width: 227px;
+}
+.FXList11-3 .leftImg {
+    height: 212px;
+}
+
+.FXList11-4{
+    width: 154px;
+    height: 136px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList11-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 135px;
+    height: 120px;
+}
+.FXList11-4 .rightWord{
+    width: 121px;
+}
+.FXList11-4 .leftImg {
+    height: 136px;
+}
+
+.FXList11-5 {
+    width: 178px;
+    height: 156px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList11-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 159px;
+    height: 140px;
+}
+.FXList11-5 .rightWord{
+    width: 145px;
+}
+.FXList11-5 .leftImg {
+    height: 156px;
+}
+
+.FXList11-6 {
+    width: 144px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList11-6>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 125px;
+    height: 40px;
+}
+.FXList11-6 .rightWord{
+    width: 111px;
+}
+.FXList11-6 .leftImg {
+    height: 56px;
+}
+
+.FXList11-7 {
+    width: 144px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList11-7>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 125px;
+    height: 40px;
+}
+.FXList11-7 .rightWord{
+    width: 111px;
+}
+.FXList11-7 .leftImg {
+    height: 56px;
+}
+
+.FXList11-1,.FXList11-2,.FXList11-3,.FXList11-4,.FXList11-5,.FXList11-6,.FXList11-7{
+    position: absolute;
+    left: 258px;
+    display: none;
+}
+.FXList11-1{
+    top: 74px;
+}
+.FXList11-2{
+    top: 109px;
+}
+.FXList11-3{
+    top: 128px;
+}
+.FXList11-4{
+    top: 150px;
+}
+.FXList11-5{
+    top: 190px;
+}
+.FXList11-6{
+    top: 210px;
+}
+.FXList11-7{
+    top: 230px;
+}
+
+
+/* nConstraint */
+.FXList12{
+    width: 256px;
+    height: 500px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.FXList12>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 237px;
+    height:484px;
+}
+.FXList12 .rightWord{
+    width: 223px;
+}
+.FXList12 .leftImg{
+    height: 500px;
+}
+#gpFXList12{
+    margin:0 12px 0 3px;
+}
+
+.FXList12-1 {
+    width: 142px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList12-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 123px;
+    height: 60px;
+}
+.FXList12-1 .rightWord{
+    width: 109px;
+}
+.FXList12-1 .leftImg{
+    height: 76px;
+}
+
+.FXList12-2 {
+    width: 142px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList12-2>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 123px;
+    height: 60px;
+}
+.FXList12-2 .rightWord{
+    width: 109px;
+}
+.FXList12-2 .leftImg{
+    height: 76px;
+}
+
+.FXList12-3 {
+    width: 142px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList12-3>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 123px;
+    height: 60px;
+}
+.FXList12-3 .rightWord{
+    width: 109px;
+}
+.FXList12-3 .leftImg{
+    height: 76px;
+}
+
+.FXList12-4 {
+    width: 142px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList12-4>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 123px;
+    height: 60px;
+}
+.FXList12-4 .rightWord{
+    width: 109px;
+}
+.FXList12-4 .leftImg{
+    height: 76px;
+}
+
+
+.FXList12-1,.FXList12-2,.FXList12-3,.FXList12-4{
+    position: absolute;
+    left: 237px;
+    display: none;
+}
+.FXList12-1{
+    top:402px;
+}
+.FXList12-2{
+    top: 422px;
+}
+.FXList12-3{
+    top: 442px;
+}
+.FXList12-4{
+    top: 462px;
+}
+
+
+/* nCache */
+.FXList13{
+    width: 250px;
+    height: 392px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.FXList13>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 231px;
+    height:378px;
+}
+.FXList13 .rightWord{
+    width: 217px;
+}
+.FXList13 .leftImg{
+    height: 392px;
+}
+#gpFXList13{
+    margin:0 12px 0 3px;
+}
+
+.FXList13-1,.FXList13-2,.FXList13-3 {
+    width: 154px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList13-1>.rightWords,.FXList13-2>.rightWords,.FXList13-3>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 135px;
+    height: 40px;
+}
+.FXList13-1 .rightWord,.FXList13-2 .rightWord,.FXList13-3 .rightWord{
+    width: 121px;
+}
+.FXList13-1 .leftImg,.FXList13-2 .leftImg,.FXList13-3 .leftImg{
+    height: 56px;
+}
+
+.FXList13-4 {
+    width: 112px;
+    height: 60px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList13-4>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 93px;
+    height: 60px;
+}
+.FXList13-4 .rightWord{
+    width: 79px;
+}
+.FXList13-4 .leftImg{
+    height: 76px;
+}
+
+
+.FXList13-1,.FXList13-2,.FXList13-3,.FXList13-4{
+    position: absolute;
+    left: 231px;
+    display: none;
+}
+.FXList13-1{
+    top:14px;
+}
+.FXList13-2{
+    top: 34px;
+}
+.FXList13-3{
+    top: 54px;
+}
+.FXList13-4{
+    top: 358px;
+}
+
+
+/* 场/解算器 */
+.FXList14{
+    width: 216px;
+    height: 746px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.FXList14>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 197px;
+    height:730px;
+}
+.FXList14 .rightWord{
+    width: 183px;
+}
+.FXList14 .leftImg{
+    height: 746px;
+}
+#gpFXList14{
+    margin:0 12px 0 3px;
+}
+
+.FXList14-1 {
+    width: 220px;
+    height: 206px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList14-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 201px;
+    height: 190px;
+}
+.FXList14-1 .rightWord{
+    width: 187px;
+}
+.FXList14-1 .leftImg{
+    height: 206px;
+}
+
+.FXList14-2 {
+    width: 136px;
+    height: 36px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList14-2>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 117px;
+    height: 20px;
+}
+.FXList14-2 .rightWord{
+    width: 103px;
+}
+.FXList14-2 .leftImg{
+    height: 36px;
+}
+
+.FXList14-3 {
+    width: 185px;
+    height: 20px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList14-3>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 166px;
+    height: 20px;
+}
+.FXList14-3 .rightWord{
+    width: 152px;
+}
+.FXList14-3 .leftImg{
+    height: 20px;
+}
+
+
+.FXList14-1,.FXList14-2,.FXList14-3{
+    position: absolute;
+    left: 197px;
+    display: none;
+}
+.FXList14-1{
+    top:322px;
+}
+.FXList14-2{
+    top: 378px;
+}
+.FXList14-3{
+    top: 684px;
+}
+
+
+/* 效果 */
+.FXList15{
+    width: 186px;
+    height: 226px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.FXList15>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 167px;
+    height:210px;
+}
+.FXList15 .rightWord{
+    width: 153px;
+}
+.FXList15 .leftImg{
+    height: 226px;
+}
+#gpFXList15{
+    margin:0 12px 0 3px;
+}
+
+.FXList15-1 {
+    width: 156px;
+    height: 76px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList15-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 137px;
+    height: 60px;
+}
+.FXList15-1 .rightWord{
+    width: 123px;
+}
+.FXList15-1 .leftImg{
+    height: 76px;
+}
+
+
+.FXList15-1{
+    position: absolute;
+    left: 166px;
+    display: none;
+}
+.FXList15-1{
+    top:128px;
+}
+
+
+/* Bifrost流体 */
+.FXList16{
+    width: 204px;
+    height: 566px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.FXList16>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 185px;
+    height:550px;
+}
+.FXList16 .rightWord{
+    width: 171px;
+}
+.FXList16 .leftImg{
+    height: 566px;
+}
+#gpFXList16{
+    margin:0 12px 0 3px;
+}
+
+.FXList16-1 {
+    width: 150px;
+    height: 176px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.FXList16-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 131px;
+    height: 160px;
+}
+.FXList16-1 .rightWord{
+    width: 117px;
+}
+.FXList16-1 .leftImg{
+    height: 176px;
+}
+
+
+.FXList16-1{
+    position: absolute;
+    left: 184px;
+    display: none;
+}
+.FXList16-1{
+    top:333px;
+}
+
+
+
+/* Boss */
+.FXList18{
+    width: 156px;
+    height: 36px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.FXList18>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 137px;
+    height:20px;
+}
+.FXList18 .rightWord{
+    width: 123px;
+}
+.FXList18 .leftImg{
+    height: 36px;
+}
+
+
+/* 不同导航 渲染 */
+/* 照明/着色 */
+.applyList8{
+    width: 256px;
+    height: 346px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.applyList8>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 237px;
+    height:330px;
+}
+.applyList8 .rightWord{
+    width: 223px;
+}
+.applyList8 .leftImg{
+    height: 346px;
+}
+#gpapplyList8{
+    margin:0 12px 0 3px;
+}
+
+.applyList8-1 {
+    width: 174px;
+    height: 190px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.applyList8-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 155px;
+    height: 190px;
+}
+.applyList8-1 .rightWord{
+    width: 141px;
+}
+.applyList8-1 .leftImg{
+    height: 190px;
+}
+
+.applyList8-2 {
+    width: 174px;
+    height: 45px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.applyList8-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 155px;
+    height: 45px;
+}
+.applyList8-2 .rightWord{
+    width: 141px;
+}
+.applyList8-2 .leftImg {
+    height: 45px;
+}
+
+.applyList8-3 {
+    width: 160px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.applyList8-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 141px;
+    height: 40px;
+}
+.applyList8-3 .rightWord{
+    width: 127px;
+}
+.applyList8-3 .leftImg {
+    height: 56px;
+}
+
+
+.applyList8-1,.applyList8-2,.applyList8-3{
+    position: absolute;
+    left: 237px;
+    display: none;
+}
+.applyList8-1{
+    top: 52px;
+}
+.applyList8-2{
+    top: 74px;
+}
+.applyList8-3{
+    top: 144px;
+}
+
+
+/* 纹理 */
+.applyList9{
+    width: 224px;
+    height: 236px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.applyList9>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 205px;
+    height:220px;
+}
+.applyList9 .rightWord{
+    width: 191px;
+}
+.applyList9 .leftImg{
+    height: 236px;
+}
+#gpapplyList9{
+    margin:0 12px 0 3px;
+}
+
+
+/* 渲染 */
+.applyList10{
+    width: 230px;
+    height: 362px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.applyList10>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 211px;
+    height:346px;
+}
+.applyList10 .rightWord{
+    width: 197px;
+}
+.applyList10 .leftImg{
+    height: 362px;
+}
+#gpapplyList10{
+    margin:0 12px 0 3px;
+}
+
+.applyList10-1 {
+    width: 185px;
+    height: 80px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.applyList10-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 166px;
+    height: 80px;
+}
+.applyList10-1 .rightWord{
+    width: 152px;
+}
+.applyList10-1 .leftImg{
+    height: 80px;
+}
+
+.applyList10-2 {
+    width: 212px;
+    height: 190px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.applyList10-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 193px;
+    height: 190px;
+}
+.applyList10-2 .rightWord{
+    width: 179px;
+}
+.applyList10-2 .leftImg {
+    height: 190px;
+}
+
+
+.applyList10-1,.applyList10-2{
+    position: absolute;
+    left: 211px;
+    display: none;
+}
+.applyList10-1{
+    top: 32px;
+}
+.applyList10-2{
+    top: 52px;
+}
+
+
+/* 卡通 */
+.applyList11{
+    width: 290px;
+    height: 256px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.applyList11>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 271px;
+    height:240px;
+}
+.applyList11 .rightWord{
+    width: 257px;
+}
+.applyList11 .leftImg{
+    height: 256px;
+}
+#gpapplyList11{
+    margin:0 12px 0 3px;
+}
+
+.applyList11-1 {
+    width: 180px;
+    height: 156px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.applyList11-1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 161px;
+    height: 140px;
+}
+.applyList11-1 .rightWord{
+    width: 147px;
+}
+.applyList11-1 .leftImg{
+    height: 156px;
+}
+
+.applyList11-2 {
+    width: 190px;
+    height: 40px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.applyList11-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 181px;
+    height: 40px;
+}
+.applyList11-2 .rightWord{
+    width: 167px;
+}
+.applyList11-2 .leftImg {
+    height: 40px;
+}
+
+.applyList11-3 {
+    width: 130px;
+    height: 100px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.applyList11-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 111px;
+    height: 84px;
+}
+.applyList11-3 .rightWord{
+    width: 97px;
+}
+.applyList11-3 .leftImg {
+    height: 100px;
+}
+
+.applyList11-4 {
+    width: 156px;
+    height: 120px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.applyList11-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 137px;
+    height: 120px;
+}
+.applyList11-4 .rightWord{
+    width: 123px;
+}
+.applyList11-4 .leftImg {
+    height: 120px;
+}
+
+
+.applyList11-1,.applyList11-2,.applyList11-3,.applyList11-4{
+    position: absolute;
+    left: 270px;
+    display: none;
+}
+.applyList11-1{
+    top: 14px;
+}
+.applyList11-2{
+    top: 34px;
+}
+.applyList11-3{
+    top: 74px;
+}
+.applyList11-4{
+    top: 164px;
+}
+
+
+/* 立体 */
+.applyList12{
+    width: 146px;
+    height: 126px;
+    background: #404040;
+    position: absolute;
+    z-index: 66;
+    display: none;
+}
+.applyList12>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 127px;
+    height:110px;
+}
+.applyList12 .rightWord{
+    width: 113px;
+}
+.applyList12 .leftImg{
+    height: 126px;
+}
+#gpapplyList12{
+    margin:0 12px 0 3px;
+}
+
+.applyList12-1,.applyList12-2 {
+    width: 182px;
+    height: 40px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.applyList12-1>.rightWords,.applyList12-2>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 163px;
+    height: 40px;
+}
+.applyList12-1 .rightWord,.applyList12-2 .rightWord{
+    width: 149px;
+}
+.applyList12-1 .leftImg,.applyList12-2 .leftImg{
+    height: 40px;
+}
+
+
+.applyList12-1,.applyList12-2{
+    position: absolute;
+    left: 127px;
+    display: none;
+}
+.applyList12-1{
+    top: 14px;
+}
+.applyList12-2{
+    top: 34px;
+}
+
+
+
+
+
+
+/* 后边不变 */
 /* 缓存 */
 .list17{
     width: 176px;
     height: 96px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 682px;
     display: none;
 }
 .list17>.rightWords{
@@ -584,15 +5107,127 @@ hr{
 .list17  .leftImg{
     height: 96px;
 }
+.list17-1 {
+    width: 244px;
+    height: 156px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list17-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 225px;
+    height: 140px;
+}
+.list17-1 .rightWord{
+    width: 211px;
+}
+
+.list17-1 .leftImg {
+    height: 156px;
+}
+
+
+.list17-2 {
+    width: 224px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list17-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 205px;
+    height: 40px;
+}
+.list17-2 .rightWord{
+    width: 191px;
+}
+
+.list17-2 .leftImg {
+    height: 56px;
+}
+
+.list17-3 {
+    width: 226px;
+    height: 290px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list17-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 207px;
+    height: 274px;
+}
+.list17-3 .rightWord{
+    width: 193px;
+}
+
+.list17-3 .leftImg {
+    height:290px;
+}
+
+.list17-4 {
+    width: 171px;
+    height: 96px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list17-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 152px;
+    height: 80px;
+}
+.list17-4 .rightWord{
+    width: 138px;
+}
+.list17-4 .leftImg {
+    height: 96px;
+}
+
+.list17-1,.list17-2,.list17-3,.list17-4{
+    position: absolute;
+    left: 156px;
+    display: none;
+}
+.list17-1{
+    top: 0px;
+}
+.list17-2{
+    top:20px;
+}
+.list17-3{
+    top:40px;
+}
+.list17-4{
+    top:60px;
+}
 
 /* Substance */
 .list18{
     width: 158px;
     height: 40px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 722px;
     display: none;
 }
 .list18>.rightWords{
@@ -618,9 +5253,8 @@ hr{
     width: 244px;
     height: 268px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 792px;
     display: none;
 }
 .list19>.rightWords{
@@ -641,14 +5275,202 @@ hr{
     height: 268px;
 }
 
+.list19-1 {
+    width: 180px;
+    height: 56px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list19-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 161px;
+    height: 40px;
+}
+.list19-1 .rightWord{
+    width: 147px;
+}
+
+.list19-1 .leftImg {
+    height: 56px;
+}
+
+
+.list19-2 {
+    width: 196px;
+    height: 136px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list19-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 177px;
+    height: 120px;
+}
+.list19-2 .rightWord{
+    width: 163px;
+}
+.list19-2 .leftImg {
+    height: 136px;
+}
+
+.list19-3 {
+    width: 190px;
+    height: 156px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list19-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 171px;
+    height: 140px;
+}
+.list19-3 .rightWord{
+    width:157px;
+}
+.list19-3 .leftImg {
+    height:156px;
+}
+
+.list19-4 {
+    width: 195px;
+    height: 116px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list19-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 176px;
+    height: 100px;
+}
+.list19-4 .rightWord{
+    width: 162px;
+}
+.list19-4 .leftImg {
+    height: 116px;
+}
+
+.list19-5 {
+    width: 254px;
+    height: 196px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list19-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 235px;
+    height: 180px;
+}
+.list19-5 .rightWord{
+    width: 221px;
+}
+.list19-5 .leftImg {
+    height: 196px;
+}
+
+.list19-6 {
+    width: 240px;
+    height: 156px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list19-6>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 221px;
+    height: 140px;
+}
+.list19-6 .rightWord{
+    width: 207px;
+}
+.list19-6 .leftImg {
+    height: 156px;
+}
+
+.list19-7 {
+    width: 188px;
+    height: 186px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list19-7>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 169px;
+    height: 170px;
+}
+.list19-7 .rightWord{
+    width: 155px;
+}
+.list19-7 .leftImg {
+    height: 186px;
+}
+
+
+.list19-1,.list19-2,.list19-3,.list19-4,.list19-5,.list19-6,
+.list19-7{
+    position: absolute;
+    left: 224px;
+    display: none;
+}
+.list19-1{
+    top: 40px;
+}
+.list19-2{
+    top:62px;
+}
+.list19-3{
+    top:82px; 
+}
+.list19-4{
+    top: 142px;
+}
+.list19-5{
+    top: 162px;
+}
+.list19-6{
+    top: 182px;
+}
+.list19-7{
+    top:202px;
+}
+
 /* 帮助 */
 .list20{
     width: 278px;
     height: 430px;
     background: #404040;
-    position: relative;
+    position: absolute;
     z-index: 66;
-    margin-left: 846px;
     display: none;
 }
 .list20>.rightWords{
@@ -672,17 +5494,225 @@ hr{
     margin:0 12px 0 3px;
 }
 
+.list20-1 {
+    width: 150px;
+    height: 40px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list20-1>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 131px;
+    height: 40px;
+}
+.list20-1 .rightWord{
+    width: 117px;
+}
+
+.list20-1 .leftImg {
+    height: 40px;
+}
+
+
+.list20-2 {
+    width: 180px;
+    height: 40px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list20-2>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 161px;
+    height: 40px;
+}
+.list20-2 .rightWord{
+    width: 147px;
+}
+.list20-2 .leftImg {
+    height: 40px;
+}
+
+.list20-3 {
+    width: 186px;
+    height: 60px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list20-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 167px;
+    height: 60px;
+}
+.list20-3 .rightWord{
+    width:153px;
+}
+.list20-3 .leftImg {
+    height:60px;
+}
+
+.list20-4 {
+    width: 154px;
+    height: 60px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+
+.list20-4>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 135px;
+    height: 60px;
+}
+.list20-4 .rightWord{
+    width: 121px;
+}
+.list20-4 .leftImg {
+    height: 60px;
+}
+
+.list20-5 {
+    width: 192px;
+    height: 40px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list20-5>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 173px;
+    height: 40px;
+}
+.list20-5 .rightWord{
+    width: 159px;
+}
+.list20-5 .leftImg {
+    height: 40px;
+}
+
+.list20-6 {
+    width: 194px;
+    height: 60px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list20-6>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 175px;
+    height: 60px;
+}
+.list20-6 .rightWord{
+    width: 161px;
+}
+.list20-6 .leftImg {
+    height: 60px;
+}
+
+.list20-7 {
+    width: 200px;
+    height: 80px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list20-7>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 181px;
+    height: 80px;
+}
+.list20-7 .rightWord{
+    width: 167px;
+}
+.list20-7 .leftImg {
+    height: 80px;
+}
+
+.list20-8 {
+    width: 214px;
+    height: 85px;
+    background: #404040;
+    position: relative;
+    z-index: 66;
+    display: none;
+}
+.list20-8>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 195px;
+    height: 85px;
+}
+.list20-8 .rightWord{
+    width: 181px;
+}
+.list20-8 .leftImg {
+    height: 85px;
+}
+
+.list20-1,.list20-2,.list20-3,.list20-4,.list20-5,.list20-6,
+.list20-7,.list20-8{
+    position: absolute;
+    left: 258px;
+    display: none;
+}
+.list20-1{
+    top: 52px;
+}
+.list20-2{
+    top:128px;
+}
+.list20-3{
+    top:184px; 
+}
+.list20-4{
+    top: 206px;
+}
+.list20-5{
+    top: 226px;
+}
+.list20-6{
+    top: 260px;
+}
+.list20-7{
+    top:282px;
+}
+.list20-8{
+    top:336px;
+}
 
 
 
 
 
 
-
-
-
-
-
+/* 菜单栏切换选项卡 */
 .nav2-1,.nav2-list{
     background: #505050;
     margin-left: 14px;
@@ -690,6 +5720,10 @@ hr{
 .nav2-1{
     width: 98px;
     height: 21px;
+    float: left;
+    margin-top: 4px;
+    position: relative;
+    z-index: 65;
 }
 .nav2-1-1,.nav2-1-2{
     height: 21px;
@@ -703,12 +5737,182 @@ hr{
     color: #c8c8c8;
     font-size: 14px;
 }
+
+
 .nav2-1-2{
     width: 19px;
+    background: #505050 url(images/tubiaojihe.png) no-repeat;
+    background-position: -546px -50px;
 }
 .nav2-list{
     width: 98px;
-    height: 200px;
+    height:120px;
+    font-size: 12px;
+    color: #c8c8c8;
+    position: absolute;
+    top: 21px;
+    left: -14px;
+    z-index: 65;
+    display: none;
+}
+
+
+.tabs{
+    display: none;
+}
+.tab{
+    width: 98px;
+    height: 20px;
+    line-height: 20px;
+}
+.nav2-list>ul>li:nth-child(1){
+    background: #5285a6;
+}
+
+/* 右边图标 */
+.nav2-2{
+    height: 20px;
+    position: relative;
+    z-index: 55;
+}
+.nav2Icon{
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(images/tubiaojihe.png) no-repeat;
+    float: left;
+    margin: 2px 1px;
+    opacity: 0.7;
+}
+.nav2Icon:hover{
+    opacity: 1;
+}
+.Wicon1{
+    background-position: -115px -50px;
+}
+.Wicon2{
+    background-position: -135px -48px;
+}
+.Wicon3{
+    background-position: -158px -48px;
+}
+.Wicon4{
+    background-position: -180px -48px;
+}
+.Wicon5{
+    background-position: -203px -48px;
+}
+.Wicon6{
+    background-position: -227px -48px;
+}
+.Wicon7{
+    background-position: -268px -50px;
+}
+.Wicon8{
+    background-position: -550px -48px;
+}
+
+.object{
+    width: 92px;
+    height: 20px;
+    border: 1px solid #505050;
+    float: left;
+    font-size: 12px;
+    color: #c8c8c8;
+    margin-top: 4px;
+}
+.Wicon9{
+    background-position: -275px -48px;
+}
+.Wicon10{
+    background-position: -294px -48px;
+}
+.Wicon11{
+    background-position: -317px -48px;
+}
+.Wicon12{
+    background-position: -340px -48px;
+}
+.Wicon13{
+    background-position: -365px -48px;
+}
+.Wicon14{
+    background-position: -388px -48px;
+}
+.Wicon15{
+    background-position: -408px -48px;
+}
+.Wicon16{
+    background-position: -432px -48px;
+}
+.Wicon17{
+    background-position: -431px -48px;
+}
+.Wicon18{
+    background-position: -454px -48px;
+}
+.Wicon19{
+    background-position: -478px -48px;
+}
+.Wicon20{
+    background-position: -476px -48px;
+}
+.Wicon21{
+    background-position: -524px -48px;
+}
+.Wicon22{
+    background-position: -548px -48px;
+}
+.Wicon23{
+    background-position: -668px -48px;
+}
+.Wicon24{
+    background-position: -692px -48px;
+}
+.Wicon25{
+    background-position: -668px -48px;
+}
+.Wicon26{
+    background-position: -670px -48px;
+}
+.Wicon27{
+    background-position: -852px -48px;
+}
+.Wicon28{
+    background-position: -875px -48px;
+}
+.Wicon29{
+    background-position: -898px -48px;
+}
+.Wicon30{
+    background-position: -921px -48px;
+}
+.Wicon31{
+    background-position: -944px -48px;
+}
+.Wicon32{
+    background-position: -967px -48px;
+}
+.Wicon33{
+    background-position: -992px -48px;
+}
+.Wicon34{
+    background-position: -1014px -48px;
+}
+.Wicon35{
+    background-position: -1036px -48px;
+}
+.Wicon36{
+    background-position: -815px -48px;
+}
+.Wicon37{
+    background-position: -835px -48px;
+}
+.Wicon38{
+    background-position: -855px -48px;
+}
+.Wicon39{
+    background-position: -875px -48px;
 }
 
 
