@@ -80,10 +80,19 @@ $('.tab').mouseover(function(){
 $('.tab').click(function(){
   $('.nav2-1-1').find('span').eq($(this).index()).show().siblings().hide();
   $('.nav1').find('.Wnav').eq($(this).index()+1).show().siblings('.changeAdd').hide();
+
 })
 
 
 $(document).click(function(){
   $(".Wlist").hide();
+  $('.words').css({
+    "background":"none"
+  });
   });
   
+
+
+$('.Wicon1').click(function(){
+  $('.nav2Icons').hide();
+})
