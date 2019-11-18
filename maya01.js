@@ -20,6 +20,14 @@ $(".GcurveList").click(function(){
         $(".GtabDiV").show();
         $(".GtabDiV").css({ /*"width": "100px", "height": "100px",*/ "position": "absolute", "left": e.pageX, "top": e.pageY});
     })
+    $(".GtabSet").click(function(e) {
+        e.stopPropagation();
+        //获取鼠标坐标：
+        var X = e.pageX;
+        var Y = e.pageY;
+        $(".GtabSetD").show();
+        $(".GtabSetD").css({ /*"width": "100px", "height": "100px",*/ "position": "absolute", "left": e.pageX, "top": e.pageY});
+    })
     $(".GcurveList").click(function () {
         var ma=$(this).attr("name");
         switch(ma){
@@ -105,9 +113,6 @@ $(".GcurveList").click(function(){
 //         }
 //     }
 // })
-$(document).click(function () {
-    $(".GtabDiV").hide();
-})
 // 选项卡点击事件
 $(".GtabDiVLi").click(function () {
     $(this).find(".GtabDiVLiLeftA").addClass("GtabDiVLiRightD");
@@ -179,4 +184,52 @@ $(".GselectA").click(function () {
 // 选择工具下点击事件
 $(".GselectB4").click(function () {
         $(this).parents(".GselectB").toggleClass("GselectAbg");
+})
+// 设置选项卡
+$(".GtabSetDiv").hover(function () {
+        $(".GtabSetDLiD").show();
+},function () {
+        $(".GtabSetDLiD").hide();
+})
+// 大纲视图
+$(".GviewTbootAList").click(function(e){
+        e.stopPropagation();
+        $(this).addClass("GselectAbg").siblings(".GviewTbootAList").removeClass("GselectAbg").find(".GviewTbootP").show(); 
+})
+$(".GviewTbootAList").dblclick(function(e){
+        e.stopPropagation();
+        $(this).find(".GviewTbootP").hide();
+})
+$(document).click(function () {
+        $(".GtabDiV").hide();
+        $(".GtabSetD").hide();
+        $(".GviewTbootAList").removeClass("GselectAbg");
+        $(".GviewTbootP").show();
+        $(".Gsearch").hide();
+        $(".GviewTlistA1").removeClass("GviewTlistAShA");
+    })
+$(".GviewTSRightX").click(function(e){
+        e.stopPropagation();
+        //获取鼠标坐标：
+        var X = e.pageX;
+        var Y = e.pageY;
+        $(".Gsearch").show();
+        $(".Gsearch").css({ "position": "absolute", "left": 178, "top": e.pageY+15});
+})
+//高级资产内容
+$(".GleftDivChildD").click(function(){
+        $(this).find(".GDClistA").addClass("GDClistColor");
+        $(this).siblings(".GleftDivChildD").find(".GDClistA").removeClass("GDClistColor");
+})
+$(".GleftDiv").hover(function(){
+        $(this).find(".GleftDivChild").show();
+},function(){
+        $(this).find(".GleftDivChild").hide();
+})
+$('.GleftDivChildD').click(function(){
+        $(this).parents(".GleftDivChild").hide();
+})
+$(".GviewTlistASh").click(function(e){
+        e.stopPropagation();
+        $(".GviewTlistA1").toggleClass("GviewTlistAShA");
 })

@@ -2886,16 +2886,7 @@
                         <p class="GtabDiVLiRight">XGen</p>
                 </li>
             </ul>
-            <ul class="GtabSetD">
-                <div class="GtabSetLeft"></div>
-                <div class="GtabSetRight">
-                    <li class="GtabSetDLi">工具架选项卡</li>
-                    <li class="GtabSetDLi">工具架编辑器</li>
-                    <div class="GtabSetDiv">
-                            <li class="GtabSetDLi">导航工具架<span class="GtabSetDLiS">〉</span></li>
-                    </div>
-                </div>
-            </ul>
+            
         </div>
         <!-- 选项卡横向 -->
         <div class="Gcurve">
@@ -3290,12 +3281,43 @@
                     <div class="Gscale"></div>
             </div>
         </div>
+        <ul class="GtabSetD">
+                <div class="GtabSetLeft">
+                    <div class="GtabSetSure">√</div>
+                </div>
+                <div class="GtabSetRight">
+                    <li class="GtabSetDLi">工具架选项卡</li>
+                    <li class="GtabSetDLi">工具架编辑器</li>
+                    <div class="GtabSetDiv">
+                            <li class="GtabSetDLi">导航工具架<span class="GtabSetDLiS">〉</span></li>
+                            <div class="GtabSetDLiD">
+                                <div class="GtabSetLine">
+                                    <div class="GtabSetLineD"></div>
+                                </div>
+                                <div class="GtabSetLineS">
+                                        <div class="GtabSetLineSD"></div>
+                                        <div class="GtabSetLineSDiv">
+                                            <div class="GtabSetA">上一工具架</div>
+                                            <div class="GtabSetA">下一工具架</div>
+                                            <div class="GtabSetB">跳转到工具架...</div>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="GtabSetDivS">
+                    <li class="GtabSetDLi">新建工具架</li>
+                    <li class="GtabSetDLi">删除工具架</li>
+                    </div>
+                    <li class="GtabSetDLi">加载工具架...</li>
+                    <li class="GtabSetDLi" style="border: 0;">保存所有的工具架</li>
+                </div>
+            </ul>
     </div>
     <div class="wrap">
         <div class="box2">
             <!-- 选择工具 上-->
             <div class="Gselect">
-                <div class="GselectA">
+                <div class="GselectA GselectAbg">
                     <div class="GselectA1"></div>
                 </div>
                 <div class="GselectA">
@@ -3332,7 +3354,334 @@
                 </div>
         </div>
         <div class="box3">
-
+            <div class="Gview">
+                <div class="GviewT">
+                    <p class="GviewTP">大纲视图</p>
+                </div>
+                <div class="GviewTlist">
+                    <div class="GviewTlistA GviewTlistASh">展示</div>
+                    <div class="GviewTlistA">显示</div>
+                    <div class="GviewTlistA">帮助</div>
+                    <!-- 展示弹窗 -->
+                    <div class="GviewTlistA1">
+                        <div class="GviewTlistAtop">
+                            <div class="GviewTlistAtopLine"></div>
+                        </div>
+                        <!-- 第一段 -->
+                        <div class="GviewTlistDiv">
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD">√</span>
+                                </div>
+                                <div class="GleftDT">仅 DAG 对象</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">形状</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">指定的材质</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">时间编辑器</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">引用节点</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">引用成员</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">属性(通道)</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">集成员</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">已连接</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">显示名称空间</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">忽略 "在大纲视图中隐藏"</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">忽略 "在大纲视图中颜色"</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT" style="border-bottom: 1px solid #999;">显示禁用信息</div>
+                            </div>
+                        </div>
+                        <!-- 第二段 -->
+                        <div class="GviewTlistDiv1">
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD">√</span>
+                                </div>
+                                <div class="GleftDT">按层组织</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT">按片段组织</div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD"></span>
+                                </div>
+                                <div class="GleftDT" style="border-bottom: 1px solid #999;">自动展开层</div>
+                            </div>
+                        </div>
+                        <!-- 第三段 -->
+                        <div class="GviewTlistDiv1" style="height: 127px;">
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft"></div>
+                                <div class="GleftDiv">
+                                    <p>高级资产内容 <span class="GleftDivP">▲</span></p>
+                                    <div class="GleftDivChild">
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA GDClistColor"></span>
+                                            </div>
+                                            <p class="GDClistB">在资产下</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB">在父对象下</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB">二者</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB">无</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft"></div>
+                                <div class="GleftDiv">
+                                    <p>通道名称 <span class="GleftDivP">▲</span></p>
+                                    <div class="GleftDivChild" style="height: 62px;">
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA GDClistColor"></span>
+                                            </div>
+                                            <p class="GDClistB">易读</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB">长</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB">短</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft"></div>
+                                <div class="GleftDiv" style="border-bottom: 1px solid #999;">
+                                    <p>排序顺序 <span class="GleftDivP">▲</span></p>
+                                    <div class="GleftDivChild" style="height: 42px;">
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA GDClistColor"></span>
+                                            </div>
+                                            <p class="GDClistB">场景层级</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB">对于类型按字母顺序</p>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft"></div>
+                                <div class="GleftDiv">
+                                    <p>属性顺序 <span class="GleftDivP">▲</span></p>
+                                    <div class="GleftDivChild" style="height: 64px;">
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA GDClistColor"></span>
+                                            </div>
+                                            <p class="GDClistB">默认</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB">按字母升序排列顺序</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB">按字母降序排列顺序</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft"></div>
+                                <div class="GleftDiv">
+                                    <p>动画层过滤器 <span class="GleftDivP">▲</span></p>
+                                    <div class="GleftDivChild" style="height: 126px;">
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA GDClistColor"></span>
+                                            </div>
+                                            <p class="GDClistB">从层级编辑器显示选项</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB">全部影响</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB">活动</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB">选定</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GDClistA"></span>
+                                            </div>
+                                            <p class="GDClistB" style="border-bottom: 1px solid #999;">活动的和选定的</p>
+                                        </div>
+                                        <div class="GleftDivChildD">
+                                            <div class="GDClist">
+                                                <span class="GleftD">√</span>
+                                            </div>
+                                            <p class="GDClistB">显示层全重</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="GviewTlistDivL">
+                                <div class="Gleft">
+                                    <span class="GleftD">√</span>
+                                </div>
+                                <div class="GleftDT">设置渲染过滤器</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="GviewTlistA2">
+                        <div class="GviewTlistA2top">
+                            <div class="GviewTlistAtopLine2"></div>
+                        </div>
+                        <div class="Garr">
+                            <div class="GarrD"></div>
+                            <div class="GarrDiv">
+                                <p class="GarrDivP">对象 <span class="GleftDivP">▲</span></p>
+                                <div class="GarrDivM"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="GviewTS">
+                    <div class="GviewTSleft"></div>
+                    <div class="GviewTSRight">
+                        <input type="text" placeholder="搜索..." class="GviewTSRightS">
+                        <div class="GviewTSRightX">▲</div>
+                    </div>
+                </div>
+                <div class="GviewTboot">
+                    <div class="GviewTbootA">
+                        <div class="GviewTbootAList">
+                            <span class="GviewTbootIcon"></span>
+                            <p class="GviewTbootP">persp</p>
+                            <input type="text" class="GviewTbootInput" placeholder="persp">
+                        </div>
+                        <div class="GviewTbootAList">
+                            <span class="GviewTbootIcon"></span>
+                            <p class="GviewTbootP">top</p>
+                            <input type="text" class="GviewTbootInput" placeholder="top">
+                        </div>
+                        <div class="GviewTbootAList">
+                            <span class="GviewTbootIcon"></span>
+                            <p class="GviewTbootP">front</p>
+                            <input type="text" class="GviewTbootInput" placeholder="front">
+                        </div>
+                        <div class="GviewTbootAList">
+                            <span class="GviewTbootIcon"></span>
+                            <p class="GviewTbootP">side</p>
+                            <input type="text" class="GviewTbootInput" placeholder="side">
+                        </div>
+                        <div class="GviewTbootAList">
+                            <span class="GviewTbootIcon GviewTbootIconA"></span>
+                            <p class="GviewTbootP" style="color: #c7c7c7;">defaultLightSet</p>
+                            <input type="text" class="GviewTbootInput" placeholder="defaultLightSet">
+                        </div>
+                        <div class="GviewTbootAList">
+                            <span class="GviewTbootIcon GviewTbootIconA"></span>
+                            <p class="GviewTbootP" style="color: #c7c7c7;">defaultObjectSet</p>
+                            <input type="text" class="GviewTbootInput" placeholder="defaultObjectSet">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="box4">
 
@@ -3349,6 +3698,14 @@
     </div>
     <div class="box8">
 
+    </div>
+    <!-- 搜索弹窗 -->
+    <div class="Gsearch">
+        <div class="GsearchA"></div>
+        <div class="GsearchB">
+            <div class="GsearchBList">无最近搜索</div>
+            <div class="GsearchBList">没有保存的搜索</div>
+        </div>
     </div>
 </body>
 <script src="jquery-1.12.4.min.js"></script>
