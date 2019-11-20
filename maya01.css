@@ -17,18 +17,12 @@ li{
     padding-left: 5px;
     box-sizing: border-box;
     padding-top: 13px;
-
-    position: relative;
 }
 .Gcurve{
-    width: 1824px;
-
-}
-.Gcurve{
-    width: 1865px;
-
+    width: 1880px;
     height: 70px;
     float: left;
+    position: relative;
 }
 .GcurveLi{
     padding-left: 2px;
@@ -134,9 +128,6 @@ li{
     color: #fff;
     line-height: 20px;
     text-indent: 5px;
-}
-.GtabDiVLiRightC{
-    background-color: #598daf;
 }
 .GtabDiVLiRightD{
     background-color: #fff;
@@ -583,7 +574,7 @@ li{
     background: url(images/duobianxing.png)no-repeat -760px -109px;
 }
 .GClickPn21{
-    background: url(images/duobianxing.png)no-repeat -791px -109px;
+    background: url(images/duobianxing.png)no-repeat -794px -109px;
 }
 .GClickPn22{
     background: url(images/duobianxing.png)no-repeat -829px -109px;
@@ -988,7 +979,7 @@ li{
     width: 10px;
     height: 36px;
     position: absolute;
-    top: 7px;
+    top: 26px;
     right: 8px;
     background: url(images/tubiaojihe.png)no-repeat -1901px -104px;
     background-color: #313131;
@@ -1129,11 +1120,12 @@ li{
 }
 /* 大纲视图 */
 .Gview{
-    width: 20%;
-    height: 695px;
+    width: 17%;
+    height: 694px;
     background-color: #373737;
     float: left;
     margin-left: 5px;
+    display: none;
 }
 .GviewT{
     width: 100%;
@@ -1254,7 +1246,7 @@ li{
 
 /* 搜索弹窗 */
 .Gsearch{
-    width: 280px;
+    width: 244px;
     height: 40px;
     background-color: #424141;
     display: none;
@@ -1267,7 +1259,7 @@ li{
     float: left;
 }
 .GsearchB{
-    width: 260px;
+    width: 220px;
     height: 40px;
     float: left;
 }
@@ -1288,11 +1280,12 @@ li{
     height: 485px;
     background-color: #3e3d3d;
     position: absolute;
-    top: 26px;
+    top: 25px;
     left: 0;
     box-shadow: 1px 2px 2px #000;
     border: 1px solid #333;
     display: none;
+    z-index: 2;
 }
 .GviewTlistAtop{
     overflow: hidden;
@@ -1302,7 +1295,7 @@ li{
 }
 .GviewTlistAtopLine{
     width: 100%;
-    height: 6px;
+    height: 4px;
     margin-top: 5px;
     border-top: 1px dashed #908d8d;
     border-bottom: 1px dashed #908d8d;
@@ -1417,24 +1410,27 @@ li{
 .GselectAbg{
     background-color: #5292b5;
 }
-.GviewTlistAShA{
-    display: block;
-}
 /* 大纲视图显示弹窗 */
 .GviewTlistA2{
     width: 180px;
-    height: 240px;
+    height: 236px;
     background-color: #555;
     position: absolute;
-    top: 20px;
+    top: 24px;
     left: 40px;
     border: 1px solid #333;
+    display: none;
+    box-shadow: 1px 2px 2px #333;
+    z-index: 2;
 }
 .GviewTlistA2top{
     width: 100%;
     height: 16px;
     float: left;
     background-color: #404040;
+}
+.GviewTlistA2top:hover{
+    background-color: #5292b5;
 }
 .GviewTlistAtopLine2{
     width: 100%;
@@ -1445,12 +1441,12 @@ li{
 }
 .Garr{
     width: 100%;
-    height: 20px;
+    height: 22px;
     float: left;
 }
 .GarrD{
     width: 20px;
-    height: 20px;
+    height: 22px;
     background-color: #404040;
     float: left;
 }
@@ -1469,12 +1465,14 @@ li{
 }
 .GarrDivM{
     width: 200px;
-    height: 500px;
+    height: 505px;
     background-color:#404040;
     position: absolute;
     top: 16px;
     left: 180px;
     display: none;
+    border: 1px solid #333;
+    box-shadow: 1px 2px 2px #333;
 }
 .GarrDivMLi{
     width: 100%;
@@ -1504,4 +1502,267 @@ li{
     height: 12px;
     background-color: #2b2b2b;
     margin: 5px auto;
+}
+.GarrDiv:hover{
+    background-color: #5292b5;
+}
+.GarrDivOp{
+    opacity:0.5;
+}
+.GviewTlistA3{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    background-color: #404040;
+    top: 25px;
+    left: 83px;
+    box-shadow: 1px 2px 2px #333;
+    border: 1px solid #333;
+    display: none;
+    z-index: 2;
+}
+.GviewTlistA3Li{
+    width: 100%;
+    height: 23px;
+    float: left;
+    position: relative;
+}
+.GviewTlistA3LiD{
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    color: red;
+    font-weight: 600;
+    float: left;
+}
+.GviewTlistA3LiDP{
+    width: 230px;
+    height: 23px;
+    font-size: 12px;
+    color: #dedede;
+    text-indent: 5px;
+    line-height: 21px;
+    float: left;
+    background-color: #555;
+    box-sizing: border-box;
+}
+.GviewTlistA3LiT{
+    width: 150px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    right: -152px;
+    background-color: #404040;
+    box-shadow: 1px 2px 1px #333;
+    border: 1px solid #333;
+    display: none;
+}
+.GviewTlistA3LiDP:hover{
+    background-color: #5292b5;
+}
+.Gdiv{
+    width: 22px;
+    height: 22px;
+    float: left;
+}
+.GdivP{
+    width: 128px;
+    height: 22px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #dedede;
+    float: left;
+    background-color: #555;
+}
+.GdivText{
+    display: block;
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    color: #dedede;
+    background-color: #000;
+    margin: 5px auto;
+}
+.GdivPL{
+    color: greenyellow;
+}
+.GdivP:hover{
+    background-color: #5292b5;
+}
+.GviewDiv{
+    width: 100%;
+    height: 676px;
+}
+.GsearchD{
+    width: 318px;
+    height: 629px;
+    overflow: auto;
+    background-color: #444;
+}
+.GsearchDIv{
+    width:320px;
+    height: 630px;
+    background-color: #383838;
+}
+/* 搜索 */
+.GviewDivSE{
+    width: 100%;
+    height: 24px;
+    background-color: #444;
+}
+.GviewDivSEA{
+    width: 30px;
+    height: 24px;
+    background: url(images/duobianxing.png)no-repeat -40px -935px;
+    float: left;
+}
+.GviewDivSearch{
+    width: 287px;
+    height: 22px;
+    float: left;
+    position: relative;
+    margin-top: -2px;
+}
+.GviewDivSearchA{
+    width: 100%;
+    height: 22px;
+    border: 0;
+    background-color: #000;
+    text-indent: 10px;
+    border-radius: 3px;
+    color: #dedede;
+}
+.GviewDivSearchX{
+    width: 24px;
+    height: 22px;
+    transform: rotate(180deg);
+    color: #dedede;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    text-align: center;
+    line-height: 22px;
+}
+.GsearchDIvL{
+    width: 100%;
+    height: 22px;
+    padding-left: 40px;
+    box-sizing:border-box;
+}
+.GsearchDIvList{
+    width: 16px;
+    height: 100%;
+    background: url(images/duobianxing.png)no-repeat -46px -816px;
+    float: left;
+}
+.GsearchDIvListP{
+    width: 244px;
+    height: 22px;
+    float: left;
+    color: #6f6f6f;
+    font-size: 12px;
+    margin-left: 4px;
+}
+.GsearchDIvListA{
+    width: 16px;
+    height: 100%;
+    background: url(images/duobianxing.png)no-repeat -142px -819px;
+    float: left;
+}
+.GsearchDIvListPA{
+    color: #c7c7c7;
+}
+.GtabDiVLiRightC{
+    background-color: #598daf;
+}
+.GviewTlistAShA{
+    display: block;
+}
+/* 隐藏的box */
+.box4,.box5,.box6,.box7,.box8{
+    display: none;
+}
+.box3{
+    width: 1870px;
+}
+.GviewDivBox{
+    width:1250px;
+    height: 100%;
+    background-color: bisque;
+    float: left;
+    border: 1px solid #333;
+}
+.GviewDivBoxD{
+    width: 100%;
+    height: 50px;
+    background-color: #444;
+}
+.GviewDivBoxDL{
+    width: 100%;
+    height: 25px;
+}
+.GdbList{
+    display: block;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    float: left;
+    color: #dedede;
+    font-size: 12px;
+    margin-left: 5px;
+    cursor: default;
+    padding: 0 5px;
+}
+.GdbList:hover{
+    background-color:#598daf;
+}
+.GviewDivBoxDIcon{
+    width: 100%;
+    height: 25px;
+}
+.GdbIcon{
+    width: 16px;
+    height: 20px;
+    float: left;
+    opacity: 0.7;
+    margin-right: 4px;
+}
+.GdbIcon0{
+    background: url(images/tubiaojihe.png)no-repeat -46px -174px;
+}
+.GdbIcon:hover{
+    opacity: 1;
+}
+.GdbA{
+    width: 140px;
+    height: 25px;
+    float: left;
+}
+.GdbIcon1{
+    background: url(images/tubiaojihe.png)no-repeat -62px -174px;
+}
+.GdbIcon2{
+    background: url(images/tubiaojihe.png)no-repeat -81px -174px;
+}
+.GdbIcon3{
+    background: url(images/tubiaojihe.png)no-repeat -100px -174px;
+}
+.GdbIcon4{
+    background: url(images/tubiaojihe.png)no-repeat -118px -174px;
+}
+.GdbIcon5{
+    background: url(images/tubiaojihe.png)no-repeat -138px -174px;
+}
+.GdbIcon6{
+    background: url(images/tubiaojihe.png)no-repeat -157px -174px;
+}
+.GdbIcon7{
+    background: url(images/tubiaojihe.png)no-repeat -178px -174px;
+}
+Gdblock{
+    display: none;
 }
