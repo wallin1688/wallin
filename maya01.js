@@ -17,9 +17,9 @@ $(".GcurveList").click(function(){
 //         //获取鼠标坐标e.pageX e.pageY，给图片添加绝对位置 position:absolute  改变图片大小
 //         $(".sanJ").css({ /*"width": "100px", "height": "100px",*/ "position": "absolute", /*"left": e.pageX,*/ "top": e.pageY-80 });
 //     }
-    $(".GtabLi").click(function() {
-        $(".GtabDiV").show();
-    })
+//     $(".GtabLi").click(function() {
+//         $(".GtabDiV").show();
+//     })
 //         $(".sanJ").css({ /*"width": "100px", "height": "100px",*/ "position": "absolute", /*"left": e.pageX,*/ "top": e.pageY-80 });
 //     }
     $(".GtabLi").click(function(e) {
@@ -194,6 +194,7 @@ $(".GselectA").click(function () {
 // 选择工具下点击事件
 $(".GselectB4").click(function () {
         $(this).parents(".GselectB").toggleClass("GselectAbg");
+        $(".Gview").toggleClass("GviewTlistAShA");
 })
 // 设置选项卡
 $(".GtabSetDiv").hover(function () {
@@ -217,6 +218,8 @@ $(document).click(function () {
         $(".GviewTbootP").show();
         $(".Gsearch").hide();
         $(".GviewTlistA1").removeClass("GviewTlistAShA");
+        $(".GviewTlistA2").removeClass("GviewTlistAShA");
+        $(".GviewTlistA3").removeClass("GviewTlistAShA");
     })
 $(".GviewTSRightX").click(function(e){
         e.stopPropagation();
@@ -242,4 +245,45 @@ $('.GleftDivChildD').click(function(){
 $(".GviewTlistASh").click(function(e){
         e.stopPropagation();
         $(".GviewTlistA1").toggleClass("GviewTlistAShA");
+        $(".GviewTlistA2").removeClass("GviewTlistAShA");
+        $(".GviewTlistA3").removeClass("GviewTlistAShA");
+})
+$(".GarrDivHover").hover(function(){
+        $(this).find(".GarrDivM").show();
+},function(){
+        $(this).find(".GarrDivM").hide();
+})
+$(".GviewTlistAX").click(function(e){
+        e.stopPropagation();
+        $(".GviewTlistA2").toggleClass("GviewTlistAShA");
+        $(".GviewTlistA1").removeClass("GviewTlistAShA");
+        $(".GviewTlistA3").removeClass("GviewTlistAShA");
+})
+$(".GviewTlistA3LiHover").hover(function(){
+        $(".GviewTlistA3LiT").show();
+},function(){
+        $(".GviewTlistA3LiT").hide();
+})
+$(".GviewTlistAHelp").click(function(e){
+        e.stopPropagation();
+        $(".GviewTlistA3").toggleClass("GviewTlistAShA");
+        $(".GviewTlistA1").removeClass("GviewTlistAShA");
+        $(".GviewTlistA2").removeClass("GviewTlistAShA");
+})
+$(".GsearchDIvL").click(function(){
+        $(this).addClass("GtabDiVLiRightC").siblings(".GsearchDIvL").removeClass("GtabDiVLiRightC");
+})
+$(".GviewDivSearchX").click(function(e) {
+        e.stopPropagation();
+        //获取鼠标坐标：
+        var X = e.pageX;
+        var Y = e.pageY;
+        $(".Gsearch").show();
+        $(".Gsearch").css({ /*"width": "100px", "height": "100px",*/ "position": "absolute", "left": 184, "top": e.pageY+10});
+    })
+$(".GviewTlistA").click(function(){
+        $(this).addClass("GtabDiVLiRightC").siblings(".GviewTlistA").removeClass("GtabDiVLiRightC");
+})
+$(".GdbIcon0").click(function(){
+        $(".GdbA").toggleClass("Gdblock");
 })
