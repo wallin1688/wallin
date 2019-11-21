@@ -1646,6 +1646,7 @@ li{
     right: 0;
     text-align: center;
     line-height: 22px;
+    font-size: 12px;
 }
 .GsearchDIvL{
     width: 100%;
@@ -1679,9 +1680,6 @@ li{
 .GtabDiVLiRightC{
     background-color: #598daf;
 }
-.GviewTlistAShA{
-    display: block;
-}
 /* 隐藏的box */
 .box4,.box5,.box6,.box7,.box8{
     display: none;
@@ -1704,6 +1702,7 @@ li{
 .GviewDivBoxDL{
     width: 100%;
     height: 25px;
+    position: relative;
 }
 .GdbList{
     display: block;
@@ -1742,6 +1741,81 @@ li{
     height: 25px;
     float: left;
 }
+.GdbA3{
+    width: 141px;
+}
+.GdbA4{
+    width: 80px;
+}
+.GdbA5{
+    width: 16px;
+}
+.GdbA6{
+    width: 60px;
+}
+.GdbA7{
+    width: 15px;
+}
+.GdbA8{
+    width: 40px;
+    height: 14px;
+    float: left;
+    margin: 5px 0 0 5px;
+    border-radius: 2px;
+    border: 0;
+    text-indent: 4px;
+    background-color: #000;
+    color: #dedede;
+    font-size: 12px;
+}
+.GdbA9{
+    width: 21px;
+    height: 25px;
+    background: url(images/tubiaojihe.png)no-repeat -737px -174px;
+    float: left;
+    opacity: 0.7;
+}
+.GdbA9:hover,.GdbA10:hover{
+    opacity: 1;
+}
+.GdbA10{
+    width: 21px;
+    height: 25px;
+    background: url(images/tubiaojihe.png)no-repeat -801px -174px;
+    float: left;
+    opacity: 0.7;
+    margin-left: 3px;
+}
+.GdbA11{
+    width: 176px;
+    height: 16px;
+    float: left;
+    margin-top: 4px;
+    background-color: #666;
+    border-radius: 2px;
+    position: relative;
+}
+.GdbAP{
+    width: 154px;
+    height: 16px;
+    font-size: 12px;
+    color: #dedede;
+    line-height: 16px;
+    text-indent: 5px;
+    float: left;
+    border-right: 2px solid #555;
+}
+.GdbAList{
+    float: right;
+    width: 20px;
+    height: 16px;
+    line-height: 15px;
+    font-size: 12px;
+    color: #dedede;
+    transform: rotate(180deg);
+    text-align: center;
+    cursor:default;
+}
 .GdbIcon1{
     background: url(images/tubiaojihe.png)no-repeat -62px -174px;
 }
@@ -1763,6 +1837,177 @@ li{
 .GdbIcon7{
     background: url(images/tubiaojihe.png)no-repeat -178px -174px;
 }
-Gdblock{
+.GdbIcon8{
+    background: url(images/tubiaojihe.png)no-repeat -208px -174px;
+}
+.GdbIcon9{
+    background: url(images/tubiaojihe.png)no-repeat -225px -174px;
+}
+.GdbIcon10{
+    background: url(images/tubiaojihe.png)no-repeat -244px -174px;
+}
+.GdbIcon11{
+    background: url(images/tubiaojihe.png)no-repeat -262px -174px;
+}
+.GdbIcon12{
+    background: url(images/tubiaojihe.png)no-repeat -282px -174px;
+}
+.GdbIcon13{
+    background: url(images/tubiaojihe.png)no-repeat -301px -174px;
+}
+.GdbIcon14{
+    background: url(images/tubiaojihe.png)no-repeat -320px -174px;
+}
+.GdbIcon15{
+    background: url(images/tubiaojihe.png)no-repeat -351px -174px;
+}
+.GdbIcon16{
+    background: url(images/tubiaojihe.png)no-repeat -369px -174px;
+    width: 17px;
+}
+.GdbIcon17{
+    background: url(images/tubiaojihe.png)no-repeat -389px -174px;
+}
+.GdbIcon18{
+    background: url(images/tubiaojihe.png)no-repeat -408px -174px;
+}
+.GdbIcon19{
+    background: url(images/tubiaojihe.png)no-repeat -428px -174px;
+}
+.GdbIcon20{
+    background: url(images/tubiaojihe.png)no-repeat -445px -174px;
+}
+.GdbIcon21{
+    background: url(images/tubiaojihe.png)no-repeat -464px -174px;
+}
+.GdbIcon22{
+    background: url(images/tubiaojihe.png)no-repeat -494px -174px;
+}
+.GdbIcon23{
+    background: url(images/tubiaojihe.png)no-repeat -513px -174px;
+}
+.GdbIcon24{
+    background: url(images/tubiaojihe.png)no-repeat -533px -174px;
+}
+.GdbIcon25{
+    background: url(images/tubiaojihe.png)no-repeat -550px -174px;
+}
+.GdbIcon26{
+    background: url(images/tubiaojihe.png)no-repeat -582px -174px;
+}
+.GdbIcon27{
+    background: url(images/tubiaojihe.png)no-repeat -611px -174px;
+}
+.GdbIcon28{
+    background: url(images/tubiaojihe.png)no-repeat -630px -174px;
+}
+.GdbIcon29{
+    background: url(images/tubiaojihe.png)no-repeat -649px -174px;
+}
+.GdbIcon30{
+    background: url(images/tubiaojihe.png)no-repeat -681px -174px;
+}
+.GdbAPmask{
+    width: 176px;
+    height: 200px;
+    background-color: #666;
+    border-radius: 3px;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    border: 1px solid #4a4a4a;
+    box-shadow: 1px 2px 2px #333;
     display: none;
+}
+.Gdblock{
+    display: none;
+}
+.GviewTlistAShA{
+    display: block;
+}
+.GdbAPmask1{
+    width: 100%;
+    height: 22px;
+    color: #dedede;
+    line-height: 22px;
+    font-size: 12px;
+}
+.GdbAPmask1:hover{
+    background-color: #598daf;
+}
+.GdbListView{
+    width: 270px;
+    height: 478px;
+    background-color: #555;
+    position: absolute;
+    top: 26px;
+    left: 5px;
+    z-index: 2;
+    border: 1px solid #333;
+    box-shadow: 2px 2px 2px #333;
+}
+.GdbListOne{
+    width: 100%;
+    height: 22px;
+    float: left;
+    position: relative;
+}
+.GdbListOne:hover{
+    background-color: #598daf;
+}
+.GdbListOneA{
+    display: block;
+    width: 24px;
+    height: 22px;
+    float: left;
+    background-color: #404040;
+}
+.GdbListOneB{
+    width:244px;
+    height: 22px;
+    font-size: 12px;
+    color: #dedede;
+    line-height: 22px;
+    text-indent: 5px;
+    float: left;
+}
+.GdbListOneBR{
+    display: block;
+    float: right;
+    margin-right: 20px;
+}
+.GdbListOneBorder{
+    border-bottom: 1px solid #999;
+}
+.GdbListOneMask{
+    width: 120px;
+    height: 146px;
+    position: absolute;
+    background-color: #555;
+    top: 0;
+    right: -120px;
+    box-shadow: 1px 2px 2px #333;
+    display: none;
+}
+.GdbListOneMaskLi{
+    width: 100%;
+    height: 22px;
+    float: left;
+}
+.GdbListOneMaskLiA{
+    width: 24px;
+    height: 22px;
+    background-color: #404040;
+    float: left;
+}
+.GdbListOneMaskLiB{
+    width: 96px;
+    height: 22px;
+    font-size: 13px;
+    color: #dedede;
+    text-indent: 5px;
+    float: left;
+}
+.GdbListOneMaskLiB:hover{
+    background-color: #598daf;
 }
