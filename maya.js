@@ -1,35 +1,35 @@
+
+
+$(document).click(function(){
+  $(".Wlist").hide();
+  $('.words').css({
+    "background":"none"
+  });
+});
+
+
+// 导航菜单悬停状态
 // $('.words').mouseover(function(){
 //   $(this).css({
 //     "background":"#5285a6"
 //   }).siblings().css({
 //     "background":"none"
-//   })
-//   if($(this).show()){
-     
-
-//   }
+//   });
+//   $(this).parents('.Wnav').siblings().find('.words').css({
+//     "background":"none"
+//   });
+//   $(this).find('.Wlist').show();
 // })
 
-// $('.file').mouseover(function(){
-//     $(".list1").show(); 
-//     $(this).css({
-//       "background":"#5285a6"
-//     }).siblings().css({
-//       "background":"none"
-//     })
-
-// $(".list1").siblings().hide();
-// $(".nav1 ul").show();
-// })
-// $(".file").mouseout(function(){
-//   $(".list1").hide(); 
+// $('.words').mouseout(function(){
 //   $(this).css({
 //     "background":"none"
-//   })
+//   });
+//   $(this).find('.Wlist').hide();
 // })
 
+// 导航菜单点击事件
 $('.words').click(function(event){
-  
     if(!$(this).children(".Wlist").is(":visible")){
         $(this).children(".Wlist").show(); 
         $(this).css({
@@ -43,32 +43,39 @@ $('.words').click(function(event){
           "background":"none"
         })
       }
-      event.stopPropagation();
+
+    // $(this).children(".Wlist").toggle();
+    // $(this).toggleClass('nav1bgChange');
+
     $(this).siblings().children(".Wlist").hide();
     $(this).parents('.Wnav').siblings().find('.Wlist').hide();
     $(this).parents('.Wnav').siblings().find('.words').css({
       "background":"none"
-    })
+    });
+    event.stopPropagation();
 })
 
-// 二级页面
+
+// 二级页面悬停显示隐藏
 $('.rightWord').mouseover(function(){
   $(this).children('div').show();
   $(this).css('background','#5285a6');
+  $(this).parent('.rightWords').siblings('.leftImg').eq($(this).index()).css('opacity','1');
 })
-$('.rightWord').mouseout(function(){
-  $(this).children().eq(2).hide();
-  $(this).css('background','none');
-})
+// $('.rightWord').mouseout(function(){
+//   $(this).children().eq(2).hide();
+//   $(this).css('background','none');
+// })
 
 
-// 菜单栏切换的点击事件
+// 图标高亮
+
+
+
+
+// 菜单栏选项卡切换的点击事件
 $('.nav2-1').click(function(){
-  if(!$('.nav2-list').is(":visible")){
-    $('.nav2-list').show();
-   }else{ 
-    $('.nav2-list').hide();
-  }
+  $('.nav2-list').toggle();
 })
 
 $('.tab').mouseover(function(){
@@ -83,44 +90,70 @@ $('.tab').click(function(){
 
 })
 
-
-$(document).click(function(){
-  $(".Wlist").hide();
-  $('.words').css({
-    "background":"none"
-  });
-  });
   
 
 // 点击收起展开
 $('.WiconClick').click(function(){
-  if(!$(this).siblings('.nav2Icons').is(":visible")){
-    $(this).siblings('.nav2Icons').show();
-    $(this).css('background-position','-115px -50px');
-   }else{ 
-    $(this).siblings('.nav2Icons').hide();
-    $(this).css('background-position','-365px -50px');
-  }
+  $(this).siblings('.nav2Icons').toggle();
+  $(this).toggleClass("clickCss");
+  $(this).parent('.navBox').toggleClass("parentsBox");
 })
 
-// console.log("$(this).siblings('.nav2Icons')");
 
 // 点击nav2出现二级菜单
 $('.nav2Icons').click(function(e){
   pageY=e.pageY;
   pageX=e.pageX;
-  if(!$(this).siblings('.Wlist').is(":visible")){
-    $(this).siblings('.Wlist').show();
-    $(this).parent().siblings().children('.Wlist').hide();
-    $(this).siblings('.Wlist').css({
+  $(this).siblings('.Wlist').toggle();
+  $(this).siblings('.Wlist').css({
       " top": pageY,
       "left": pageX,
-    }
-
-  );
-   }else{ 
-    $(this).siblings('.Wlist').hide();
   }
+  );
+  $(this).parent().siblings().children('.Wlist').hide();
   event.stopPropagation();
 })
 
+
+
+
+
+
+
+// $('.Wicon40').click(function(){
+//   if(!$(this).siblings('.Wlist').is(":visible")){
+//     $(this).siblings('.Wlist').show();
+//     $(this).parent().siblings().children('.Wlist').hide();
+//    }else{ 
+//     $(this).siblings('.Wlist').hide();
+//   }
+// })
+
+// 
+$('.Wicon10').click(function(){
+  $(".clickChange1").show();
+  $(".clickChange1").siblings('.clickChange').hide();
+  $(this).css('background-color','#5285a6');
+  $(this).siblings().css('background-color','#444');
+  $('.object').html('层级');
+})
+$('.Wicon11').click(function(){
+  $(".clickChange2").show();
+  $(".clickChange2").siblings('.clickChange').hide();
+  $(this).css('background-color','#5285a6');
+  $(this).siblings().css('background-color','#444');
+  $('.object').html('对象');
+})
+$('.Wicon12').click(function(){
+  $(".clickChange3").show();
+  $(".clickChange3").siblings('.clickChange').hide();
+  $(this).css('background-color','#5285a6');
+  $(this).siblings().css('background-color','#444');
+  $('.object').html('组件');
+})
+
+
+
+$('.logIn').click(function(){
+  $('.logList').toggle();
+})
