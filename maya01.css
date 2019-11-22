@@ -1359,6 +1359,7 @@ li{
 .GleftDivP{
     transform:rotate(90deg);
     float: right;
+    line-height: 16px;
 }
 .GleftDiv:hover{
     background-color: #5292b5;
@@ -1685,7 +1686,7 @@ li{
     display: none;
 }
 .box3{
-    width: 1870px;
+    width: 1855px;
 }
 .GviewDivBox{
     width:1250px;
@@ -1922,9 +1923,6 @@ li{
 .Gdblock{
     display: none;
 }
-.GviewTlistAShA{
-    display: block;
-}
 .GdbAPmask1{
     width: 100%;
     height: 22px;
@@ -1935,7 +1933,7 @@ li{
 .GdbAPmask1:hover{
     background-color: #598daf;
 }
-.GdbListView{
+.GdbListView,.GdbListView1{
     width: 270px;
     height: 478px;
     background-color: #555;
@@ -1945,6 +1943,11 @@ li{
     z-index: 2;
     border: 1px solid #333;
     box-shadow: 2px 2px 2px #333;
+    display: none;
+}
+.GdbListView1{
+    height: 390px;
+    left: 44px;
 }
 .GdbListOne{
     width: 100%;
@@ -1962,7 +1965,7 @@ li{
     float: left;
     background-color: #404040;
 }
-.GdbListOneB{
+.GdbListOneB,.GdbListOneC{
     width:244px;
     height: 22px;
     font-size: 12px;
@@ -2007,7 +2010,256 @@ li{
     color: #dedede;
     text-indent: 5px;
     float: left;
+    line-height: 22px;
+    font-size: 12px;
 }
 .GdbListOneMaskLiB:hover{
     background-color: #598daf;
+}
+.GdbListOneMaskOne{
+    width: 200px;
+    height: 368px;
+    right: -200px;
+    top: -120px;
+}
+.GdbListOneMaskLiBA{
+    float: right;
+    margin-right: 20px;
+}
+.GdbListOneMaskLiA1{
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #2b2b2b;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    margin: 4px auto;
+    color: #dedede;
+}
+.GbList{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #2b2b2b;
+    margin: 5px auto;
+    background-color: #2b2b2b;
+}
+.GbListColor{
+    background-color: #fff;
+}
+.GbList1,.GbList2,.GbList3,.GbList4,.GbList5,.GbList6,.GbList7,.GbList8,.GbList9,.GbList10,.GbList11{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 2px auto;
+    opacity: 0.7;
+}
+.GbList1{
+    background: url(images/duobianxing.png)no-repeat -44px -1012px;
+}
+.GbList2{
+    background: url(images/duobianxing.png)no-repeat -72px -1012px;
+}
+.GbList3{
+    background: url(images/duobianxing.png)no-repeat -96px -1012px;
+}
+.GbList4{
+    background: url(images/duobianxing.png)no-repeat -121px -1012px;
+}
+.GbList5{
+    background: url(images/duobianxing.png)no-repeat -149px -1012px;
+}
+.GbList6{
+    background: url(images/duobianxing.png)no-repeat -175px -1012px;
+}
+.GbList7{
+    background: url(images/duobianxing.png)no-repeat -199px -1012px;
+}
+.GbList8{
+    background: url(images/duobianxing.png)no-repeat -225px -1012px;
+}
+.GbList9{
+    background: url(images/duobianxing.png)no-repeat -251px -1012px;
+}
+.GbList11{
+    background: url(images/duobianxing.png)no-repeat -279px -1012px;
+}
+.GdbListOneMaskTwo{
+    width: 210px;
+    height: 260px;
+    right: -210px;
+    top: -100px;
+}
+.GbLA{
+    float: right;
+    margin-right: 5px;
+    font-size: 22px;
+    line-height: 16px;
+}
+.GbLAOP{
+    opacity: 1;
+}
+.GdbListOneMaskThree{
+    width: 210px;
+    height: 82px;
+    right: -210px;
+    top: 0;
+}
+.GdbListView2{
+    width: 175px;
+    height: 170px;
+    background-color: #555;
+    top: 25px;
+    left: 83px;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    box-shadow: 2px 3px 3px #000;
+}
+.GdbListOneC{
+    width: 150px;
+}
+.GdbListView3{
+    width: 180px;
+    height: 962px;
+    background-color: #555;
+    top: 25px;
+    left: 122px;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 2px 3px 3px #000;
+}
+.wrap{
+    overflow: auto;
+}
+.Gisolation{
+    width: 220px;
+    height: 170px;
+    position: absolute;
+    top: 0;
+    right:-220px;
+    background-color:#555;
+    box-shadow: 2px 3px 3px #000;
+    display: none;
+}
+.GdbListOneCbook{
+    width: 220px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right:-220px;
+    background-color: #555;
+    box-shadow: 2px 3px 3px #000;
+    display: none;
+}
+.GdbPreview{
+    width: 150PX;
+    height: 900px;
+    background-color: #555;
+    box-shadow: 2px 3px 3px #000;
+    position: absolute;
+    top: -878px;
+    right: -150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.GviewTlistAShA{
+    display: block;
 }
