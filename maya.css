@@ -5706,6 +5706,17 @@ hr{
 }
 
 
+/* 导航第一行最右边工作区 */
+.work{
+    color: #c8c8c8;
+    float: right;
+    margin-top: 2px;
+}
+
+
+
+
+
 
 /* 菜单栏图标 */
 .leftImg{
