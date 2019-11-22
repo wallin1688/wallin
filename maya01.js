@@ -220,6 +220,7 @@ $(document).click(function () {
         $(".GviewTlistA1").removeClass("GviewTlistAShA");
         $(".GviewTlistA2").removeClass("GviewTlistAShA");
         $(".GviewTlistA3").removeClass("GviewTlistAShA");
+        $(".GdbAPmask").removeClass("GviewTlistAShA");
     })
 $(".GviewTSRightX").click(function(e){
         e.stopPropagation();
@@ -284,6 +285,36 @@ $(".GviewDivSearchX").click(function(e) {
 $(".GviewTlistA").click(function(){
         $(this).addClass("GtabDiVLiRightC").siblings(".GviewTlistA").removeClass("GtabDiVLiRightC");
 })
-$(".GdbIcon0").click(function(){
-        $(".GdbA").toggleClass("Gdblock");
+$(".GdbIconB").click(function(){
+        $(".GdbA2").toggleClass("Gdblock");
+})
+$(".GdbIconC").click(function(){
+        $(".GdbA3").toggleClass("Gdblock");
+})
+$(".GdbIconA").click(function(){
+        $(".GdbA1").toggleClass("Gdblock");
+})
+$(".GdbIconD").click(function(){
+        $(".GdbA4").toggleClass("Gdblock");
+})
+$(".GdbIconE").click(function(){
+        $(".GdbA5").toggleClass("Gdblock");
+})
+$(".GdbIconF").click(function(){
+        $(".GdbA6").toggleClass("Gdblock");
+})
+$(".GdbIconH").click(function(){
+        $(".GdbA7").toggleClass("Gdblock");
+})
+$(".GdbA11").click(function(e){
+        e.stopPropagation();
+        $(".GdbAPmask").toggleClass("GviewTlistAShA");
+})
+$(".GdbAPmask1").click(function(){
+        $(".GdbAP").html($(this).html());
+})
+$(".GdbListOneHover").hover(function(){
+        $(this).find(".GdbListOneMask").show();
+},function(){
+        $(this).find(".GdbListOneMask").hide();   
 })
