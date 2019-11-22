@@ -9,24 +9,22 @@ $(document).click(function(){
 
 
 // 导航菜单悬停状态
-// $('.words').mouseover(function(){
-//   $(this).css({
-//     "background":"#5285a6"
-//   }).siblings().css({
-//     "background":"none"
-//   });
-//   $(this).parents('.Wnav').siblings().find('.words').css({
-//     "background":"none"
-//   });
-//   $(this).find('.Wlist').show();
-// })
+$('.words').mouseover(function(){
+  $(this).css({
+    "background":"#5285a6"
+  }).siblings().css({
+    "background":"none"
+  });
+  $(this).parents('.Wnav').siblings().find('.words').css({
+    "background":"none"
+  });
+})
 
-// $('.words').mouseout(function(){
-//   $(this).css({
-//     "background":"none"
-//   });
-//   $(this).find('.Wlist').hide();
-// })
+$('.words').mouseout(function(){
+  $(this).css({
+    "background":"none"
+  });
+})
 
 // 导航菜单点击事件
 $('.words').click(function(event){
@@ -60,12 +58,13 @@ $('.words').click(function(event){
 $('.rightWord').mouseover(function(){
   $(this).children('div').show();
   $(this).css('background','#5285a6');
-  $(this).parent('.rightWords').siblings('.leftImg').eq($(this).index()).css('opacity','1');
+  $(this).parent('.rightWords').siblings('.leftImg').children('.iconImgs,.iconImgs1').eq($(this).index()).css('opacity','1');
 })
-// $('.rightWord').mouseout(function(){
-//   $(this).children().eq(2).hide();
-//   $(this).css('background','none');
-// })
+$('.rightWord').mouseout(function(){
+  $(this).children().eq(2).hide();
+  $(this).css('background','none');
+  $(this).parent('.rightWords').siblings('.leftImg').children('.iconImgs,.iconImgs1').eq($(this).index()).css('opacity','0.7');
+})
 
 
 // 图标高亮
