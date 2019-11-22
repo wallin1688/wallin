@@ -3,11 +3,9 @@ html,body,ul,li {
     padding: 0;
 
 }
-html{
+/* html{
     overflow: hidden;
-
-
-}
+} */
 body{
     background: #373737;
 }
