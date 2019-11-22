@@ -318,6 +318,7 @@ $(".GdbListOneHover").hover(function(){
 },function(){
         $(this).find(".GdbListOneMask").hide();   
 })
+
 $(".GdbListOneMaskLi").hover(function(){
         $(this).find(".GdbListOneMaskLiA").find("span").addClass("GbLAOP");
 },function() {
