@@ -318,3 +318,30 @@ $(".GdbListOneHover").hover(function(){
 },function(){
         $(this).find(".GdbListOneMask").hide();   
 })
+$(".GdbListOneMaskLi").hover(function(){
+        $(this).find(".GdbListOneMaskLiA").find("span").addClass("GbLAOP");
+},function() {
+        $(this).find(".GdbListOneMaskLiA").find("span").removeClass("GbLAOP");
+})
+// 视图弹窗
+$(".GdbListClick").click(function() {
+        $(".GdbListView").toggleClass("GviewTlistAShA");
+})
+// 着色弹窗
+$(".GdbListClick1").click(function() {
+        $(".GdbListView1").toggleClass("GviewTlistAShA");
+})
+// 照明弹窗
+$(".GdbListClick2").click(function() {
+        $(".GdbListView2").toggleClass("GviewTlistAShA");
+})
+$(".GdbListOneH").hover(function() {
+        $(this).find(".GdbListOneCbook").show();
+},function () {
+        $(this).find(".GdbListOneCbook").hide();
+})
+$(".GisolationHover").hover(function() {
+        $(this).find(".Gisolation").show();
+},function () {
+        $(this).find(".Gisolation").hide();
+})
