@@ -50,11 +50,13 @@ $('.words').click(function(event){
     $(this).parents('.Wnav').siblings().find('.words').css({
       "background":"none"
     });
+    // $(this).children('.Wlist').show();
+    // $(this).find('.Wlist').hide();
     event.stopPropagation();
 })
 
 
-// 二级页面悬停显示隐藏
+// 二级页面悬停显示隐藏  以及图标高亮
 $('.rightWord').mouseover(function(){
   $(this).children('div').show();
   $(this).css('background','#5285a6');
@@ -67,14 +69,13 @@ $('.rightWord').mouseout(function(){
 })
 
 
-// 图标高亮
 
 
 
 
 // 菜单栏选项卡切换的点击事件
-$('.nav2-1').click(function(){
-  $('.nav2-list').toggle();
+$('.nav1-1,.nav2-1').click(function(){
+  $(this).children('.nav1-list,.nav2-list').toggle();
 })
 
 $('.tab').mouseover(function(){
@@ -86,9 +87,20 @@ $('.tab').mouseover(function(){
 $('.tab').click(function(){
   $('.nav2-1-1').find('span').eq($(this).index()).show().siblings().hide();
   $('.nav1').find('.Wnav').eq($(this).index()+1).show().siblings('.changeAdd').hide();
-
 })
 
+$('.tab1').click(function(){
+  $('.nav1-1-1').find('span').eq($(this).index()).show().siblings().hide();
+})
+
+$('.WordEstablish').click(function(){
+  $('.Westablishs').toggle();
+  $('.WdownTriangle1').toggleClass('WrightTransform');
+})
+$('.WordLead').click(function(){
+  $('.Wleads').toggle();
+  $('.WdownTriangle2').toggleClass('WrightTransform');
+})
   
 
 // 点击收起展开
@@ -155,4 +167,17 @@ $('.Wicon12').click(function(){
 
 $('.logIn').click(function(){
   $('.logList').toggle();
+})
+
+
+
+// 右边选项卡点击切换
+$('.WrightTab').click(function(){
+  $('.WrightList').eq($(this).index()).show().siblings('.WrightList').hide();
+  $(this).addClass('WrightAddclass').siblings().removeClass('WrightAddclass');
+})
+
+$('.WrightListTab').click(function(){
+  // $('.WrightList').eq($(this).index()).show().siblings('.WrightList').hide();
+  $(this).addClass('WrightAddclass').siblings().removeClass('WrightAddclass');
 })

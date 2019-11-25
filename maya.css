@@ -3,9 +3,10 @@ html,body,ul,li {
     padding: 0;
 
 }
-/* html{
+html{
     overflow: hidden;
-} */
+    cursor: default;
+}
 body{
     background: #373737;
 }
@@ -133,33 +134,33 @@ hr{
     color: #74787b;
 }
 /* 二级页面 */
-        /* 文件的二级菜单 */
-        .list1-1,
-        .list1-2,
-        .list1-3 {
-            width: 174px;
-            height: 62px;
-            background: #404040;
-            position: absolute;
-            left: 276px;
-            display: none;
-        }
-        .list1-1>.rightWords,
-        .list1-2>.rightWords,
-        .list1-3>.rightWords {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: 155px;
-            height: 60px;
-        }
-        /* .rightWord {
-            height: 16px;
-            margin: 0.5px 0 4px 15px;
-        } */
-        .list1-1 .leftImg {
-            height: 472px;
-        }
+/* 文件的二级菜单 */
+.list1-1,
+.list1-2,
+.list1-3 {
+    width: 174px;
+    height: 62px;
+    background: #404040;
+    position: absolute;
+    left: 276px;
+    display: none;
+}
+.list1-1>.rightWords,
+.list1-2>.rightWords,
+.list1-3>.rightWords {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 155px;
+    height: 60px;
+}
+/* .rightWord {
+    height: 16px;
+    margin: 0.5px 0 4px 15px;
+} */
+.list1-1 .leftImg {
+    height: 472px;
+}
 
 .list1-1{
     top: 266px;
@@ -5706,12 +5707,6 @@ hr{
 }
 
 
-/* 导航第一行最右边工作区 */
-.work{
-    color: #c8c8c8;
-    float: right;
-    margin-top: 2px;
-}
 
 
 
@@ -8218,6 +8213,56 @@ hr{
 
 
 
+/* 导航第一行最右边工作区 */
+.work{
+    width: 230px;
+    color: #c8c8c8;
+    float: right;
+    margin-top: 2px;
+}
+.working{
+    float: left;
+    margin-top: 4px;
+}
+.nav1-1,.nav1-list{
+    background: #505050;
+}
+.nav1-1{
+    width: 164px;
+    height: 21px;
+    float: left;
+    margin-top: 4px;
+    position: relative;
+    z-index: 65;
+}
+.nav1-1-1,.nav1-1-2{
+    height: 21px;
+    background: #5d5d5d;
+    float: left;
+}
+.nav1-1-1{
+    width: 140px;
+    margin-right: 2px;
+    padding-left: 3px;
+    color: #c8c8c8;
+}
+
+.nav1-list{
+    width: 160px;
+    height:402px;
+    color: #c8c8c8;
+    position: absolute;
+    top: 21px;
+    left: 0px;
+    z-index: 65;
+    display: none;
+}
+.nav1-list li{
+    padding: 2.3px 4px;
+}
+.nav1-list>ul>hr{
+    margin-left: 0;
+}
 
 
 
@@ -8253,7 +8298,7 @@ hr{
 }
 
 
-.nav2-1-2{
+.nav1-1-2,.nav2-1-2{
     width: 19px;
     background: #505050 url(images/tubiaojihe.png) no-repeat;
     background-position: -546px -50px;
@@ -8423,7 +8468,7 @@ hr{
     background-position: -357px -894px;
 }
 .Wicon37{
-    background-position: -832px -50px;
+    background-position: -832px -53px;
 }
 .Wicon38{
     background-position: -855px -50px;
@@ -8511,10 +8556,10 @@ hr{
     background-position: -282px -972px;
 }
 .Wicon65{
-    background-position: -1083px -50px;
+    background-position: -1083px -53px;
 }
 .Wicon66{
-    background-position: -548px -50px;
+    background-position: -548px -53px;
     float: right;
 }
 .Wicon67{
@@ -8597,7 +8642,7 @@ input{
 
 .logIn{
     width: 120px;
-    height: 26px;
+    height: 22px;
     float: left;
     color: #c8c8c8;
     font-size: 12px;
@@ -8605,7 +8650,7 @@ input{
     position: relative;
 }
 .logIn span:nth-child(2){
-    margin-top: 6px;
+    margin-top: 3px;
     display: inline-block;
 }
 
@@ -8614,7 +8659,7 @@ input{
     height: 82px;
     display: none;
     position: absolute;
-    top: 26px;
+    top: 22px;
     right: 0;
     background: #525252;
 }
@@ -8720,7 +8765,7 @@ input{
 }
 .wrap{
     overflow: hidden;
-    zoom: 1;    
+    zoom: 1;   
 }
 .box2,.box3,.box4{
     height: 695px;
@@ -8733,12 +8778,19 @@ input{
 .box3{
     margin: 2px 2px 0 0;
     width: 1590px;
+    position: relative; 
 }
 .box4,.box6,.box7,.box8{
     margin-top: 2px;
 }
 .box4{
     width: 282px;
+    font-size: 12px;
+    color: #c8c8c8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background: #373737; */
 }
 .box5{
     height: 42px;
@@ -8751,4 +8803,482 @@ input{
 }
 .box8{
     height: 24px;
+}
+
+
+
+/* 右边选项卡 box4 */
+.WrightTabs{
+    transform: rotate(90deg);
+    margin: 272px -257px 0 0;
+}
+.WrightTab,.WrightListTab{
+    height: 20px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    padding: 0 10px;
+    background-color: #373737;
+    border: 1px solid #2b2b2b;
+    border-bottom: 0;
+    margin-right: 4px;
+    /* box-sizing: border-box; */
+}
+/* .WrightTab1,.WrightListTab1{
+    background: #444;
+} */
+
+.WrightLists{
+    height: 100%;
+    position: absolute;
+    top: -2px;
+    right: 21px;
+}
+
+/* 第一个选项卡 通道盒/层编辑器 */
+.WrightList1{
+    width: 265px;
+    height: 100%;
+    background: #444;
+    /* display: none; */
+}
+.WrightListImgs{
+    width: 100%;
+    height: 30px;
+}
+.WrightListImg{
+    float: right;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    background:  url(images/tubiaojihe.png) no-repeat;
+}
+.WrightListImg1{
+    background-position: -1877px -151px;
+    margin-right: 6px;
+}
+.WrightListImg2{
+    background-position: -1855px -151px;
+}
+.WrightListImg3{
+    background-position: -1835px -152px;
+}
+.WrightListImg4{
+    background-position: -1870px -735px;
+}
+.WrightListImg5{
+    background-position: -1845px -735px;
+}
+.WrightListImg6{
+    background-position: -1820px -735px;
+}
+.WrightListImg7{
+    background-position: -1795px -735px;
+}
+
+.WrightListUl{
+    width: 265px;
+    height: 24px;
+    margin:0 0 8px 8px;
+}
+.WrightListTabUl{
+    width: 265px;
+    height: 24px;
+    margin-left:8px;
+}
+.WrightListUl>li,.WrightListTabUl>li{
+    list-style: none;
+    float: left;
+    margin: 3px;
+}
+
+/* 一级页面 */
+.WrightListUl1{
+    width: 280px;
+    height: 550px;
+    background: #404040;
+    z-index: 66;
+    display: none;
+}
+.WrightListUl1>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 261px;
+    height: 550px;
+}
+.WrightListUl1>.rightWords>.rightWord{
+    width: 246px;
+}
+.leftImg{
+    height: 100%;
+}
+
+.WrightListUl2{
+    width: 210px;
+    height: 416px;
+    background: #404040;
+    z-index: 66;
+    display: none;
+}
+.WrightListUl2>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 191px;
+    height: 416px;
+}
+.WrightListUl2>.rightWords>.rightWord{
+    width: 176px;
+}
+
+.WrightListUl3,.WrightListUl7{
+    width: 170px;
+    height: 20px;
+    background: #404040;
+    z-index: 66;
+    display: none;
+}
+.WrightListUl3>.rightWords,.WrightListUl7>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 151px;
+    height: 20px;
+}
+.WrightListUl3>.rightWords>.rightWord,.WrightListUl7>.rightWords>.rightWord{
+    width: 136px;
+}
+
+.WrightListUl4{
+    width: 160px;
+    height: 170px;
+    background: #404040;
+    z-index: 66;
+    display: none;
+}
+.WrightListUl4>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 141px;
+    height: 170px;
+}
+.WrightListUl4>.rightWords>.rightWord{
+    width: 126px;
+}
+
+.WrightListUl5{
+    width: 222px;
+    height: 284px;
+    background: #404040;
+    z-index: 66;
+    display: none;
+}
+.WrightListUl5>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 203px;
+    height: 284px;
+}
+.WrightListUl5>.rightWords>.rightWord{
+    width: 188px;
+}
+
+.WrightListUl6{
+    width: 210px;
+    height: 80px;
+    background: #404040;
+    z-index: 66;
+    display: none;
+}
+.WrightListUl6>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 191px;
+    height:80px;
+}
+.WrightListUl6>.rightWords>.rightWord{
+    width: 176px;
+}
+
+.WrightListUl8{
+    width: 100px;
+    height: 70px;
+    background: #404040;
+    z-index: 66;
+    display: none;
+}
+.WrightListUl8>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 81px;
+    height:70px;
+}
+.WrightListUl8>.rightWords>.rightWord{
+    width: 66px;
+}
+
+.WrightListUl9{
+    width: 182px;
+    height: 66px;
+    background: #404040;
+    z-index: 66;
+    display: none;
+}
+.WrightListUl9>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 163px;
+    height:66px;
+}
+.WrightListUl9>.rightWords>.rightWord{
+    width: 148px;
+}
+
+.WrightListUl10{
+    width: 196px;
+    height: 40px;
+    background: #404040;
+    z-index: 66;
+    display: none;
+}
+.WrightListUl10>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 177px;
+    height:40px;
+}
+.WrightListUl10>.rightWords>.rightWord{
+    width: 162px;
+}
+
+.WrightListUl11{
+    width: 112px;
+    height: 62px;
+    background: #404040;
+    z-index: 66;
+    display: none;
+}
+.WrightListUl11>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 93px;
+    height:62px;
+}
+.WrightListUl11>.rightWords>.rightWord{
+    width: 78px;
+}
+
+.WrightListUl12{
+    width: 240px;
+    height: 20px;
+    background: #404040;
+    z-index: 66;
+    display: none;
+}
+.WrightListUl12>.rightWords{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 221px;
+    height:20px;
+}
+.WrightListUl12>.rightWords>.rightWord{
+    width: 206px;
+}
+
+
+.WrightListFrame1{
+    background: #2b2b2b;
+    width: 254px;
+    height: 420px;
+    margin-left: 7px;
+}
+.WrightListFrame2{
+    background: #2b2b2b;
+    width: 254px;
+    height: 142px;
+    margin-top: 20px;
+}
+
+.WrightListTabAdd{
+    margin-top: 10px;
+    width: 254px;
+    height: 200px;
+    background: #474747;
+    margin-left: 7px;
+}
+
+/* 第二个选项卡 Human IK*/
+.WrightList2{
+    width: 300px;
+    height: 100%;
+    background: #444;
+    display: none;
+}
+
+.WrightListDown{
+    width: 230px;
+    margin: 6px 0 0 93px;
+    float: left;
+}
+.WrightListDown1{
+    width: 230px;
+    margin: 6px 0 0 105px;
+}
+.role{
+    float: left;
+    margin-top: 6px;
+}
+.WrightDown,.nav1-list{
+    background: #505050;
+}
+.WrightDown{
+    width: 154px;
+    height: 21px;
+    float: left;
+    margin-top: 4px;
+    position: relative;
+    z-index: 65;
+}
+
+.WrightNone,.WdownTriangle,.WdownTriangle1,.WdownTriangle2{
+    height: 21px;
+    background: #5d5d5d;
+    float: left;
+}
+.WrightNone{
+    width: 130px;
+    margin-right: 2px;
+    padding-left: 3px;
+}
+.Wnone{
+    height: 21px;
+    line-height: 21px;
+}
+.WdownTriangle,.WdownTriangle1,.WdownTriangle2{
+    width: 19px;
+    background:  url(images/tubiaojihe.png) no-repeat;
+    background-position: -546px -50px;
+}
+
+.WrightDown-list{
+    width: 160px;
+    height:402px;
+    color: #c8c8c8;
+    position: absolute;
+    top: 21px;
+    left: 0px;
+    z-index: 65;
+    display: none;
+}
+.WrightDown-list li{
+    padding: 2.3px 4px;
+}
+.WrightDown-list>ul>hr{
+    margin-left: 0;
+}
+
+.WrightClassify{
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    float: right;
+}
+.WordEstablish,.WordLead{
+    width: 268px;
+    height: 24px;
+    background: #5d5d5d;
+    line-height: 24px;
+    margin: 4px 0 0 14px;
+}
+.Westablish,.Wlead{
+    width: 208px;
+    height: 28px;
+    background: #5d5d5d;
+    margin: 4px auto;
+    line-height: 28px;
+    text-align: center;
+}
+.Westablish:hover,.Wlead:hover,.Wadd:hover{
+    background: #707070;
+}
+
+
+/*第三个选项卡 XGen交互式梳理编辑器 */
+.WrightList3{
+    width: 460px;
+    height: 100%;
+    background: #444;
+    display: none;
+}
+
+.Wadd{
+    width: 97px;
+    height: 24px;
+    background: #5d5d5d;
+    float: left;
+}
+.Wadd>span{
+    height: 13px;
+}
+.modifier{
+    margin: 0 2px 0 8px;
+}
+
+.WrightList3>.WrightLisImgs{
+    margin-right: 10px;
+}
+.WrightListImg8{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    background: url(images/tubiaojihe.png) no-repeat  -1820px -735px;
+}
+.WrightListFrame3{
+    margin: 40px 0 0 7px;
+    width: 440px;
+    height: 620px;
+    background: #2b2b2b;
+}
+.WframeBox{
+    background: #5d5d5d;
+    height: 24px;
+    margin-right: 2px;
+    float: left;
+    line-height: 24px;
+    text-align: center;
+}
+.WframeBox1{
+    width: 24px;
+}
+.WframeBox2{
+    width: 199px;
+}
+.WframeBox3{
+    width: 133px;
+}
+.WframeBox4{
+    width: 31px;
+}
+.WframeBox5{
+    width: 43px;
+}
+
+/* 添加的class */
+.WrightAddclass{
+    background: #444;
+}
+/* 三角旋转 */
+.WrightTransform{
+    transform: rotate(-90deg);
+    /* margin: 272px -257px 0 0; */
 }
