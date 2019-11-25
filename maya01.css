@@ -19,7 +19,7 @@ li{
     padding-top: 13px;
 }
 .Gcurve{
-    width: 1880px;
+    width: 1867px;
     height: 70px;
     float: left;
     position: relative;
@@ -2130,9 +2130,17 @@ li{
     position: absolute;
     z-index: 2;
     box-shadow: 2px 3px 3px #000;
+    display: none;
 }
-.wrap{
-    overflow: auto;
+.GdbListView4{
+    width: 180px;
+    height: 60px;
+    background-color: #555;
+    position: absolute;
+    top: 25px;
+    left: 161px;
+    box-shadow:2px 3px 3px #000;
+    z-index: 2;
 }
 .Gisolation{
     width: 220px;
@@ -2163,6 +2171,13 @@ li{
     position: absolute;
     top: -878px;
     right: -150px;
+    display: none;
+}
+.Gwrap{
+    width: 100%;
+    height: 300px;
+    background-color: hotpink;
+    float: left;
 }
 
 
